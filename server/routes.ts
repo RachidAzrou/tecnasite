@@ -20,7 +20,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       try {
         const emailSent = await sendEmail({
           to: "info@tecnarit.com",
-          from: "info@tecnarit.com", // BELANGRIJK: Dit moet een geverifieerd e-mailadres zijn in uw SendGrid account
+          from: "sendgrid@tecnarit.com", // BELANGRIJK: Dit moet een geverifieerd e-mailadres zijn in uw SendGrid account
           subject: `Nieuw contactformulier bericht van ${data.name}`,
           html: `
             <h2>Nieuw bericht van het contactformulier op tecnarit.com</h2>
