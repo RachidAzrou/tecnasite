@@ -4,8 +4,10 @@ import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { serviceItems } from "@/lib/data";
 import { Check, Zap, RefreshCw, Monitor } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const ServicesPage = () => {
+  const { t } = useTranslation();
   const icons = [Check, Zap, RefreshCw, Monitor];
 
   return (
@@ -16,11 +18,10 @@ const ServicesPage = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl">
-                Our Testing Services
+                {t('services.title')}
               </h1>
               <p className="mt-4 max-w-2xl mx-auto text-lg text-neutral-light">
-                We offer comprehensive software testing solutions to ensure your applications
-                meet the highest quality standards.
+                {t('services.subtitle')}
               </p>
             </div>
           </div>
@@ -29,9 +30,9 @@ const ServicesPage = () => {
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">What We Offer</span>
+              <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">{t('services.offer')}</span>
               <h2 className="text-3xl font-extrabold text-tecnarit-dark">
-                Comprehensive Testing Solutions
+                {t('services.solutions')}
               </h2>
               <div className="w-20 h-1 mx-auto mt-6 tecnarit-gradient-bg rounded-full"></div>
             </div>

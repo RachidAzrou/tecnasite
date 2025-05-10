@@ -143,8 +143,8 @@ const AboutPage = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
-                  <h3 className="text-lg font-bold text-tecnarit-dark mb-3">{highlight.title}</h3>
-                  <p className="text-neutral-dark">{highlight.description}</p>
+                  <h3 className="text-lg font-bold text-tecnarit-dark mb-3">{t(`about.highlights.${highlight.key}.title`)}</h3>
+                  <p className="text-neutral-dark">{t(`about.highlights.${highlight.key}.description`)}</p>
                 </motion.div>
               ))}
             </div>
