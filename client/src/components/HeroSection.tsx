@@ -65,22 +65,7 @@ const HeroSection = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-tecnarit-dark to-transparent"></div>
         </div>
       </div>
-      
-      {/* About Section after the image */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 z-10 relative bg-tecnarit-dark">
-        <div className="text-left text-neutral-light">
-          <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">{t('about_section.label')}</span>
-          <h2 className="text-2xl font-extrabold text-white sm:text-3xl mb-4">
-            {t('about_section.title')}
-          </h2>
-          <p className="text-base mb-4">
-            {t('about_section.paragraph1')}
-          </p>
-          <p className="text-base">
-            {t('about_section.paragraph2')}
-          </p>
-        </div>
-      </div>
+
     </section>
   );
 };
