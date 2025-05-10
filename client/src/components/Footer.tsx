@@ -17,7 +17,7 @@ const Footer = () => {
               />
             </div>
             <p className="mt-4 text-base text-neutral-light">
-              Specialized in software testing and quality assurance services that ensure your applications work flawlessly, every time.
+              Specialized in software testing services.
             </p>
             <div className="mt-6 space-y-3">
               <div className="flex items-center">

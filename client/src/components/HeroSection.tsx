@@ -17,8 +17,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6 }}
             >
               <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
-                <span className="block">Elevate Your Software Quality with</span>
-                <span className="block tecnarit-gradient-text">Expert Testing Solutions</span>
+                <span className="block">Elevate Your Software Quality</span>
               </h1>
               <p className="mt-3 text-base text-neutral-light sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 At Tecnarit, we specialize in comprehensive software testing and quality assurance services that ensure your applications work flawlessly, every time.
@@ -26,12 +25,12 @@ const HeroSection = () => {
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
                   <Button size="lg" className="tecnarit-gradient-bg hover:opacity-90 text-white border-none" asChild>
-                    <a href="#contact">Get Started</a>
+                    <a href="/contact">Get Started</a>
                   </Button>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <Button size="lg" variant="outline" className="border-tecnarit-green text-white hover:bg-tecnarit-green/20" asChild>
-                    <a href="#services">Our Services</a>
+                  <Button size="lg" variant="outline" className="border-tecnarit-lime text-white hover:bg-tecnarit-lime/20" asChild>
+                    <a href="/services">Our Services</a>
                   </Button>
                 </div>
               </div>
