@@ -1,16 +1,19 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 // Import the TECNARIT logo for decoration
 import tecnaritIcon from "../assets/tecnarit-icon.png";
 
 const AboutSection = () => {
+  const { t } = useTranslation();
+  
   const aboutPoints = [
-    "Expert testing team with certified professionals",
-    "Experience across diverse industries and technologies",
-    "Focus on quality, precision and thorough methodology",
-    "Commitment to reliable, secure software solutions"
+    t('about_section.points.point1'),
+    t('about_section.points.point2'),
+    t('about_section.points.point3'),
+    t('about_section.points.point4')
   ];
 
   return (
@@ -51,17 +54,17 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">About Us</span>
+            <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">{t('about_section.label')}</span>
             <h2 className="text-3xl font-extrabold text-tecnarit-dark sm:text-4xl">
-              About TECNARIT
+              {t('about_section.title')}
             </h2>
             <p className="mt-4 text-lg text-neutral-dark">
-              TECNARIT is a leading software testing and quality assurance company dedicated to helping businesses deliver flawless digital experiences.
+              {t('about_section.subtitle')}
             </p>
             
             <div className="mt-6">
               <p className="text-base text-neutral-dark mb-4">
-                Founded with a passion for quality and precision, we have evolved to become specialists in software testing. Our team of certified testing professionals brings extensive experience across various industries and technologies.
+                {t('about_section.paragraph1')}
               </p>
               
               <div className="mt-6 mb-6 space-y-3">
@@ -74,7 +77,7 @@ const AboutSection = () => {
               </div>
               
               <p className="text-base text-neutral-dark">
-                Our mission is to partner with you to ensure your software meets the highest standards of quality, performance, and security. Whether you need comprehensive testing services or specialized expertise for a specific project, TECNARIT delivers results you can trust.
+                {t('about_section.paragraph2')}
               </p>
             </div>
             

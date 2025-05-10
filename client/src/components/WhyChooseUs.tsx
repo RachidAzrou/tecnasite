@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Check, Zap, Award, Calendar } from "lucide-react";
 import { features } from "@/lib/data";
+import { useTranslation } from "react-i18next";
 
 const FeatureItem = ({ 
   icon: Icon, 
