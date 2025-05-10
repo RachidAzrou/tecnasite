@@ -31,7 +31,8 @@ export default async function handler(req, res) {
     try {
       const emailSent = await sendEmail({
         to: "info@tecnarit.com",
-        from: "sendgrid@tecnarit.com", // Dit moet een geverifieerd e-mailadres zijn in uw SendGrid account
+        from: "info@tecnarit.com", // Dit moet een geverifieerd e-mailadres zijn in uw SendGrid account
+        replyTo: email, // Antwoorden gaan naar de persoon die het formulier heeft ingevuld
         subject: `Nieuw contactformulier bericht van ${name}`,
         html: `
           <h2>Nieuw bericht van het contactformulier op tecnarit.com</h2>
@@ -79,6 +80,7 @@ async function sendEmail(params) {
     const msg = {
       to: params.to,
       from: params.from,
+      replyTo: params.replyTo || params.from,
       subject: params.subject,
       text: params.text || '',
       html: params.html || '',
