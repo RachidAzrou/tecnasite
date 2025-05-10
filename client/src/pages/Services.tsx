@@ -55,6 +55,7 @@ const ServicesPage = () => {
         <section className="py-16 bg-tecnarit-dark text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
+              <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">{t('services.title')}</span>
               <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl">
                 {t('services.title')}
               </h1>
