@@ -44,8 +44,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/about" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  {t('footer.nearshoring')}
+                <a href="/privacy" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
+                  {t('footer.privacy')}
                 </a>
               </li>
               <li>
