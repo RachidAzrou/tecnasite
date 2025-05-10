@@ -38,7 +38,7 @@ const Home = () => {
               <Button className="tecnarit-gradient-bg hover:opacity-90 text-white" size="lg" asChild>
                 <Link href="/contact">{t('navigation.contact')}</Link>
               </Button>
-              <Button variant="outline" className="border-tecnarit-lime bg-tecnarit-lime/20 text-white hover:bg-tecnarit-lime/40" size="lg" asChild>
+              <Button className="bg-white text-tecnarit-dark hover:bg-neutral-100" size="lg" asChild>
                 <Link href="/services">{t('navigation.services')}</Link>
               </Button>
             </div>
