@@ -49,7 +49,7 @@ const Navbar = () => {
       "bg-tecnarit-dark sticky top-0 z-50 transition-shadow duration-300",
       scrolled ? "shadow-md" : "shadow-sm"
     )}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-7xl mx-auto px-0 pl-0 pr-4 sm:pl-0 sm:pr-6 lg:pl-0 lg:pr-8 relative">
         <div className="flex items-center py-4">
           {/* Logo - Left aligned */}
           <div className="flex-shrink-0 mr-auto">
@@ -57,12 +57,12 @@ const Navbar = () => {
               <img 
                 src={tecnaritLogo} 
                 alt="TECNARIT Logo" 
-                className="h-10 hidden md:block -ml-2" 
+                className="h-10 hidden md:block -ml-4" 
               />
               <img 
                 src={tecnaritIcon} 
                 alt="TECNARIT Logo" 
-                className="h-8 md:hidden -ml-1" 
+                className="h-8 md:hidden -ml-3" 
               />
             </Link>
           </div>
