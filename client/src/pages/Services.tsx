@@ -52,7 +52,8 @@ const ServicesPage = () => {
       
       <Navbar />
       <main className="flex-grow">
-        <section className="py-16 relative overflow-hidden text-white" style={{ background: 'linear-gradient(135deg, #0f1729 0%, #183728 100%)' }}>
+        <div className="h-2 w-full bg-gradient-to-r from-tecnarit-dark via-tecnarit-dark/90 to-tecnarit-dark"></div>
+        <section className="pt-14 pb-16 relative overflow-hidden text-white" style={{ background: 'linear-gradient(180deg, #0f1729 0%, #132b23 50%, #183728 100%)' }}>
           {/* Animated background elements */}
           <div className="absolute top-0 left-0 w-full h-full">
             <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-tecnarit-green/5 animate-pulse" style={{ animationDuration: '7s' }}></div>

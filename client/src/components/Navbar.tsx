@@ -46,9 +46,9 @@ const Navbar = () => {
 
   return (
     <header className={cn(
-      "bg-tecnarit-dark sticky top-0 z-50 transition-shadow duration-300",
+      "sticky top-0 z-50 transition-shadow duration-300",
       scrolled ? "shadow-md" : "shadow-sm"
-    )}>
+    )} style={{ background: 'linear-gradient(180deg, #0f1729 0%, #0f1729 100%)' }}>
       <div className="max-w-7xl mx-auto px-0 pl-0 pr-4 sm:pl-0 sm:pr-6 lg:pl-0 lg:pr-8 relative">
         <div className="flex items-center py-4">
           {/* Logo - Left aligned */}
