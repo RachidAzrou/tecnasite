@@ -106,8 +106,8 @@
     "reach": "Contactez-Nous",
     "intro": "Notre modèle de nearshoring combine le meilleur des deux mondes - la gestion belge avec notre talentueuse équipe marocaine. TECNARIT est là pour vous aider avec tous vos besoins de test logiciel.",
     "offices": "Nos Bureaux",
-    "management_address": "Direction: Cleydaellaan 16/5, 2630 Aartselaar, Belgique (Anvers)",
-    "development_address": "Équipe de développement: Agadir, Maroc",
+    "management_address": "Belgique: Anvers",
+    "development_address": "Maroc: Agadir",
     "email": "Email",
     "phone": "Téléphone",
     "benefits": {
@@ -152,7 +152,7 @@
     "label": "À Propos",
     "title": "À Propos de TECNARIT",
     "subtitle": "TECNARIT est une entreprise leader en test de logiciels et assurance qualité dédiée à aider les entreprises à offrir des expériences numériques impeccables.",
-    "paragraph1": "Fondée avec une passion pour la qualité et la précision, nous avons évolué pour devenir des spécialistes dans le test de logiciels. Notre équipe de professionnels certifiés en test apporte une vaste expérience dans divers secteurs et technologies.",
+    "paragraph1": "Fondée par des professionnels du monde du test avec plus de 20 ans d'expérience, nous avons évolué pour devenir des spécialistes dans le test de logiciels. Notre équipe de professionnels certifiés en test apporte une vaste expertise dans divers secteurs et technologies.",
     "paragraph2": "Notre mission est de collaborer avec vous pour garantir que votre logiciel répond aux normes les plus élevées de qualité, de performance et de sécurité. Que vous ayez besoin de services de test complets ou d'une expertise spécialisée pour un projet spécifique, TECNARIT livre des résultats sur lesquels vous pouvez compter.",
     "points": {
       "point1": "Équipe de test experte avec des professionnels certifiés",

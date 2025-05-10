@@ -49,9 +49,9 @@ const Navbar = () => {
       scrolled ? "shadow-md" : "shadow-sm"
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex items-center py-4">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/" className="flex-shrink-0 mr-8">
             <div className="flex items-center">
               <img 
                 src={tecnaritLogo} 
@@ -67,7 +67,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex flex-grow items-center justify-center space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -78,11 +78,14 @@ const Navbar = () => {
                 <span className="absolute w-0 h-0.5 tecnarit-gradient-bg bottom-[-2px] left-0 transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
-            <LanguageSwitcher />
           </nav>
+          
+          <div className="hidden md:block">
+            <LanguageSwitcher />
+          </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="md:hidden">
+          <div className="md:hidden ml-auto">
             <button
               type="button"
               className="text-white focus:outline-none"
@@ -97,8 +100,6 @@ const Navbar = () => {
               )}
             </button>
           </div>
-
-
         </div>
 
         {/* Mobile Navigation Menu */}
