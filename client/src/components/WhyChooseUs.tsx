@@ -87,8 +87,7 @@ const WhyChooseUs = () => {
                 src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800" 
                 alt="Software testing and quality assurance" 
               />
-              {/* Overlay with gradient */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-tecnarit-dark/20 to-transparent"></div>
+
             </div>
           </motion.div>
         </div>
