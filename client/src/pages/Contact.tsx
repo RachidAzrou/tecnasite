@@ -44,15 +44,15 @@ const ContactPage = () => {
     try {
       await apiRequest("POST", "/api/contact", data);
       toast({
-        title: "Message sent!",
-        description: "Thank you for your message. We'll get back to you soon.",
+        title: t('contact.form.success.title'),
+        description: t('contact.form.success.description'),
         variant: "default",
       });
       reset();
     } catch (error) {
       toast({
-        title: "Something went wrong",
-        description: "Please try again later.",
+        title: t('contact.form.error.title'),
+        description: t('contact.form.error.description'),
         variant: "destructive",
       });
     } finally {

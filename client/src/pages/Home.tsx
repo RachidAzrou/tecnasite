@@ -7,8 +7,10 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const { t } = useTranslation();
   // No smooth scrolling needed anymore since we use proper page navigation
   useEffect(() => {
     // Effect can be used for other initialization if needed in the future
@@ -27,10 +29,10 @@ const Home = () => {
         <section className="py-16 bg-tecnarit-dark text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-extrabold sm:text-4xl mb-8">
-              Ready to enhance your software quality?
+              {t('home.cta.title')}
             </h2>
             <p className="text-xl text-neutral-light max-w-3xl mx-auto mb-10">
-              Our nearshoring model combines Belgian management expertise with our talented Moroccan team to deliver cost-effective, high-quality testing solutions.
+              {t('home.cta.description')}
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
               <Button className="tecnarit-gradient-bg hover:opacity-90 text-white" size="lg" asChild>

@@ -90,11 +90,11 @@ const ServicesPage = () => {
                 </li>
                 <li className="flex items-center">
                   <Check className="h-5 w-5 text-tecnarit-green mr-2 flex-shrink-0" />
-                  <span>Seamless communication and project management</span>
+                  <span>{t('services.nearshoring.benefit3')}</span>
                 </li>
                 <li className="flex items-center">
                   <Check className="h-5 w-5 text-tecnarit-green mr-2 flex-shrink-0" />
-                  <span>High-quality testing expertise at competitive rates</span>
+                  <span>{t('services.nearshoring.benefit4')}</span>
                 </li>
               </ul>
             </div>
