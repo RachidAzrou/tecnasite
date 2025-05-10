@@ -3,8 +3,9 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-// Import the TECNARIT logo for decoration
+// Import the TECNARIT logo for decoration and beach card image
 import tecnaritIcon from "../assets/tecnarit-icon.png";
+import beachCardImage from "../assets/beach_card.jpg";
 
 const AboutSection = () => {
   const { t } = useTranslation();
@@ -39,9 +40,9 @@ const AboutSection = () => {
           >
             <div className="rounded-lg shadow-xl overflow-hidden relative">
               <img 
-                className="w-full" 
-                src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800" 
-                alt="IT professionals working together on software testing" 
+                className="w-full object-cover" 
+                src={beachCardImage} 
+                alt="TECNARIT business card on beach in Morocco" 
               />
               {/* Overlay with gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-tecnarit-green/20 to-transparent"></div>
