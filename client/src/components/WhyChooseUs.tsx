@@ -84,8 +84,8 @@ const WhyChooseUs = () => {
             <div className="rounded-lg shadow-xl overflow-hidden relative">
               <img 
                 className="w-full" 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800" 
-                alt="Software testing team collaboration" 
+                src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800" 
+                alt="Software testing and quality assurance" 
               />
               {/* Overlay with gradient */}
               <div className="absolute inset-0 bg-gradient-to-tr from-tecnarit-dark/20 to-transparent"></div>

@@ -55,8 +55,8 @@ const HeroSection = () => {
         <div className="h-56 w-full relative sm:h-72 md:h-96 lg:w-full lg:h-full overflow-hidden">
           <img 
             className="absolute inset-0 h-full w-full object-cover" 
-            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&h=1000" 
-            alt="Software testing professional analyzing code"
+            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&h=1000" 
+            alt="Software testing professional working with code"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-tecnarit-dark to-transparent"></div>
         </div>
