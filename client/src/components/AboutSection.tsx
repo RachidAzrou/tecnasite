@@ -19,15 +19,7 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="py-16 bg-neutral-lightest relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute right-0 bottom-0 opacity-5 pointer-events-none">
-        <img 
-          src={tecnaritIcon} 
-          alt="" 
-          className="w-72 h-72"
-          aria-hidden="true"
-        />
-      </div>
+      {/* No background decoration */}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch">
