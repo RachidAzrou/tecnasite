@@ -25,17 +25,19 @@ const Home = () => {
         {/* About Section before services */}
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-left">
+            <div className="text-center">
               <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">{t('about_section.label')}</span>
               <h2 className="text-2xl font-extrabold text-tecnarit-dark sm:text-3xl mb-4">
                 {t('about_section.title')}
               </h2>
-              <p className="text-base mb-4 text-neutral-dark">
-                {t('about_section.paragraph1')}
-              </p>
-              <p className="text-base text-neutral-dark">
-                {t('about_section.paragraph2')}
-              </p>
+              <div className="max-w-3xl mx-auto">
+                <p className="text-base mb-4 text-neutral-dark">
+                  {t('about_section.paragraph1')}
+                </p>
+                <p className="text-base text-neutral-dark">
+                  {t('about_section.paragraph2')}
+                </p>
+              </div>
             </div>
           </div>
         </section>
