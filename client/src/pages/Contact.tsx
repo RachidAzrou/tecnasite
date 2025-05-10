@@ -99,10 +99,9 @@ const ContactPage = () => {
                 transition={{ duration: 0.5 }}
               >
                 <div>
-                  <h2 className="text-2xl font-bold text-tecnarit-dark mb-6">Reach Out To Us</h2>
+                  <h2 className="text-2xl font-bold text-tecnarit-dark mb-6">{t('contact.reach')}</h2>
                   <p className="text-neutral-dark mb-8">
-                    Our nearshoring model combines the best of both worlds - Belgian management with our talented Moroccan team. 
-                    TECNARIT is here to help with all your software testing needs.
+                    {t('contact.intro')}
                   </p>
                   
                   <div className="space-y-6 mb-10">
@@ -113,7 +112,7 @@ const ContactPage = () => {
                         </div>
                       </div>
                       <div className="ml-4">
-                        <h4 className="text-base font-medium text-tecnarit-dark">Our Offices</h4>
+                        <h4 className="text-base font-medium text-tecnarit-dark">{t('contact.offices')}</h4>
                         <div className="mt-1">
                           <p className="text-neutral-dark">Management: Cleydaellaan 16/5, 2630 Aartselaar, Belgium (Antwerpen)</p>
                           <p className="text-neutral-dark">Development Team: Agadir, Morocco</p>
@@ -128,7 +127,7 @@ const ContactPage = () => {
                         </div>
                       </div>
                       <div className="ml-4">
-                        <h4 className="text-base font-medium text-tecnarit-dark">Email</h4>
+                        <h4 className="text-base font-medium text-tecnarit-dark">{t('contact.email')}</h4>
                         <p className="mt-1 text-neutral-dark">info@tecnarit.com</p>
                       </div>
                     </div>
@@ -140,26 +139,26 @@ const ContactPage = () => {
                         </div>
                       </div>
                       <div className="ml-4">
-                        <h4 className="text-base font-medium text-tecnarit-dark">Phone</h4>
+                        <h4 className="text-base font-medium text-tecnarit-dark">{t('contact.phone')}</h4>
                         <p className="mt-1 text-neutral-dark">+32 71 55 09 46</p>
                       </div>
                     </div>
                   </div>
                   
                   <div className="bg-white p-6 rounded-lg shadow-md border border-neutral-light">
-                    <h3 className="text-lg font-medium text-tecnarit-dark mb-4">Our Nearshoring Model Benefits</h3>
+                    <h3 className="text-lg font-medium text-tecnarit-dark mb-4">{t('contact.benefits.title')}</h3>
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <CheckCircle className="h-5 w-5 text-tecnarit-green flex-shrink-0 mt-0.5" />
-                        <p className="ml-2 text-neutral-dark">Cost-effective software testing solutions</p>
+                        <p className="ml-2 text-neutral-dark">{t('contact.benefits.cost')}</p>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="h-5 w-5 text-tecnarit-green flex-shrink-0 mt-0.5" />
-                        <p className="ml-2 text-neutral-dark">Belgian management ensures smooth communication</p>
+                        <p className="ml-2 text-neutral-dark">{t('contact.benefits.communication')}</p>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="h-5 w-5 text-tecnarit-green flex-shrink-0 mt-0.5" />
-                        <p className="ml-2 text-neutral-dark">Talented Moroccan team delivers high-quality testing</p>
+                        <p className="ml-2 text-neutral-dark">{t('contact.benefits.quality')}</p>
                       </li>
                     </ul>
                   </div>
@@ -173,10 +172,10 @@ const ContactPage = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
                 <div className="bg-white rounded-lg p-8 shadow-lg border border-tecnarit-green/10">
-                  <h3 className="text-xl font-semibold text-tecnarit-dark mb-6">Send us a message</h3>
+                  <h3 className="text-xl font-semibold text-tecnarit-dark mb-6">{t('contact.form.title')}</h3>
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-tecnarit-dark">Name</label>
+                      <label htmlFor="name" className="block text-sm font-medium text-tecnarit-dark">{t('contact.form.name')}</label>
                       <div className="mt-1">
                         <Input
                           id="name"
