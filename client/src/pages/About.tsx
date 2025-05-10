@@ -68,7 +68,7 @@ const AboutPage = () => {
                   <div className="flex items-center p-4 bg-white rounded-lg shadow border border-neutral-light">
                     <MapPin className="h-8 w-8 text-tecnarit-green mr-4" />
                     <div>
-                      <h4 className="font-medium text-tecnarit-dark">Morocco</h4>
+                      <h4 className="font-medium text-tecnarit-dark">Morocco (Agadir)</h4>
                       <p className="text-sm text-neutral-dark">Technical Team</p>
                     </div>
                   </div>

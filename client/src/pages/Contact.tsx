@@ -113,8 +113,8 @@ const ContactPage = () => {
                       <div className="ml-4">
                         <h4 className="text-base font-medium text-tecnarit-dark">Our Offices</h4>
                         <div className="mt-1">
-                          <p className="text-neutral-dark">Management: Belgium</p>
-                          <p className="text-neutral-dark">Development Team: Morocco</p>
+                          <p className="text-neutral-dark">Management: Cleydaellaan 16/5, 2630 Aartselaar, Belgium (Antwerpen)</p>
+                          <p className="text-neutral-dark">Development Team: Agadir, Morocco</p>
                         </div>
                       </div>
                     </div>
@@ -139,7 +139,7 @@ const ContactPage = () => {
                       </div>
                       <div className="ml-4">
                         <h4 className="text-base font-medium text-tecnarit-dark">Phone</h4>
-                        <p className="mt-1 text-neutral-dark">+31 (0)6 123 456 78</p>
+                        <p className="mt-1 text-neutral-dark">+32 71 55 09 46</p>
                       </div>
                     </div>
                   </div>
@@ -179,6 +179,7 @@ const ContactPage = () => {
                         <Input
                           id="name"
                           placeholder="Your name"
+                          required
                           {...register("name")}
                           className={errors.name ? "border-red-500" : "border-tecnarit-green/20 focus:border-tecnarit-green/50"}
                         />
@@ -195,6 +196,7 @@ const ContactPage = () => {
                           id="email"
                           type="email"
                           placeholder="your.email@example.com"
+                          required
                           {...register("email")}
                           className={errors.email ? "border-red-500" : "border-tecnarit-green/20 focus:border-tecnarit-green/50"}
                         />
@@ -210,6 +212,7 @@ const ContactPage = () => {
                         <Input
                           id="company"
                           placeholder="Your company name"
+                          required
                           {...register("company")}
                           className={errors.company ? "border-red-500" : "border-tecnarit-green/20 focus:border-tecnarit-green/50"}
                         />
@@ -226,6 +229,7 @@ const ContactPage = () => {
                           id="message"
                           rows={4}
                           placeholder="Tell us about your project and testing needs"
+                          required
                           {...register("message")}
                           className={errors.message ? "border-red-500" : "border-tecnarit-green/20 focus:border-tecnarit-green/50"}
                         />
