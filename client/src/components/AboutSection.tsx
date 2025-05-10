@@ -38,18 +38,15 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="p-2 bg-white rounded-lg shadow-2xl" style={{ transform: 'rotate(-2deg)' }}>
-              <div className="rounded-lg overflow-hidden relative max-w-sm border-2 border-neutral-200">
-                <img 
-                  className="w-full aspect-[4/3] object-cover" 
-                  src={beachCardImage} 
-                  alt="TECNARIT business card on beach in Morocco" 
-                />
-                {/* Overlay with gradient */}
-                <div className="absolute inset-0 bg-gradient-to-br from-tecnarit-green/20 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent h-16"></div>
-                <div className="absolute bottom-2 left-2 text-white text-sm font-medium">TECNARIT - Agadir, Morocco</div>
-              </div>
+            <div className="rounded-lg shadow-md overflow-hidden relative">
+              <img 
+                className="w-full object-cover" 
+                src={beachCardImage} 
+                alt="TECNARIT business card on beach in Morocco" 
+                style={{ height: '280px' }}
+              />
+              {/* Overlay with gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-tecnarit-green/10 to-transparent"></div>
             </div>
           </motion.div>
           
