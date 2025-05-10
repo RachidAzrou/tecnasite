@@ -1,20 +1,7 @@
 {
-  "version": 2,
-  "buildCommand": "./build.sh",
-  "outputDirectory": "client/dist",
-  "installCommand": "npm install",
+  "buildCommand": "./vercel-build.sh",
+  "outputDirectory": ".vercel/output",
   "cleanUrls": true,
   "trailingSlash": false,
-  "regions": ["fra1"],
-  "functions": {
-    "api/index.js": {
-      "memory": 1024,
-      "maxDuration": 10
-    }
-  },
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/api", "dest": "/api/index.js" },
-    { "src": "/(.*)", "dest": "/index.html" }
-  ]
+  "regions": ["fra1", "arn1"]
 }
