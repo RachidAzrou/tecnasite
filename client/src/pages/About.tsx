@@ -3,11 +3,13 @@ import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { aboutUsHighlights } from "@/lib/data";
 import { CheckCircle2, Users, Globe, MapPin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 // Import the TECNARIT logo for decoration
 import tecnaritIcon from "../assets/tecnarit-icon.png";
 
 const AboutPage = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-neutral-lightest min-h-screen flex flex-col">
       <Navbar />
@@ -16,10 +18,10 @@ const AboutPage = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl">
-                About Us
+                {t('about.title')}
               </h1>
               <p className="mt-4 max-w-2xl mx-auto text-lg text-neutral-light">
-                Your trusted partner for quality software testing with a global approach.
+                {t('about.subtitle')}
               </p>
             </div>
           </div>
@@ -38,9 +40,9 @@ const AboutPage = () => {
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-16">
-              <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">Our Story</span>
+              <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">{t('about.story')}</span>
               <h2 className="text-3xl font-extrabold text-tecnarit-dark">
-                Who We Are
+                {t('about.who')}
               </h2>
               <div className="w-20 h-1 mx-auto mt-6 tecnarit-gradient-bg rounded-full"></div>
             </div>
@@ -48,21 +50,21 @@ const AboutPage = () => {
             <div className="grid gap-12 md:grid-cols-2 items-center">
               <div>
                 <p className="text-lg text-neutral-dark mb-6">
-                  TECNARIT is a specialized software testing company that operates on a nearshoring model, combining the expertise of our management team in Belgium with our talented technical team in Morocco.
+                  {t('about.overview.p1')}
                 </p>
                 <p className="text-lg text-neutral-dark mb-6">
-                  This unique approach allows us to deliver high-quality testing services at competitive rates while maintaining excellent communication and project management.
+                  {t('about.overview.p2')}
                 </p>
                 <p className="text-lg text-neutral-dark">
-                  Our mission is to help businesses deliver flawless software through rigorous testing methodologies and dedicated expertise.
+                  {t('about.overview.p3')}
                 </p>
                 
                 <div className="mt-8 grid md:grid-cols-2 gap-4">
                   <div className="flex items-center p-4 bg-white rounded-lg shadow border border-neutral-light">
                     <MapPin className="h-8 w-8 text-tecnarit-green mr-4" />
                     <div>
-                      <h4 className="font-medium text-tecnarit-dark">Belgium (Antwerpen)</h4>
-                      <p className="text-sm text-neutral-dark">Management Team</p>
+                      <h4 className="font-medium text-tecnarit-dark">{t('about.locations.belgium')}</h4>
+                      <p className="text-sm text-neutral-dark">{t('about.locations.belgium_team')}</p>
                     </div>
                   </div>
                   <div className="flex items-center p-4 bg-white rounded-lg shadow border border-neutral-light">
