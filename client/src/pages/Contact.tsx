@@ -115,7 +115,7 @@ const ContactPage = () => {
                         <h4 className="text-base font-medium text-tecnarit-dark">{t('contact.offices')}</h4>
                         <div className="mt-1">
                           <p className="text-neutral-dark">{t('contact.management_address')}</p>
-                          <p className="text-neutral-dark">Development Team: Agadir, Morocco</p>
+                          <p className="text-neutral-dark">{t('contact.development_address')}</p>
                         </div>
                       </div>
                     </div>
