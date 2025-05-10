@@ -144,24 +144,7 @@ const ContactPage = () => {
                       </div>
                     </div>
                   </div>
-                  
-                  <div className="bg-white p-6 rounded-lg shadow-md border border-neutral-light">
-                    <h3 className="text-lg font-medium text-tecnarit-dark mb-4">{t('contact.benefits.title')}</h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-tecnarit-green flex-shrink-0 mt-0.5" />
-                        <p className="ml-2 text-neutral-dark">{t('contact.benefits.cost')}</p>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-tecnarit-green flex-shrink-0 mt-0.5" />
-                        <p className="ml-2 text-neutral-dark">{t('contact.benefits.communication')}</p>
-                      </li>
-                      <li className="flex items-start">
-                        <CheckCircle className="h-5 w-5 text-tecnarit-green flex-shrink-0 mt-0.5" />
-                        <p className="ml-2 text-neutral-dark">{t('contact.benefits.quality')}</p>
-                      </li>
-                    </ul>
-                  </div>
+
                 </div>
               </motion.div>
               
