@@ -208,11 +208,11 @@ const ContactPage = () => {
                     </div>
 
                     <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-tecnarit-dark">Company</label>
+                      <label htmlFor="company" className="block text-sm font-medium text-tecnarit-dark">{t('contact.form.company')}</label>
                       <div className="mt-1">
                         <Input
                           id="company"
-                          placeholder="Your company name"
+                          placeholder={t('contact.form.company_placeholder')}
                           required
                           {...register("company")}
                           className={errors.company ? "border-red-500" : "border-tecnarit-green/20 focus:border-tecnarit-green/50"}
@@ -257,7 +257,7 @@ const ContactPage = () => {
                           </span>
                         ) : (
                           <span className="flex items-center">
-                            {t('contact.form.send')}
+                            {t('contact.form.submit')}
                             <Send className="ml-2 h-4 w-4" />
                           </span>
                         )}

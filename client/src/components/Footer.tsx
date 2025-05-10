@@ -30,7 +30,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 text-tecnarit-green mr-3" />
-                <span className="text-neutral-light">Cleydaellaan 16/5, 2630 Aartselaar, Belgium</span>
+                <span className="text-neutral-light">{t('footer.address')}</span>
               </div>
             </div>
             <div className="mt-6 flex space-x-6">
@@ -81,7 +81,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="/about" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  Our Nearshoring Model
+                  {t('footer.nearshoring')}
                 </a>
               </li>
               <li>
