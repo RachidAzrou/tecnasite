@@ -4,6 +4,10 @@ import { Menu, X } from "lucide-react";
 import { Link } from "wouter";
 import { cn } from "@/lib/utils";
 
+// Import the Tecnarit logo
+import tecnaritLogo from "../assets/tecnarit-logo.png";
+import tecnaritIcon from "../assets/tecnarit-icon.png";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -39,14 +43,25 @@ const Navbar = () => {
 
   return (
     <header className={cn(
-      "bg-white sticky top-0 z-50 transition-shadow duration-300",
+      "bg-tecnarit-dark sticky top-0 z-50 transition-shadow duration-300",
       scrolled ? "shadow-md" : "shadow-sm"
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
-            <span className="text-2xl font-bold text-secondary">Tecnarit</span>
+            <div className="flex items-center">
+              <img 
+                src={tecnaritLogo} 
+                alt="Tecnarit Logo" 
+                className="h-10 md:h-10 hidden md:block" 
+              />
+              <img 
+                src={tecnaritIcon} 
+                alt="Tecnarit Logo" 
+                className="h-10 md:hidden" 
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -55,10 +70,10 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="relative text-secondary hover:text-primary font-medium group"
+                className="relative text-white hover:text-tecnarit-lime font-medium group"
               >
                 {link.name}
-                <span className="absolute w-0 h-0.5 bg-primary bottom-[-2px] left-0 transition-all duration-300 group-hover:w-full" />
+                <span className="absolute w-0 h-0.5 tecnarit-gradient-bg bottom-[-2px] left-0 transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </nav>
@@ -67,7 +82,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className="text-secondary focus:outline-none"
+              className="text-white focus:outline-none"
               onClick={toggleMenu}
               aria-expanded={isMenuOpen}
               aria-label="Toggle navigation menu"
@@ -82,7 +97,7 @@ const Navbar = () => {
 
           {/* Contact Button (Desktop) */}
           <div className="hidden md:block">
-            <Button asChild>
+            <Button className="tecnarit-gradient-bg hover:opacity-90 text-white" asChild>
               <a href="#contact">Get in Touch</a>
             </Button>
           </div>
@@ -99,14 +114,14 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-secondary hover:bg-primary hover:text-white transition duration-150"
+                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-tecnarit-green hover:text-white transition duration-150"
                 onClick={closeMenu}
               >
                 {link.name}
               </a>
             ))}
             <div className="mt-4 mb-2">
-              <Button className="w-full" asChild>
+              <Button className="tecnarit-gradient-bg hover:opacity-90 text-white w-full" asChild>
                 <a href="#contact" onClick={closeMenu}>Get in Touch</a>
               </Button>
             </div>

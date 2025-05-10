@@ -20,12 +20,12 @@ const FeatureItem = ({
       transition={{ duration: 0.5 }}
     >
       <div className="flex-shrink-0">
-        <div className="flex items-center justify-center h-10 w-10 rounded-md bg-primary text-white">
+        <div className="flex items-center justify-center h-10 w-10 rounded-md tecnarit-gradient-bg text-white">
           <Icon className="h-6 w-6" />
         </div>
       </div>
       <div className="ml-4">
-        <h3 className="text-lg font-medium text-secondary">{title}</h3>
+        <h3 className="text-lg font-medium text-tecnarit-dark">{title}</h3>
         <p className="mt-2 text-base text-neutral-dark">
           {description}
         </p>
@@ -38,8 +38,14 @@ const WhyChooseUs = () => {
   const icons = [Check, Zap, Award, Calendar];
 
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 bg-white relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute left-0 top-0 w-full h-full overflow-hidden opacity-5 pointer-events-none">
+        <div className="absolute top-1/3 -right-64 w-96 h-96 rounded-full bg-tecnarit-green"></div>
+        <div className="absolute -bottom-24 -left-24 w-64 h-64 rounded-full bg-tecnarit-lime"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -47,7 +53,8 @@ const WhyChooseUs = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-3xl font-extrabold text-secondary sm:text-4xl">
+            <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">Why Choose Us</span>
+            <h2 className="text-3xl font-extrabold text-tecnarit-dark sm:text-4xl">
               Why Choose Tecnarit for Software Testing
             </h2>
             <p className="mt-3 max-w-2xl text-lg text-neutral-dark">
@@ -73,11 +80,15 @@ const WhyChooseUs = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <img 
-              className="rounded-lg shadow-xl" 
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800" 
-              alt="Software testing team collaboration" 
-            />
+            <div className="rounded-lg shadow-xl overflow-hidden relative">
+              <img 
+                className="w-full" 
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800" 
+                alt="Software testing team collaboration" 
+              />
+              {/* Overlay with gradient */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-tecnarit-dark/20 to-transparent"></div>
+            </div>
           </motion.div>
         </div>
       </div>
