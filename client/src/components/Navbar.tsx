@@ -51,12 +51,12 @@ const Navbar = () => {
             <div className="flex items-center">
               <img 
                 src={tecnaritLogo} 
-                alt="Tecnarit Logo" 
+                alt="TECNARIT Logo" 
                 className="h-10 md:h-10 hidden md:block" 
               />
               <img 
                 src={tecnaritIcon} 
-                alt="Tecnarit Logo" 
+                alt="TECNARIT Logo" 
                 className="h-10 md:hidden" 
               />
             </div>
@@ -93,12 +93,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* Contact Button (Desktop) */}
-          <div className="hidden md:block">
-            <Button className="tecnarit-gradient-bg hover:opacity-90 text-white" asChild>
-              <a href="#contact">Get in Touch</a>
-            </Button>
-          </div>
+
         </div>
 
         {/* Mobile Navigation Menu */}
@@ -118,11 +113,7 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <div className="mt-4 mb-2">
-              <Button className="tecnarit-gradient-bg hover:opacity-90 text-white w-full" asChild>
-                <a href="#contact" onClick={closeMenu}>Get in Touch</a>
-              </Button>
-            </div>
+
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex items-center">
               <img 
                 src={tecnaritLogo}
-                alt="Tecnarit Logo"
+                alt="TECNARIT Logo"
                 className="h-10"
               />
             </div>
@@ -99,7 +99,7 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-tecnarit-green/20 pt-8">
           <p className="text-base text-neutral-light xl:text-center">
-            &copy; {new Date().getFullYear()} Tecnarit. All rights reserved.
+            &copy; {new Date().getFullYear()} TECNARIT. All rights reserved.
           </p>
         </div>
       </div>

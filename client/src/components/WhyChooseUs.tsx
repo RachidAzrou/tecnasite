@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
           >
             <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">Why Choose Us</span>
             <h2 className="text-3xl font-extrabold text-tecnarit-dark sm:text-4xl">
-              Why Choose Tecnarit for Software Testing
+              Why Choose TECNARIT for Software Testing
             </h2>
             <p className="mt-3 max-w-2xl text-lg text-neutral-dark">
               We deliver excellence in software testing with a focus on precision, efficiency, and valuable insights.

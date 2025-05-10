@@ -29,7 +29,7 @@ const HeroSection = () => {
                   </Button>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <Button size="lg" variant="outline" className="border-tecnarit-lime text-white hover:bg-tecnarit-lime/20" asChild>
+                  <Button size="lg" variant="outline" className="border-tecnarit-lime bg-tecnarit-lime/20 text-white hover:bg-tecnarit-lime/40" asChild>
                     <a href="/services">Our Services</a>
                   </Button>
                 </div>
