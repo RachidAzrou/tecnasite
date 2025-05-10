@@ -1,23 +1,44 @@
-import { Linkedin, Twitter } from "lucide-react";
+import { Linkedin, Twitter, Phone, Mail, MapPin } from "lucide-react";
+
+// Import the Tecnarit logo
+import tecnaritLogo from "../assets/tecnarit-logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary">
+    <footer className="bg-tecnarit-dark">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center">
-              <span className="text-2xl font-bold text-white">Tecnarit</span>
+              <img 
+                src={tecnaritLogo}
+                alt="Tecnarit Logo"
+                className="h-10"
+              />
             </div>
             <p className="mt-4 text-base text-neutral-light">
               Specialized in software testing and quality assurance services that ensure your applications work flawlessly, every time.
             </p>
+            <div className="mt-6 space-y-3">
+              <div className="flex items-center">
+                <Phone className="h-5 w-5 text-tecnarit-green mr-3" />
+                <span className="text-neutral-light">+31 (0)6 123 456 78</span>
+              </div>
+              <div className="flex items-center">
+                <Mail className="h-5 w-5 text-tecnarit-green mr-3" />
+                <span className="text-neutral-light">info@tecnarit.com</span>
+              </div>
+              <div className="flex items-center">
+                <MapPin className="h-5 w-5 text-tecnarit-green mr-3" />
+                <span className="text-neutral-light">Netherlands</span>
+              </div>
+            </div>
             <div className="mt-6 flex space-x-6">
-              <a href="#" className="text-neutral-light hover:text-white transition-colors duration-200">
+              <a href="#" className="text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
                 <span className="sr-only">LinkedIn</span>
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a href="#" className="text-neutral-light hover:text-white transition-colors duration-200">
+              <a href="#" className="text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
                 <span className="sr-only">Twitter</span>
                 <Twitter className="h-6 w-6" />
               </a>
@@ -25,32 +46,32 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-neutral-lightest tracking-wider uppercase">
+            <h3 className="text-sm font-semibold text-tecnarit-green tracking-wider uppercase">
               Services
             </h3>
             <ul role="list" className="mt-4 space-y-4">
               <li>
-                <a href="#services" className="text-base text-neutral-light hover:text-white transition-colors duration-200">
+                <a href="#services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
                   Functional Testing
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-base text-neutral-light hover:text-white transition-colors duration-200">
+                <a href="#services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
                   Performance Testing
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-base text-neutral-light hover:text-white transition-colors duration-200">
+                <a href="#services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
                   Security Testing
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-base text-neutral-light hover:text-white transition-colors duration-200">
+                <a href="#services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
                   Automated Testing
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-base text-neutral-light hover:text-white transition-colors duration-200">
+                <a href="#services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
                   QA Consulting
                 </a>
               </li>
@@ -58,27 +79,27 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold text-neutral-lightest tracking-wider uppercase">
+            <h3 className="text-sm font-semibold text-tecnarit-green tracking-wider uppercase">
               Company
             </h3>
             <ul role="list" className="mt-4 space-y-4">
               <li>
-                <a href="#about" className="text-base text-neutral-light hover:text-white transition-colors duration-200">
+                <a href="#about" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
                   About
                 </a>
               </li>
               <li>
-                <a href="#case-studies" className="text-base text-neutral-light hover:text-white transition-colors duration-200">
+                <a href="#case-studies" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
                   Case Studies
                 </a>
               </li>
               <li>
-                <a href="#testimonials" className="text-base text-neutral-light hover:text-white transition-colors duration-200">
+                <a href="#testimonials" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
                   Testimonials
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-base text-neutral-light hover:text-white transition-colors duration-200">
+                <a href="#contact" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
                   Contact
                 </a>
               </li>
@@ -86,7 +107,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-gray-700 pt-8">
+        <div className="mt-12 border-t border-tecnarit-green/20 pt-8">
           <p className="text-base text-neutral-light xl:text-center">
             &copy; {new Date().getFullYear()} Tecnarit. All rights reserved.
           </p>

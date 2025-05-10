@@ -1,10 +1,31 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { CheckCircle2 } from "lucide-react";
+
+// Import the Tecnarit logo for decoration
+import tecnaritIcon from "../assets/tecnarit-icon.png";
 
 const AboutSection = () => {
+  const aboutPoints = [
+    "Expert testing team with certified professionals",
+    "Experience across diverse industries and technologies",
+    "Focus on quality, precision and thorough methodology",
+    "Commitment to reliable, secure software solutions"
+  ];
+
   return (
-    <section id="about" className="py-16 bg-neutral-lightest">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-16 bg-neutral-lightest relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute right-0 bottom-0 opacity-5 pointer-events-none">
+        <img 
+          src={tecnaritIcon} 
+          alt="" 
+          className="w-72 h-72"
+          aria-hidden="true"
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
           <motion.div 
             className="mb-10 lg:mb-0"
@@ -13,11 +34,15 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <img 
-              className="rounded-lg shadow-xl" 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800" 
-              alt="IT professional analyzing software testing results" 
-            />
+            <div className="rounded-lg shadow-xl overflow-hidden relative">
+              <img 
+                className="w-full" 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800" 
+                alt="IT professional analyzing software testing results" 
+              />
+              {/* Overlay with gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-tecnarit-green/20 to-transparent"></div>
+            </div>
           </motion.div>
           
           <motion.div
@@ -26,7 +51,8 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h2 className="text-3xl font-extrabold text-secondary sm:text-4xl">
+            <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">About Us</span>
+            <h2 className="text-3xl font-extrabold text-tecnarit-dark sm:text-4xl">
               About Tecnarit
             </h2>
             <p className="mt-4 text-lg text-neutral-dark">
@@ -37,16 +63,23 @@ const AboutSection = () => {
               <p className="text-base text-neutral-dark mb-4">
                 Founded with a passion for quality and precision, we have evolved to become specialists in software testing. Our team of certified testing professionals brings extensive experience across various industries and technologies.
               </p>
-              <p className="text-base text-neutral-dark mb-4">
-                We understand that quality software is critical to your business success, which is why we apply rigorous testing methodologies to identify issues before they impact your users or your reputation.
-              </p>
+              
+              <div className="mt-6 mb-6 space-y-3">
+                {aboutPoints.map((point, index) => (
+                  <div key={index} className="flex items-start">
+                    <CheckCircle2 className="h-5 w-5 text-tecnarit-green flex-shrink-0 mt-0.5" />
+                    <p className="ml-2 text-neutral-dark">{point}</p>
+                  </div>
+                ))}
+              </div>
+              
               <p className="text-base text-neutral-dark">
                 Our mission is to partner with you to ensure your software meets the highest standards of quality, performance, and security. Whether you need comprehensive testing services or specialized expertise for a specific project, Tecnarit delivers results you can trust.
               </p>
             </div>
             
             <div className="mt-8">
-              <Button size="lg" asChild>
+              <Button size="lg" className="tecnarit-gradient-bg hover:opacity-90 text-white border-none" asChild>
                 <a href="#contact">Get to Know Us</a>
               </Button>
             </div>
