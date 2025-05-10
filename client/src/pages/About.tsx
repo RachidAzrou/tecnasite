@@ -84,7 +84,7 @@ const AboutPage = () => {
                 transition={{ duration: 0.5 }}
               >
                 <div className="bg-white p-8 rounded-lg shadow-lg">
-                  <h3 className="text-xl font-bold text-tecnarit-dark mb-6">Our Nearshoring Advantages</h3>
+                  <h3 className="text-xl font-bold text-tecnarit-dark mb-6">{t('about.advantages.title')}</h3>
                   
                   <div className="space-y-6">
                     <div className="flex">
@@ -94,9 +94,9 @@ const AboutPage = () => {
                         </div>
                       </div>
                       <div className="ml-4">
-                        <h4 className="text-lg font-medium text-tecnarit-dark">Cross-Cultural Expertise</h4>
+                        <h4 className="text-lg font-medium text-tecnarit-dark">{t('about.advantages.expertise.title')}</h4>
                         <p className="mt-2 text-neutral-dark">
-                          Our Belgian-Moroccan structure gives us unique cross-cultural insights and communication capabilities.
+                          {t('about.advantages.expertise.description')}
                         </p>
                       </div>
                     </div>
@@ -108,9 +108,9 @@ const AboutPage = () => {
                         </div>
                       </div>
                       <div className="ml-4">
-                        <h4 className="text-lg font-medium text-tecnarit-dark">Talent Pool</h4>
+                        <h4 className="text-lg font-medium text-tecnarit-dark">{t('about.advantages.talent.title')}</h4>
                         <p className="mt-2 text-neutral-dark">
-                          Access to Morocco's growing tech talent combined with European management expertise.
+                          {t('about.advantages.talent.description')}
                         </p>
                       </div>
                     </div>
@@ -122,9 +122,9 @@ const AboutPage = () => {
                         </div>
                       </div>
                       <div className="ml-4">
-                        <h4 className="text-lg font-medium text-tecnarit-dark">Cost-Effective Quality</h4>
+                        <h4 className="text-lg font-medium text-tecnarit-dark">{t('about.advantages.cost.title')}</h4>
                         <p className="mt-2 text-neutral-dark">
-                          Premium testing services at competitive rates without sacrificing quality or communication.
+                          {t('about.advantages.cost.description')}
                         </p>
                       </div>
                     </div>
