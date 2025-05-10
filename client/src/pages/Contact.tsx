@@ -114,7 +114,7 @@ const ContactPage = () => {
                       <div className="ml-4">
                         <h4 className="text-base font-medium text-tecnarit-dark">{t('contact.offices')}</h4>
                         <div className="mt-1">
-                          <p className="text-neutral-dark">Management: Cleydaellaan 16/5, 2630 Aartselaar, Belgium (Antwerpen)</p>
+                          <p className="text-neutral-dark">{t('contact.management_address')}</p>
                           <p className="text-neutral-dark">Development Team: Agadir, Morocco</p>
                         </div>
                       </div>
@@ -257,7 +257,7 @@ const ContactPage = () => {
                           </span>
                         ) : (
                           <span className="flex items-center">
-                            Send Message
+                            {t('contact.form.send')}
                             <Send className="ml-2 h-4 w-4" />
                           </span>
                         )}
