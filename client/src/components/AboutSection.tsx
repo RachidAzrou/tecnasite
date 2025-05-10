@@ -38,12 +38,12 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="rounded-lg shadow-md overflow-hidden relative">
+            <div className="rounded-lg shadow-md overflow-hidden relative w-full">
               <img 
                 className="w-full object-cover" 
                 src={beachCardImage} 
                 alt="TECNARIT business card on beach in Morocco" 
-                style={{ height: '280px' }}
+                style={{ height: '350px' }}
               />
               {/* Overlay with gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-tecnarit-green/10 to-transparent"></div>
