@@ -10,9 +10,29 @@
     "subtitle": "Solutions d'assurance qualité pour votre entreprise",
     "cta": "Contactez-Nous"
   },
+  "home": {
+    "cta": {
+      "title": "Prêt à améliorer la qualité de votre logiciel?",
+      "description": "Notre modèle de nearshoring combine l'expertise de gestion belge avec notre talentueuse équipe marocaine pour fournir des solutions de test rentables et de haute qualité."
+    }
+  },
   "services": {
     "title": "Nos Services",
     "subtitle": "Solutions complètes de test logiciel",
+    "offer": "Ce Que Nous Offrons",
+    "solutions": "Solutions de Test Complètes",
+    "benefits": "Avantages",
+    "benefit1": "Amélioration de la qualité logicielle",
+    "benefit2": "Réduction des coûts de développement",
+    "benefit3": "Mise sur le marché plus rapide",
+    "nearshoring": {
+      "title": "Notre Modèle de Nearshoring",
+      "description": "Nous fonctionnons selon un modèle de nearshoring avec notre talentueuse équipe de professionnels de test basée au Maroc et notre équipe de gestion en Belgique. Cette approche nous permet de fournir:",
+      "benefit1": "Solutions de test rentables",
+      "benefit2": "Différences de fuseau horaire minimales avec les clients européens",
+      "benefit3": "Communication et gestion de projet transparentes",
+      "benefit4": "Expertise de test de haute qualité à des tarifs compétitifs"
+    },
     "functional": {
       "title": "Tests Fonctionnels",
       "description": "Vérifiez que votre logiciel se comporte exactement comme prévu en le testant par rapport aux exigences et spécifications fonctionnelles."
@@ -103,15 +123,15 @@
       "message": "Message",
       "message_placeholder": "Parlez-nous de votre projet et de vos besoins de test",
       "submit": "Envoyer le Message",
-      "sending": "Envoi en cours..."
-    },
-    "success": {
-      "title": "Message envoyé!",
-      "description": "Merci pour votre message. Nous vous répondrons bientôt."
-    },
-    "error": {
-      "title": "Quelque chose s'est mal passé",
-      "description": "Veuillez réessayer plus tard."
+      "sending": "Envoi en cours...",
+      "success": {
+        "title": "Message envoyé!",
+        "description": "Merci pour votre message. Nous vous répondrons bientôt."
+      },
+      "error": {
+        "title": "Quelque chose s'est mal passé",
+        "description": "Veuillez réessayer plus tard."
+      }
     }
   },
   "footer": {
@@ -123,5 +143,41 @@
     "privacy": "Politique de Confidentialité",
     "address": "Cleydaellaan 16/5, 2630 Aartselaar, Belgique",
     "nearshoring": "Notre Modèle de Nearshoring"
+  },
+  "about_section": {
+    "label": "À Propos",
+    "title": "À Propos de TECNARIT",
+    "subtitle": "TECNARIT est une entreprise leader en test de logiciels et assurance qualité dédiée à aider les entreprises à offrir des expériences numériques impeccables.",
+    "paragraph1": "Fondée avec une passion pour la qualité et la précision, nous avons évolué pour devenir des spécialistes dans le test de logiciels. Notre équipe de professionnels certifiés en test apporte une vaste expérience dans divers secteurs et technologies.",
+    "paragraph2": "Notre mission est de collaborer avec vous pour garantir que votre logiciel répond aux normes les plus élevées de qualité, de performance et de sécurité. Que vous ayez besoin de services de test complets ou d'une expertise spécialisée pour un projet spécifique, TECNARIT livre des résultats sur lesquels vous pouvez compter.",
+    "points": {
+      "point1": "Équipe de test experte avec des professionnels certifiés",
+      "point2": "Expérience dans divers secteurs et technologies",
+      "point3": "Accent sur la qualité, la précision et une méthodologie rigoureuse",
+      "point4": "Engagement envers des solutions logicielles fiables et sécurisées"
+    }
+  },
+  "why_choose": {
+    "label": "Pourquoi Nous Choisir",
+    "title": "Pourquoi Choisir TECNARIT pour les Tests Logiciels",
+    "subtitle": "Nous offrons l'excellence en test de logiciels avec un accent sur la précision, l'efficacité et des insights précieux."
+  },
+  "features": {
+    "expertise": {
+      "title": "Équipe de Test Experte",
+      "description": "Nos professionnels de test certifiés sont dédiés à trouver même les problèmes les plus difficiles à détecter dans votre logiciel."
+    },
+    "agility": {
+      "title": "Approche Agile",
+      "description": "Nous nous adaptons à votre méthodologie de développement, travaillant en synchronisation avec votre équipe pour fournir une qualité constante."
+    },
+    "efficiency": {
+      "title": "Efficacité des Coûts",
+      "description": "Notre modèle de nearshoring offre des services de test premium à des tarifs compétitifs sans compromettre la qualité."
+    },
+    "collaboration": {
+      "title": "Collaboration Transparente",
+      "description": "Malgré la distance géographique, notre équipe de test fonctionne comme une extension de votre équipe de développement."
+    }
   }
 }

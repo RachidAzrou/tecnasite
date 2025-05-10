@@ -10,9 +10,29 @@
     "subtitle": "Kwaliteitsborging-oplossingen voor uw bedrijf",
     "cta": "Neem Contact Op"
   },
+  "home": {
+    "cta": {
+      "title": "Klaar om uw softwarekwaliteit te verbeteren?",
+      "description": "Ons nearshoring-model combineert Belgische managementexpertise met ons getalenteerde Marokkaanse team om kosteneffectieve, hoogwaardige testoplossingen te leveren."
+    }
+  },
   "services": {
     "title": "Onze Diensten",
     "subtitle": "Uitgebreide software testoplossingen",
+    "offer": "Wat Wij Bieden",
+    "solutions": "Uitgebreide Testoplossingen",
+    "benefits": "Voordelen",
+    "benefit1": "Verbeterde softwarekwaliteit",
+    "benefit2": "Verminderde ontwikkelingskosten",
+    "benefit3": "Snellere marktintroductie",
+    "nearshoring": {
+      "title": "Ons Nearshoring Model",
+      "description": "We werken volgens een nearshoring-model met ons getalenteerde team van testprofessionals in Marokko en ons managementteam in België. Deze aanpak stelt ons in staat om te bieden:",
+      "benefit1": "Kosteneffectieve testoplossingen",
+      "benefit2": "Minimale tijdsverschillen met Europese klanten",
+      "benefit3": "Naadloze communicatie en projectmanagement",
+      "benefit4": "Hoogwaardige testexpertise tegen concurrerende tarieven"
+    },
     "functional": {
       "title": "Functioneel Testen",
       "description": "Verifieer dat uw software exact werkt zoals verwacht door het te testen tegen functionele vereisten en specificaties."
@@ -103,15 +123,15 @@
       "message": "Bericht",
       "message_placeholder": "Vertel ons over uw project en testbehoeften",
       "submit": "Verstuur Bericht",
-      "sending": "Verzenden..."
-    },
-    "success": {
-      "title": "Bericht verzonden!",
-      "description": "Bedankt voor uw bericht. We nemen binnenkort contact met u op."
-    },
-    "error": {
-      "title": "Er is iets misgegaan",
-      "description": "Probeer het later opnieuw."
+      "sending": "Verzenden...",
+      "success": {
+        "title": "Bericht verzonden!",
+        "description": "Bedankt voor uw bericht. We nemen binnenkort contact met u op."
+      },
+      "error": {
+        "title": "Er is iets misgegaan",
+        "description": "Probeer het later opnieuw."
+      }
     }
   },
   "footer": {
@@ -123,5 +143,41 @@
     "privacy": "Privacybeleid",
     "address": "Cleydaellaan 16/5, 2630 Aartselaar, België",
     "nearshoring": "Ons Nearshoring Model"
+  },
+  "about_section": {
+    "label": "Over Ons",
+    "title": "Over TECNARIT",
+    "subtitle": "TECNARIT is een toonaangevend bedrijf in softwaretesten en kwaliteitsborging dat zich toelegt op het helpen van bedrijven bij het leveren van foutloze digitale ervaringen.",
+    "paragraph1": "TECNARIT is opgericht met een passie voor kwaliteit en precisie en is gespecialiseerd in softwaretesten. Ons team van gecertificeerde testprofessionals brengt uitgebreide ervaring mee uit verschillende industrieën en technologieën.",
+    "paragraph2": "Onze missie is om samen met u ervoor te zorgen dat uw software voldoet aan de hoogste normen van kwaliteit, prestaties en veiligheid. Of u nu uitgebreide testdiensten nodig heeft of gespecialiseerde expertise voor een specifiek project, TECNARIT levert resultaten waarop u kunt vertrouwen.",
+    "points": {
+      "point1": "Deskundig testteam met gecertificeerde professionals",
+      "point2": "Ervaring in diverse industrieën en technologieën",
+      "point3": "Focus op kwaliteit, precisie en grondige methodologie",
+      "point4": "Toewijding aan betrouwbare, veilige softwareoplossingen"
+    }
+  },
+  "why_choose": {
+    "label": "Waarom Ons Kiezen",
+    "title": "Waarom TECNARIT Kiezen voor Softwaretesten",
+    "subtitle": "Wij leveren uitmuntendheid in softwaretesten met een focus op precisie, efficiëntie en waardevolle inzichten."
+  },
+  "features": {
+    "expertise": {
+      "title": "Expert Testteam",
+      "description": "Onze gecertificeerde testprofessionals zijn toegewijd om zelfs de meest ongrijpbare problemen in uw software te vinden."
+    },
+    "agility": {
+      "title": "Agile Aanpak",
+      "description": "We passen ons aan aan uw ontwikkelmethodologie en werken in sync met uw team om consistente kwaliteit te leveren."
+    },
+    "efficiency": {
+      "title": "Kostenefficiëntie",
+      "description": "Ons nearshoring-model biedt premium testdiensten tegen concurrerende tarieven zonder concessies te doen aan kwaliteit."
+    },
+    "collaboration": {
+      "title": "Naadloze Samenwerking",
+      "description": "Ondanks de geografische afstand werkt ons testteam als een verlengstuk van uw ontwikkelteam."
+    }
   }
 }
