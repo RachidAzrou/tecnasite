@@ -179,7 +179,7 @@ const ContactPage = () => {
                       <div className="mt-1">
                         <Input
                           id="name"
-                          placeholder="Your name"
+                          placeholder={t('contact.form.name_placeholder')}
                           required
                           {...register("name")}
                           className={errors.name ? "border-red-500" : "border-tecnarit-green/20 focus:border-tecnarit-green/50"}
@@ -191,12 +191,12 @@ const ContactPage = () => {
                     </div>
 
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-tecnarit-dark">Email</label>
+                      <label htmlFor="email" className="block text-sm font-medium text-tecnarit-dark">{t('contact.form.email')}</label>
                       <div className="mt-1">
                         <Input
                           id="email"
                           type="email"
-                          placeholder="your.email@example.com"
+                          placeholder={t('contact.form.email_placeholder')}
                           required
                           {...register("email")}
                           className={errors.email ? "border-red-500" : "border-tecnarit-green/20 focus:border-tecnarit-green/50"}
@@ -224,12 +224,12 @@ const ContactPage = () => {
                     </div>
 
                     <div>
-                      <label htmlFor="message" className="block text-sm font-medium text-tecnarit-dark">Message</label>
+                      <label htmlFor="message" className="block text-sm font-medium text-tecnarit-dark">{t('contact.form.message')}</label>
                       <div className="mt-1">
                         <Textarea
                           id="message"
                           rows={4}
-                          placeholder="Tell us about your project and testing needs"
+                          placeholder={t('contact.form.message_placeholder')}
                           required
                           {...register("message")}
                           className={errors.message ? "border-red-500" : "border-tecnarit-green/20 focus:border-tecnarit-green/50"}
@@ -253,7 +253,7 @@ const ContactPage = () => {
                               <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                               <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                             </svg>
-                            Sending...
+                            {t('contact.form.sending')}
                           </span>
                         ) : (
                           <span className="flex items-center">
