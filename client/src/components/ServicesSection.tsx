@@ -63,33 +63,15 @@ const ServicesSection = () => {
         </motion.div>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {serviceItems.map((service, index) => {
-            let serviceKey = '';
-            switch(index) {
-              case 0:
-                serviceKey = 'functional';
-                break;
-              case 1:
-                serviceKey = 'automation';
-                break;
-              case 2:
-                serviceKey = 'ui';
-                break;
-              case 3:
-                serviceKey = 'integration';
-                break;
-              default:
-                serviceKey = 'functional';
-            }
-            return (
+          {serviceItems.map((service, index) => (
               <ServiceCard 
                 key={index}
-                title={t(`services.${serviceKey}.title`)}
-                description={t(`services.${serviceKey}.description`)}
+                title={t(`services.${service.key}.title`)}
+                description={t(`services.${service.key}.description`)}
                 icon={icons[index % icons.length]}
               />
-            );
-          })}
+            )
+          )}
         </div>
       </div>
     </section>
