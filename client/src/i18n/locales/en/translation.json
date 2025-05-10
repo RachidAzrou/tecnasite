@@ -163,21 +163,21 @@
     "subtitle": "We deliver excellence in software testing with a focus on precision, efficiency, and valuable insights."
   },
   "features": {
-    "expertise": {
-      "title": "Expert Testing Team",
-      "description": "Our certified testing professionals are dedicated to finding even the most elusive issues in your software."
+    "nearshoring": {
+      "title": "Nearshoring Advantage",
+      "description": "Our talented development team in Morocco combined with our management team in Belgium provides cost-effective solutions without compromising on quality or communication."
     },
-    "agility": {
-      "title": "Agile Approach",
-      "description": "We adapt to your development methodology, working in sync with your team to deliver consistent quality."
+    "experts": {
+      "title": "Expert Testing Professionals",
+      "description": "Our certified testing professionals bring years of experience across various industries and technologies."
     },
-    "efficiency": {
-      "title": "Cost Efficiency",
-      "description": "Our nearshoring model offers premium testing services at competitive rates without compromising on quality."
+    "methodologies": {
+      "title": "Efficient Methodologies",
+      "description": "Our streamlined testing processes ensure thorough coverage while minimizing time-to-market."
     },
-    "collaboration": {
-      "title": "Seamless Collaboration",
-      "description": "Despite geographic distance, our testing team works as an extension of your development team."
+    "flexible": {
+      "title": "Flexible Engagement Models",
+      "description": "We offer customizable service models to match your specific project requirements and timeline."
     }
   }
 }

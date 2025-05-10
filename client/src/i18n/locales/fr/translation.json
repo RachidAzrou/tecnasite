@@ -163,21 +163,21 @@
     "subtitle": "Nous offrons l'excellence en test de logiciels avec un accent sur la précision, l'efficacité et des insights précieux."
   },
   "features": {
-    "expertise": {
-      "title": "Équipe de Test Experte",
-      "description": "Nos professionnels de test certifiés sont dédiés à trouver même les problèmes les plus difficiles à détecter dans votre logiciel."
+    "nearshoring": {
+      "title": "Avantage du Nearshoring",
+      "description": "Notre talentueuse équipe de développement au Maroc combinée à notre équipe de gestion en Belgique fournit des solutions rentables sans compromettre la qualité ou la communication."
     },
-    "agility": {
-      "title": "Approche Agile",
-      "description": "Nous nous adaptons à votre méthodologie de développement, travaillant en synchronisation avec votre équipe pour fournir une qualité constante."
+    "experts": {
+      "title": "Professionnels de Test Experts",
+      "description": "Nos professionnels de test certifiés apportent des années d'expérience dans divers secteurs et technologies."
     },
-    "efficiency": {
-      "title": "Efficacité des Coûts",
-      "description": "Notre modèle de nearshoring offre des services de test premium à des tarifs compétitifs sans compromettre la qualité."
+    "methodologies": {
+      "title": "Méthodologies Efficaces",
+      "description": "Nos processus de test rationalisés assurent une couverture complète tout en minimisant le délai de mise sur le marché."
     },
-    "collaboration": {
-      "title": "Collaboration Transparente",
-      "description": "Malgré la distance géographique, notre équipe de test fonctionne comme une extension de votre équipe de développement."
+    "flexible": {
+      "title": "Modèles d'Engagement Flexibles",
+      "description": "Nous offrons des modèles de service personnalisables pour correspondre à vos exigences et délais de projet spécifiques."
     }
   }
 }
