@@ -38,14 +38,30 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="rounded-lg shadow-md overflow-hidden relative w-full bg-white p-4">
+            <div className="rounded-lg border border-neutral-200 shadow-xl overflow-hidden relative w-full bg-gradient-to-br from-white to-neutral-50 p-6">
+              <div className="absolute top-0 left-0 right-0 h-1.5 tecnarit-gradient-bg"></div>
+              <h4 className="text-tecnarit-dark font-medium mb-4 text-center flex items-center justify-center">
+                <div className="w-1.5 h-1.5 rounded-full bg-tecnarit-green mr-2"></div>
+                TECNARIT Nearshoring
+                <div className="w-1.5 h-1.5 rounded-full bg-tecnarit-green ml-2"></div>
+              </h4>
               <img 
-                className="w-full object-contain" 
+                className="w-full object-contain mx-auto" 
                 src={mapImage} 
                 alt="Map showing TECNARIT offices in Belgium and Morocco" 
-                style={{ height: '350px' }}
+                style={{ height: '270px' }}
               />
-              <div className="absolute bottom-2 right-2 text-xs text-tecnarit-dark/70 font-medium">TECNARIT: België - Marokko</div>
+              <div className="flex items-center justify-between mt-4 border-t border-neutral-100 pt-4">
+                <div className="flex items-center px-3 py-1.5 bg-tecnarit-green/10 rounded-full">
+                  <div className="w-2 h-2 rounded-full bg-tecnarit-green mr-2"></div>
+                  <span className="font-medium text-tecnarit-dark text-xs">België: Antwerpen</span>
+                </div>
+                <div className="h-px bg-neutral-200 flex-grow mx-2"></div>
+                <div className="flex items-center px-3 py-1.5 bg-tecnarit-green/10 rounded-full">
+                  <div className="w-2 h-2 rounded-full bg-tecnarit-green mr-2"></div>
+                  <span className="font-medium text-tecnarit-dark text-xs">Marokko: Agadir</span>
+                </div>
+              </div>
             </div>
           </motion.div>
           
