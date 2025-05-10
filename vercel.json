@@ -1,7 +1,23 @@
 {
-  "buildCommand": "./vercel-build.sh",
-  "outputDirectory": ".vercel/output",
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "regions": ["fra1", "arn1"]
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/public",
+  "rewrites": [
+    { "source": "/api", "destination": "/api/index" }
+  ],
+  "functions": {
+    "api/index.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" }
+      ]
+    }
+  ]
 }

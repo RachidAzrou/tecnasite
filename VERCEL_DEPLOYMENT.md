@@ -1,69 +1,69 @@
-# Deployment van TECNARIT Website op Vercel
+# TECNARIT Website Deployment op Vercel
 
-Deze stapsgewijze gids helpt je om de TECNARIT website probleemloos te deployen op Vercel.
+Deze gids helpt je om de TECNARIT website probleemloos te deployen op Vercel als een **statische website met serverless functie** voor het contactformulier.
 
-## Stap 1: Account aanmaken en voorbereiden
+## Vereisten
+- Een Vercel account (Aanmelden op https://vercel.com)
+- Een SendGrid account met geverifieerd afzender e-mailadres
+- Een SendGrid API key
 
-1. Maak een account aan op [Vercel](https://vercel.com) als je die nog niet hebt
-2. Verbind je GitHub, GitLab of Bitbucket account met Vercel (of gebruik Vercel CLI voor directe uploads)
+## Stap 1: Vercel setup
 
-## Stap 2: Project importeren
+1. Log in op je Vercel account
+2. Klik op "Add New Project"
+3. Importeer je repository van GitHub, GitLab of Bitbucket
+4. In de configuratie, zorg ervoor dat:
+   - **Framework Preset**: Automatisch ingesteld (laat Vercel detecteren)
+   - **Build Command**: Automatisch ingesteld via vercel.json
+   - **Output Directory**: Automatisch ingesteld via vercel.json
 
-1. Klik op "Add New..." en selecteer "Project" in het Vercel dashboard
-2. Selecteer je repository met de TECNARIT website
-3. Je wordt naar de configuratiepagina geleid
+## Stap 2: Environment Variables instellen
 
-## Stap 3: Configureren van het project
+Dit is **CRUCIAAL** voor het contactformulier:
 
-1. **Framework Preset**: Selecteer "Vite" of "Other"
-2. **Build Command**: Laat dit op de standaard instelling `npm run build`
-3. **Output Directory**: Zorg ervoor dat dit staat ingesteld op `dist`
-4. **Environment Variables**: Klik op "Add" en voeg de volgende variabele toe:
-   - `SENDGRID_API_KEY`: Je SendGrid API sleutel voor e-mailfunctionaliteit
-   
-![Vercel Environment Variables Screenshot](https://i.imgur.com/example-image.png)
+1. Klik op "Environment Variables"
+2. Voeg de volgende variabele toe:
+   ```
+   SENDGRID_API_KEY=jouw_sendgrid_api_key_hier
+   ```
+3. Zorg ervoor dat de variabele beschikbaar is in zowel Production, Preview als Development
 
-## Stap 4: Deployment
+## Stap 3: Deployment starten
 
-1. Klik op "Deploy" onderaan de pagina
-2. Wacht tot het build en deployment proces is voltooid
-3. Als het succesvol is, krijg je een URL waar je site is gedeployed
-4. Test deze URL om er zeker van te zijn dat alles correct werkt
+1. Klik op "Deploy"
+2. Dit proces duurt ongeveer 1-2 minuten
 
-## Stap 5: Domein koppelen (optioneel)
+## Stap 4: Contactformulier testen
 
-Als je een eigen domein wilt gebruiken:
+Na een succesvolle deployment:
 
-1. Ga naar het tabblad "Domains" in het projectdashboard
-2. Klik op "Add" en voer je domeinnaam in
-3. Volg de instructies om DNS records in te stellen bij je domeinprovider
+1. Ga naar de gedeployede website
+2. Vul het contactformulier in en verstuur het
+3. Controleer of je een succesbericht krijgt
+4. Kijk of de e-mail is aangekomen op info@tecnarit.com
 
-## Stap 6: SendGrid configuratie controleren
+## Stap 5: Verifieer het afzender e-mailadres in SendGrid
 
-Na deployment is het belangrijk om de e-mailfunctionaliteit te controleren:
+⚠️ **BELANGRIJK**: Het contactformulier gebruikt momenteel `sendgrid@tecnarit.com` als afzender.
+Zorg ervoor dat dit e-mailadres **geverifieerd** is in je SendGrid account.
 
-1. Ga naar je TECNARIT website en vul het contactformulier in
-2. Controleer of de e-mail correct wordt ontvangen op info@tecnarit.com
-3. Als er problemen zijn, controleer of:
-   - De SENDGRID_API_KEY correct is ingesteld
-   - Je het afzenderdomein hebt geverifieerd in SendGrid
+Als je een ander afzenderadres wilt gebruiken:
+1. Verifieer het e-mailadres in SendGrid
+2. Open `api/index.js` in je project
+3. Wijzig regel 34 naar je geverifieerde e-mailadres
+4. Commit de wijziging en deploy opnieuw
 
 ## Problemen oplossen
 
-Als je deployment problemen ondervindt:
+Als het contactformulier niet werkt:
 
-1. Controleer de build logs in het Vercel dashboard
-2. Zorg ervoor dat `vercel.json` correct is geconfigureerd in je repository
-3. Test lokaal met `npm run build` om te zien of er build-problemen zijn
-
-## Onderhoudsupdate
-
-Wanneer je later wijzigingen wilt doorvoeren:
-
-1. Commit en push je wijzigingen naar de repository
-2. Vercel zal automatisch een nieuwe deployment starten
-3. Je kunt de voortgang volgen in het Vercel dashboard
+1. Controleer in Vercel dashboard onder "Functions" of de api/index.js functie correct is gedeployed
+2. Controleer de Function logs in het Vercel dashboard
+3. Verifieer dat je SendGrid API key nog geldig is
+4. Controleer of het "from" e-mailadres geverifieerd is in SendGrid
 
 ---
 
-Voor meer gedetailleerde informatie, raadpleeg de [officiële Vercel documentatie](https://vercel.com/docs).
+Voor meer informatie over Vercel serverless functions en SendGrid integratie, 
+raadpleeg de [Vercel documentatie](https://vercel.com/docs/serverless-functions) 
+en de [SendGrid documentatie](https://docs.sendgrid.com/for-developers/sending-email).
