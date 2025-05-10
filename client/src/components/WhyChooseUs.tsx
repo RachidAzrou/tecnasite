@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { Check, Zap, Award, Calendar } from "lucide-react";
 import { features } from "@/lib/data";

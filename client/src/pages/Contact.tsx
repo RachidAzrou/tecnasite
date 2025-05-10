@@ -14,7 +14,7 @@ import { Phone, Mail, MapPin, Send, CheckCircle } from "lucide-react";
 import { contactFormSchema } from "@/lib/data";
 
 // Import Tecnarit logo for decoration
-import tecnaritIcon from "../assets/tecnarit-icon.png";
+import tecnaritIcon from "@assets/Color logo - no background.png";
 
 type ContactFormValues = z.infer<typeof contactFormSchema>;
 
