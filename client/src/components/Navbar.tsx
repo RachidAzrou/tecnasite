@@ -49,26 +49,26 @@ const Navbar = () => {
       "bg-tecnarit-dark sticky top-0 z-50 transition-shadow duration-300",
       scrolled ? "shadow-md" : "shadow-sm"
     )}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="flex items-center py-4">
           {/* Logo - Left aligned */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 mr-auto">
             <Link href="/" className="flex items-center">
               <img 
                 src={tecnaritLogo} 
                 alt="TECNARIT Logo" 
-                className="h-10 hidden md:block" 
+                className="h-10 hidden md:block -ml-2" 
               />
               <img 
                 src={tecnaritIcon} 
                 alt="TECNARIT Logo" 
-                className="h-8 md:hidden" 
+                className="h-8 md:hidden -ml-1" 
               />
             </Link>
           </div>
 
           {/* Desktop Navigation - Centered */}
-          <div className="hidden md:flex flex-grow justify-center">
+          <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
             <nav className="flex items-center justify-center space-x-8">
               {navLinks.map((link) => (
                 <a
