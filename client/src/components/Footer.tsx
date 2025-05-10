@@ -48,22 +48,22 @@ const Footer = () => {
             <ul role="list" className="mt-4 space-y-4">
               <li>
                 <a href="/services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  Functional Testing
+                  {t('services.functional.title')}
                 </a>
               </li>
               <li>
                 <a href="/services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  Test Automation
+                  {t('services.automation.title')}
                 </a>
               </li>
               <li>
                 <a href="/services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  UI/UX Testing
+                  {t('services.ui.title')}
                 </a>
               </li>
               <li>
                 <a href="/services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  Integration Testing
+                  {t('services.integration.title')}
                 </a>
               </li>
             </ul>
@@ -76,7 +76,7 @@ const Footer = () => {
             <ul role="list" className="mt-4 space-y-4">
               <li>
                 <a href="/about" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  About Us
+                  {t('nav.about')}
                 </a>
               </li>
               <li>
@@ -86,7 +86,7 @@ const Footer = () => {
               </li>
               <li>
                 <a href="/contact" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  Contact Us
+                  {t('nav.contact')}
                 </a>
               </li>
             </ul>
@@ -95,7 +95,7 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-tecnarit-green/20 pt-8">
           <p className="text-base text-neutral-light xl:text-center">
-            &copy; {new Date().getFullYear()} TECNARIT. All rights reserved.
+            {t('footer.copyright').replace('2023', new Date().getFullYear().toString())}
           </p>
         </div>
       </div>

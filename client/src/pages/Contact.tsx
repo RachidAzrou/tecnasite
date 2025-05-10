@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -20,6 +21,7 @@ type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 const ContactPage = () => {
   const { toast } = useToast();
+  const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
   
   const {
@@ -66,10 +68,10 @@ const ContactPage = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl">
-                Contact Us
+                {t('contact.title')}
               </h1>
               <p className="mt-4 max-w-2xl mx-auto text-lg text-neutral-light">
-                Get in touch with our team to discuss your software testing needs.
+                {t('contact.subtitle')}
               </p>
             </div>
           </div>
