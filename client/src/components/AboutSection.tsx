@@ -30,17 +30,17 @@ const AboutSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch">
           <motion.div 
-            className="mb-10 lg:mb-0"
+            className="mb-10 lg:mb-0 h-full flex"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="rounded-lg shadow-xl overflow-hidden relative">
+            <div className="rounded-lg shadow-xl overflow-hidden relative h-full flex">
               <img 
-                className="w-full object-cover" 
+                className="w-full h-full object-cover flex-grow" 
                 src={beachCardImage} 
                 alt="TECNARIT business card on beach in Morocco" 
               />
@@ -50,6 +50,7 @@ const AboutSection = () => {
           </motion.div>
           
           <motion.div
+            className="h-full flex flex-col"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
