@@ -100,7 +100,7 @@ const ContactPage = () => {
                   <h2 className="text-2xl font-bold text-tecnarit-dark mb-6">Reach Out To Us</h2>
                   <p className="text-neutral-dark mb-8">
                     Our nearshoring model combines the best of both worlds - Belgian management with our talented Moroccan team. 
-                    We're here to help with all your software testing needs.
+                    TECNARIT is here to help with all your software testing needs.
                   </p>
                   
                   <div className="space-y-6 mb-10">

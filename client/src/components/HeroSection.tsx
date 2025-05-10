@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
-// Import the Tecnarit logo for decoration
+// Import the TECNARIT logo for decoration
 import tecnaritIcon from "../assets/tecnarit-icon.png";
 
 const HeroSection = () => {
@@ -20,7 +20,7 @@ const HeroSection = () => {
                 <span className="block">Elevate Your Software Quality</span>
               </h1>
               <p className="mt-3 text-base text-neutral-light sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                At Tecnarit, we specialize in comprehensive software testing and quality assurance services that ensure your applications work flawlessly, every time.
+                At TECNARIT, we specialize in comprehensive software testing and quality assurance services that ensure your applications work flawlessly, every time.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
