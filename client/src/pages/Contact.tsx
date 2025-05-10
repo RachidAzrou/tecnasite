@@ -42,27 +42,24 @@ const ContactPage = () => {
   const onSubmit = async (data: ContactFormValues) => {
     setIsSubmitting(true);
     try {
-      // Prepare mailto link with form data
-      const subject = encodeURIComponent(`Contact from ${data.name} - TECNARIT Website`);
-      const body = encodeURIComponent(
-        `Name: ${data.name}\nEmail: ${data.email}\nCompany: ${data.company}\n\nMessage:\n${data.message}`
-      );
+      // Send form data to server, which will use SendGrid to email info@tecnarit.com
+      const response = await apiRequest("POST", "/api/contact", data);
       
-      // Try to open mailto link
-      window.location.href = `mailto:info@tecnarit.com?subject=${subject}&body=${body}`;
-      
-      // Also send to server for backup
-      try {
-        await apiRequest("POST", "/api/contact", data);
-      } catch (e) {
-        console.log("Backend storage failed, but email was opened", e);
+      if (response.emailSent) {
+        toast({
+          title: t('contact.form.success.title'),
+          description: t('contact.form.success.description'),
+          variant: "default",
+        });
+      } else {
+        // The message was saved but email sending failed
+        console.warn("Email sending failed, but form submission was saved");
+        toast({
+          title: t('contact.form.success.title'),
+          description: t('contact.form.success.description'),
+          variant: "default",
+        });
       }
-      
-      toast({
-        title: t('contact.form.success.title'),
-        description: t('contact.form.success.description'),
-        variant: "default",
-      });
       reset();
     } catch (error) {
       toast({

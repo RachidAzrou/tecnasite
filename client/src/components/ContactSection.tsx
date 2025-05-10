@@ -38,12 +38,24 @@ const ContactSection = () => {
   const onSubmit = async (data: ContactFormValues) => {
     setIsSubmitting(true);
     try {
-      await apiRequest("POST", "/api/contact", data);
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. We'll get back to you soon.",
-        variant: "default",
-      });
+      // Send form data to server, which will use SendGrid to email info@tecnarit.com
+      const response = await apiRequest("POST", "/api/contact", data);
+      
+      if (response.emailSent) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message. We'll get back to you soon.",
+          variant: "default",
+        });
+      } else {
+        // The message was saved but email sending failed
+        console.warn("Email sending failed, but form submission was saved");
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message. We'll get back to you soon.",
+          variant: "default",
+        });
+      }
       reset();
     } catch (error) {
       toast({
@@ -51,6 +63,7 @@ const ContactSection = () => {
         description: "Please try again later.",
         variant: "destructive",
       });
+      console.error("Contact form error:", error);
     } finally {
       setIsSubmitting(false);
     }

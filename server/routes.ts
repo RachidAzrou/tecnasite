@@ -17,26 +17,48 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const contactMessage = await storage.createContactMessage(data);
       
       // Send email using SendGrid
-      const emailSent = await sendEmail({
-        to: "info@tecnarit.com",
-        from: "no-reply@tecnarit.com", // Deze moet geverifieerd zijn in uw SendGrid account
-        subject: `Nieuw contactformulier bericht van ${data.name}`,
-        html: `
-          <h2>Nieuw bericht van het contactformulier op tecnarit.com</h2>
-          <p><strong>Naam:</strong> ${data.name}</p>
-          <p><strong>E-mail:</strong> ${data.email}</p>
-          <p><strong>Bedrijf:</strong> ${data.company || 'Niet opgegeven'}</p>
-          <p><strong>Bericht:</strong></p>
-          <p>${data.message.replace(/\n/g, '<br>')}</p>
-        `,
-      });
-      
-      // Return success response
-      return res.status(201).json({
-        message: 'Thank you for your message. We will get back to you soon.',
-        id: contactMessage.id,
-        emailSent
-      });
+      try {
+        const emailSent = await sendEmail({
+          to: "info@tecnarit.com",
+          from: "info@tecnarit.com", // BELANGRIJK: Dit moet een geverifieerd e-mailadres zijn in uw SendGrid account
+          subject: `Nieuw contactformulier bericht van ${data.name}`,
+          html: `
+            <h2>Nieuw bericht van het contactformulier op tecnarit.com</h2>
+            <p><strong>Naam:</strong> ${data.name}</p>
+            <p><strong>E-mail:</strong> ${data.email}</p>
+            <p><strong>Bedrijf:</strong> ${data.company || 'Niet opgegeven'}</p>
+            <p><strong>Bericht:</strong></p>
+            <p>${data.message.replace(/\n/g, '<br>')}</p>
+          `,
+          text: `
+            Nieuw bericht van het contactformulier op tecnarit.com
+            
+            Naam: ${data.name}
+            E-mail: ${data.email}
+            Bedrijf: ${data.company || 'Niet opgegeven'}
+            
+            Bericht:
+            ${data.message}
+          `,
+        });
+        
+        // Return success response
+        return res.status(201).json({
+          message: 'Thank you for your message. We will get back to you soon.',
+          id: contactMessage.id,
+          emailSent
+        });
+      } catch (emailError) {
+        console.error('Error sending email:', emailError);
+        
+        // We return success even if email fails, since we stored the message
+        return res.status(201).json({
+          message: 'Thank you for your message. We will get back to you soon.',
+          id: contactMessage.id,
+          emailSent: false,
+          emailError: 'Email sending failed but your message was saved'
+        });
+      }
     } catch (error) {
       if (error instanceof ZodError) {
         // Handle validation errors
