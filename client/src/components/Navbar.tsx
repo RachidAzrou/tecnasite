@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 // Import the Tecnarit logo
-import tecnaritLogo from "../assets/tecnarit-logo.png";
+import tecnaritLogo from "../assets/tecnarit-logo-clear.png";
 import tecnaritIcon from "../assets/tecnarit-icon.png";
 
 const Navbar = () => {
@@ -48,29 +48,27 @@ const Navbar = () => {
       "bg-tecnarit-dark sticky top-0 z-50 transition-shadow duration-300",
       scrolled ? "shadow-md" : "shadow-sm"
     )}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-3 items-center py-4">
           {/* Logo - Left aligned */}
-          <div className="flex-none">
-            <Link href="/" className="flex-shrink-0">
-              <div className="flex items-center">
-                <img 
-                  src={tecnaritLogo} 
-                  alt="TECNARIT Logo" 
-                  className="h-10 md:h-10 hidden md:block" 
-                />
-                <img 
-                  src={tecnaritIcon} 
-                  alt="TECNARIT Logo" 
-                  className="h-10 md:hidden" 
-                />
-              </div>
+          <div className="justify-self-start">
+            <Link href="/" className="flex items-center">
+              <img 
+                src={tecnaritLogo} 
+                alt="TECNARIT Logo" 
+                className="h-10 hidden md:block" 
+              />
+              <img 
+                src={tecnaritIcon} 
+                alt="TECNARIT Logo" 
+                className="h-8 md:hidden" 
+              />
             </Link>
           </div>
 
           {/* Desktop Navigation - Centered */}
-          <div className="hidden md:flex flex-1 justify-center">
-            <nav className="flex items-center space-x-8">
+          <div className="hidden md:block justify-self-center">
+            <nav className="flex items-center justify-center space-x-8">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -85,12 +83,12 @@ const Navbar = () => {
           </div>
           
           {/* Language Switcher - Right aligned */}
-          <div className="hidden md:flex flex-none">
+          <div className="hidden md:flex justify-self-end">
             <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="md:hidden">
+          <div className="md:hidden justify-self-end col-start-3 col-end-4">
             <button
               type="button"
               className="text-white focus:outline-none"
