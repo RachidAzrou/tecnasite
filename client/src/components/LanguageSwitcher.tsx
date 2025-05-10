@@ -29,7 +29,7 @@ const LanguageSwitcher = () => {
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="sm" className="flex items-center gap-1 text-sm font-medium text-white">
+        <Button variant="ghost" size="sm" className="flex items-center gap-1 text-sm font-medium text-white hover:text-tecnarit-lime">
           <Globe className="h-4 w-4" />
           <span className="hidden sm:inline-block">{currentLanguage.name}</span>
         </Button>

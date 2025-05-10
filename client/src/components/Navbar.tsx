@@ -49,43 +49,48 @@ const Navbar = () => {
       scrolled ? "shadow-md" : "shadow-sm"
     )}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center py-4">
-          {/* Logo */}
-          <Link href="/" className="flex-shrink-0 mr-8">
-            <div className="flex items-center">
-              <img 
-                src={tecnaritLogo} 
-                alt="TECNARIT Logo" 
-                className="h-10 md:h-10 hidden md:block" 
-              />
-              <img 
-                src={tecnaritIcon} 
-                alt="TECNARIT Logo" 
-                className="h-10 md:hidden" 
-              />
-            </div>
-          </Link>
+        <div className="flex items-center justify-between py-4">
+          {/* Logo - Left aligned */}
+          <div className="flex-none">
+            <Link href="/" className="flex-shrink-0">
+              <div className="flex items-center">
+                <img 
+                  src={tecnaritLogo} 
+                  alt="TECNARIT Logo" 
+                  className="h-10 md:h-10 hidden md:block" 
+                />
+                <img 
+                  src={tecnaritIcon} 
+                  alt="TECNARIT Logo" 
+                  className="h-10 md:hidden" 
+                />
+              </div>
+            </Link>
+          </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex flex-grow items-center justify-center space-x-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="relative text-white hover:text-tecnarit-lime font-medium group"
-              >
-                {link.name}
-                <span className="absolute w-0 h-0.5 tecnarit-gradient-bg bottom-[-2px] left-0 transition-all duration-300 group-hover:w-full" />
-              </a>
-            ))}
-          </nav>
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden md:flex flex-1 justify-center">
+            <nav className="flex items-center space-x-8">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="relative text-white hover:text-tecnarit-lime font-medium group"
+                >
+                  {link.name}
+                  <span className="absolute w-0 h-0.5 tecnarit-gradient-bg bottom-[-2px] left-0 transition-all duration-300 group-hover:w-full" />
+                </a>
+              ))}
+            </nav>
+          </div>
           
-          <div className="hidden md:block">
+          {/* Language Switcher - Right aligned */}
+          <div className="hidden md:flex flex-none">
             <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="md:hidden ml-auto">
+          <div className="md:hidden">
             <button
               type="button"
               className="text-white focus:outline-none"
