@@ -8,19 +8,14 @@ export const serviceItems = [
     description: "Verify your software behaves exactly as expected by testing it against functional requirements and specifications."
   },
   {
+    key: "nonfunctional",
+    title: "Non-Functional Testing",
+    description: "Evaluate the performance, security, usability and reliability aspects of your software to ensure it meets quality standards."
+  },
+  {
     key: "automation",
     title: "Test Automation",
     description: "Accelerate testing cycles with customized test automation solutions that improve efficiency and test coverage."
-  },
-  {
-    key: "ui",
-    title: "UI/UX Testing",
-    description: "Evaluate your software from the user's perspective to enhance usability, accessibility, and overall experience."
-  },
-  {
-    key: "integration",
-    title: "Integration Testing",
-    description: "Ensure all components and systems work together seamlessly by validating the interactions between integrated units."
   }
 ];
 

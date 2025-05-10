@@ -3,12 +3,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { serviceItems } from "@/lib/data";
-import { Check, Zap, RefreshCw, Monitor } from "lucide-react";
+import { Check, CheckSquare, BarChart2, Cog } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 const ServicesPage = () => {
   const { t } = useTranslation();
-  const icons = [Check, Zap, RefreshCw, Monitor];
+  const icons = [CheckSquare, BarChart2, Cog];
 
   return (
     <div className="bg-neutral-lightest min-h-screen flex flex-col">

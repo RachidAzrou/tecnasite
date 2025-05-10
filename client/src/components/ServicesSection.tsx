@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Check, Zap, Shield, RefreshCw, Monitor, ClipboardList } from "lucide-react";
+import { CheckSquare, BarChart2, Cog } from "lucide-react";
 import { serviceItems } from "@/lib/data";
 import { useTranslation } from "react-i18next";
 
@@ -38,7 +38,7 @@ const ServiceCard = ({
 
 const ServicesSection = () => {
   const { t } = useTranslation();
-  const icons = [Check, Zap, Shield, RefreshCw, Monitor, ClipboardList];
+  const icons = [CheckSquare, BarChart2, Cog];
 
   return (
     <section id="services" className="py-16 bg-neutral-lightest">

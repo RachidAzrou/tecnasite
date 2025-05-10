@@ -13,7 +13,7 @@ const HeroSection = () => {
         <div className="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-7xl lg:pb-24 xl:pb-32">
           <div className="pt-10 mx-auto max-w-7xl px-4 sm:pt-12 sm:px-6 md:pt-16 lg:pt-20 lg:px-8 xl:pt-28">
             <motion.div 
-              className="sm:text-center lg:text-left"
+              className="text-center"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -21,16 +21,16 @@ const HeroSection = () => {
               <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
                 <span className="block">{t('hero.title')}</span>
               </h1>
-              <p className="mt-3 text-base text-neutral-light sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-base text-neutral-light sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl mx-auto">
                 {t('hero.subtitle')}
               </p>
-              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+              <div className="mt-5 sm:mt-8 flex justify-center">
                 <div className="rounded-md shadow">
                   <Button size="lg" className="tecnarit-gradient-bg hover:opacity-90 text-white border-none" asChild>
                     <a href="/contact">{t('hero.cta')}</a>
                   </Button>
                 </div>
-                <div className="mt-3 sm:mt-0 sm:ml-3">
+                <div className="mt-0 ml-3">
                   <Button size="lg" variant="outline" className="border-tecnarit-lime bg-tecnarit-lime/20 text-white hover:bg-tecnarit-lime/40" asChild>
                     <a href="/services">{t('services.title')}</a>
                   </Button>
