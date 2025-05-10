@@ -3,7 +3,8 @@
     "home": "Home",
     "services": "Services",
     "about": "About Us",
-    "contact": "Contact"
+    "contact": "Contact",
+    "privacy": "Privacy"
   },
   "hero": {
     "title": "Your Code, Our Commitment.",

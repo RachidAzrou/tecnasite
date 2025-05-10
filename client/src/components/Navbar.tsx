@@ -41,6 +41,7 @@ const Navbar = () => {
     { name: t('nav.services'), href: "/services" },
     { name: t('nav.about'), href: "/about" },
     { name: t('nav.contact'), href: "/contact" },
+    { name: t('nav.privacy'), href: "/privacy" },
   ];
 
   return (
@@ -88,7 +89,7 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="md:hidden flex-shrink-0">
+          <div className="md:hidden ml-auto">
             <button
               type="button"
               className="text-white focus:outline-none"
