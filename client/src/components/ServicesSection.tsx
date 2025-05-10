@@ -30,7 +30,6 @@ const ServiceCard = ({
         <p className="mt-2 text-base text-neutral-dark">
           {description}
         </p>
-
       </div>
     </motion.div>
   );
@@ -62,16 +61,34 @@ const ServicesSection = () => {
           </div>
         </motion.div>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {serviceItems.map((service, index) => (
+        <div className="mt-12 grid gap-8 max-w-5xl mx-auto">
+          {/* First row - Two services */}
+          <div className="grid gap-8 md:grid-cols-2">
+            <ServiceCard 
+              key="service-1"
+              title={t(`services.${serviceItems[0].key}.title`)}
+              description={t(`services.${serviceItems[0].key}.description`)}
+              icon={icons[0]}
+            />
+            <ServiceCard 
+              key="service-2"
+              title={t(`services.${serviceItems[1].key}.title`)}
+              description={t(`services.${serviceItems[1].key}.description`)}
+              icon={icons[1]}
+            />
+          </div>
+          
+          {/* Second row - One centered service */}
+          <div className="flex justify-center">
+            <div className="w-full md:w-1/2">
               <ServiceCard 
-                key={index}
-                title={t(`services.${service.key}.title`)}
-                description={t(`services.${service.key}.description`)}
-                icon={icons[index % icons.length]}
+                key="service-3"
+                title={t(`services.${serviceItems[2].key}.title`)}
+                description={t(`services.${serviceItems[2].key}.description`)}
+                icon={icons[2]}
               />
-            )
-          )}
+            </div>
+          </div>
         </div>
       </div>
     </section>
