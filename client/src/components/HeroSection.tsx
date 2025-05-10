@@ -37,6 +37,20 @@ const HeroSection = () => {
                 </div>
               </div>
             </motion.div>
+            
+            {/* About Section embedded in Hero */}
+            <div className="mt-12 text-left text-neutral-light">
+              <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">{t('about_section.label')}</span>
+              <h2 className="text-2xl font-extrabold text-white sm:text-3xl mb-4">
+                {t('about_section.title')}
+              </h2>
+              <p className="text-base mb-4">
+                {t('about_section.paragraph1')}
+              </p>
+              <p className="text-base">
+                {t('about_section.paragraph2')}
+              </p>
+            </div>
           </div>
         </div>
       </div>

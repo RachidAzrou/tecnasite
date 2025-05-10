@@ -20,7 +20,6 @@ const Home = () => {
     <div className="bg-neutral-lightest min-h-screen flex flex-col">
       <Navbar />
       <main>
-        <AboutSection />
         <HeroSection />
         <ServicesSection />
         <WhyChooseUs />
