@@ -16,9 +16,7 @@ const Footer = () => {
                 className="h-10"
               />
             </div>
-            <p className="mt-4 text-base text-neutral-light">
-              Specialized in software testing services.
-            </p>
+
             <div className="mt-6 space-y-3">
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-tecnarit-green mr-3" />

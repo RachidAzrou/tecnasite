@@ -36,7 +36,7 @@ const Home = () => {
               <Button className="tecnarit-gradient-bg hover:opacity-90 text-white" size="lg" asChild>
                 <Link href="/contact">Contact Us</Link>
               </Button>
-              <Button variant="outline" className="border-tecnarit-green text-white hover:bg-tecnarit-green/20" size="lg" asChild>
+              <Button variant="outline" className="border-tecnarit-lime bg-tecnarit-lime/20 text-white hover:bg-tecnarit-lime/40" size="lg" asChild>
                 <Link href="/services">Our Services</Link>
               </Button>
             </div>

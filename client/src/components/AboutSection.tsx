@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 
-// Import the Tecnarit logo for decoration
+// Import the TECNARIT logo for decoration
 import tecnaritIcon from "../assets/tecnarit-icon.png";
 
 const AboutSection = () => {
@@ -53,10 +53,10 @@ const AboutSection = () => {
           >
             <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">About Us</span>
             <h2 className="text-3xl font-extrabold text-tecnarit-dark sm:text-4xl">
-              About Tecnarit
+              About TECNARIT
             </h2>
             <p className="mt-4 text-lg text-neutral-dark">
-              Tecnarit is a leading software testing and quality assurance company dedicated to helping businesses deliver flawless digital experiences.
+              TECNARIT is a leading software testing and quality assurance company dedicated to helping businesses deliver flawless digital experiences.
             </p>
             
             <div className="mt-6">
@@ -74,15 +74,11 @@ const AboutSection = () => {
               </div>
               
               <p className="text-base text-neutral-dark">
-                Our mission is to partner with you to ensure your software meets the highest standards of quality, performance, and security. Whether you need comprehensive testing services or specialized expertise for a specific project, Tecnarit delivers results you can trust.
+                Our mission is to partner with you to ensure your software meets the highest standards of quality, performance, and security. Whether you need comprehensive testing services or specialized expertise for a specific project, TECNARIT delivers results you can trust.
               </p>
             </div>
             
-            <div className="mt-8">
-              <Button size="lg" className="tecnarit-gradient-bg hover:opacity-90 text-white border-none" asChild>
-                <a href="#contact">Get to Know Us</a>
-              </Button>
-            </div>
+
           </motion.div>
         </div>
       </div>
