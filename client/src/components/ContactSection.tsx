@@ -38,25 +38,37 @@ const ContactSection = () => {
   const onSubmit = async (data: ContactFormValues) => {
     setIsSubmitting(true);
     try {
-      // Send form data to server, which will use SendGrid to email info@tecnarit.com
-      const response = await apiRequest("POST", "/api/contact", data);
+      // Send form data to serverless function for Vercel deployment
+      const response = await fetch("/api", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
       
-      if (response.emailSent) {
-        toast({
-          title: "Message sent!",
-          description: "Thank you for your message. We'll get back to you soon.",
-          variant: "default",
-        });
+      const result = await response.json();
+      
+      if (response.ok) {
+        if (result.emailSent) {
+          toast({
+            title: "Message sent!",
+            description: "Thank you for your message. We'll get back to you soon.",
+            variant: "default",
+          });
+        } else {
+          // Email was not sent, but still show success to user
+          console.warn("Email sending failed, but form submission was received");
+          toast({
+            title: "Message sent!",
+            description: "Thank you for your message. We'll get back to you soon.",
+            variant: "default",
+          });
+        }
+        reset();
       } else {
-        // The message was saved but email sending failed
-        console.warn("Email sending failed, but form submission was saved");
-        toast({
-          title: "Message sent!",
-          description: "Thank you for your message. We'll get back to you soon.",
-          variant: "default",
-        });
+        throw new Error(result.message || "Something went wrong");
       }
-      reset();
     } catch (error) {
       toast({
         title: "Something went wrong",
