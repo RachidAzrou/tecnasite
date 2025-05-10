@@ -52,17 +52,30 @@ const ServicesPage = () => {
       
       <Navbar />
       <main className="flex-grow">
-        <section className="py-16 bg-tecnarit-dark text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">{t('services.title')}</span>
+        <section className="py-16 relative overflow-hidden text-white" style={{ background: 'linear-gradient(135deg, #0f1729 0%, #183728 100%)' }}>
+          {/* Animated background elements */}
+          <div className="absolute top-0 left-0 w-full h-full">
+            <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-tecnarit-green/5 animate-pulse" style={{ animationDuration: '7s' }}></div>
+            <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-tecnarit-lime/5 animate-pulse" style={{ animationDuration: '5s' }}></div>
+            <div className="absolute top-1/2 right-1/4 w-24 h-24 rounded-full bg-tecnarit-green/5 animate-pulse" style={{ animationDuration: '8s' }}></div>
+          </div>
+          
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <motion.div 
+              className="text-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/20 text-tecnarit-lime text-sm font-medium mb-3">{t('services.title')}</span>
               <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl">
                 {t('services.title')}
               </h1>
               <p className="mt-4 max-w-2xl mx-auto text-lg text-neutral-light">
                 {t('services.subtitle')}
               </p>
-            </div>
+              <div className="w-20 h-1 mx-auto mt-6 bg-gradient-to-r from-tecnarit-green to-tecnarit-lime rounded-full"></div>
+            </motion.div>
           </div>
         </section>
         
@@ -106,37 +119,66 @@ const ServicesPage = () => {
               </div>
             </div>
             
-            <div className="mt-16 bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-xl font-bold text-tecnarit-dark mb-4">{t('services.nearshoring.title')}</h3>
-              <p className="text-neutral-dark mb-4">
-                {t('services.nearshoring.description')}
-              </p>
-              <ul className="space-y-2 mt-6">
-                <li className="flex items-start">
-                  <div className="flex-shrink-0 mt-1">
-                    <Check className="h-5 w-5 text-tecnarit-green" />
-                  </div>
-                  <span className="ml-2 text-neutral-dark">{t('services.nearshoring.benefit1')}</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="flex-shrink-0 mt-1">
-                    <Check className="h-5 w-5 text-tecnarit-green" />
-                  </div>
-                  <span className="ml-2 text-neutral-dark">{t('services.nearshoring.benefit2')}</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="flex-shrink-0 mt-1">
-                    <Check className="h-5 w-5 text-tecnarit-green" />
-                  </div>
-                  <span className="ml-2 text-neutral-dark">{t('services.nearshoring.benefit3')}</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="flex-shrink-0 mt-1">
-                    <Check className="h-5 w-5 text-tecnarit-green" />
-                  </div>
-                  <span className="ml-2 text-neutral-dark">{t('services.nearshoring.benefit4')}</span>
-                </li>
-              </ul>
+            <div className="mt-16 relative overflow-hidden rounded-lg shadow-lg">
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-tecnarit-dark to-tecnarit-dark/90 opacity-10"></div>
+              <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-tecnarit-green/10 to-transparent"></div>
+              
+              <div className="relative p-8 bg-white">
+                <h3 className="text-xl font-bold text-tecnarit-dark mb-4">{t('services.nearshoring.title')}</h3>
+                <p className="text-neutral-dark mb-4">
+                  {t('services.nearshoring.description')}
+                </p>
+                <ul className="space-y-4 mt-6">
+                  <motion.li 
+                    className="flex items-start"
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.1, duration: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="flex-shrink-0 mt-1 bg-tecnarit-green/10 rounded-full p-1">
+                      <Check className="h-5 w-5 text-tecnarit-green" />
+                    </div>
+                    <span className="ml-3 text-neutral-dark">{t('services.nearshoring.benefit1')}</span>
+                  </motion.li>
+                  <motion.li 
+                    className="flex items-start"
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.2, duration: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="flex-shrink-0 mt-1 bg-tecnarit-green/10 rounded-full p-1">
+                      <Check className="h-5 w-5 text-tecnarit-green" />
+                    </div>
+                    <span className="ml-3 text-neutral-dark">{t('services.nearshoring.benefit2')}</span>
+                  </motion.li>
+                  <motion.li 
+                    className="flex items-start"
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.3, duration: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="flex-shrink-0 mt-1 bg-tecnarit-green/10 rounded-full p-1">
+                      <Check className="h-5 w-5 text-tecnarit-green" />
+                    </div>
+                    <span className="ml-3 text-neutral-dark">{t('services.nearshoring.benefit3')}</span>
+                  </motion.li>
+                  <motion.li 
+                    className="flex items-start"
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.4, duration: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="flex-shrink-0 mt-1 bg-tecnarit-green/10 rounded-full p-1">
+                      <Check className="h-5 w-5 text-tecnarit-green" />
+                    </div>
+                    <span className="ml-3 text-neutral-dark">{t('services.nearshoring.benefit4')}</span>
+                  </motion.li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
