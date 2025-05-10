@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { serviceItems } from "@/lib/data";
-import { CheckSquare, BarChart2, Cog } from "lucide-react";
+import { CheckSquare, BarChart2, Cog, Check } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
 
@@ -111,6 +111,32 @@ const ServicesPage = () => {
               <p className="text-neutral-dark mb-4">
                 {t('services.nearshoring.description')}
               </p>
+              <ul className="space-y-2 mt-6">
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <Check className="h-5 w-5 text-tecnarit-green" />
+                  </div>
+                  <span className="ml-2 text-neutral-dark">{t('services.nearshoring.benefit1')}</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <Check className="h-5 w-5 text-tecnarit-green" />
+                  </div>
+                  <span className="ml-2 text-neutral-dark">{t('services.nearshoring.benefit2')}</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <Check className="h-5 w-5 text-tecnarit-green" />
+                  </div>
+                  <span className="ml-2 text-neutral-dark">{t('services.nearshoring.benefit3')}</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 mt-1">
+                    <Check className="h-5 w-5 text-tecnarit-green" />
+                  </div>
+                  <span className="ml-2 text-neutral-dark">{t('services.nearshoring.benefit4')}</span>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
