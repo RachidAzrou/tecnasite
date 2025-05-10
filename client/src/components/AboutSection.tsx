@@ -32,17 +32,18 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch">
           <motion.div 
-            className="mb-10 lg:mb-0 h-full flex"
+            className="mb-10 lg:mb-0 flex items-start"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="rounded-lg shadow-xl overflow-hidden relative h-full flex">
+            <div className="rounded-lg shadow-xl overflow-hidden relative flex">
               <img 
-                className="w-full h-full object-cover flex-grow" 
+                className="w-full object-cover" 
                 src={beachCardImage} 
                 alt="TECNARIT business card on beach in Morocco" 
+                style={{ height: '220px' }}
               />
               {/* Overlay with gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-tecnarit-green/20 to-transparent"></div>
@@ -50,7 +51,7 @@ const AboutSection = () => {
           </motion.div>
           
           <motion.div
-            className="h-full flex flex-col"
+            className="flex flex-col"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
