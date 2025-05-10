@@ -30,14 +30,12 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="rounded-lg shadow-md overflow-hidden relative w-full bg-white p-4">
-              <img 
-                className="w-full object-cover" 
+            <img 
+                className="w-full object-cover rounded-lg" 
                 src={teamImage} 
                 alt="TECNARIT team members" 
                 style={{ height: 'auto', maxHeight: '350px' }}
               />
-            </div>
           </motion.div>
           
           <motion.div
