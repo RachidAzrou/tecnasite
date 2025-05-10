@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Globe } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -19,7 +19,17 @@ const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   
-  const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[0];
+  // Make sure English is set on first load
+  useEffect(() => {
+    // Only force English if the language isn't explicitly set yet
+    if (!localStorage.getItem('i18nextLng')) {
+      i18n.changeLanguage('en');
+    }
+  }, [i18n]);
+  
+  // Ensure we always have a valid language code
+  const effectiveLanguage = i18n.language?.split('-')[0] || 'en'; // Handle 'en-US' format
+  const currentLanguage = languages.find(lang => lang.code === effectiveLanguage) || languages[0];
 
   const changeLanguage = (languageCode: string) => {
     i18n.changeLanguage(languageCode);
@@ -39,7 +49,7 @@ const LanguageSwitcher = () => {
           <DropdownMenuItem 
             key={language.code}
             onClick={() => changeLanguage(language.code)}
-            className={`text-neutral-dark hover:text-white ${language.code === i18n.language ? "bg-tecnarit-green/10 font-medium" : ""}`}
+            className={`text-neutral-dark hover:text-white ${language.code === effectiveLanguage ? "bg-tecnarit-green/10 font-medium" : ""}`}
           >
             <span className="w-8 inline-block font-bold">{language.shortcode}</span>
             <span>{language.name}</span>

@@ -9,7 +9,8 @@ import frTranslation from './locales/fr/translation.json';
 
 // Configure i18next
 i18n
-  .use(LanguageDetector) // Detect user language
+  // Auto-detection is disabled to ensure English is always the default
+  // .use(LanguageDetector)
   .use(initReactI18next) // Pass i18n down to react-i18next
   .init({
     resources: {
@@ -23,15 +24,17 @@ i18n
         translation: frTranslation
       }
     },
-    fallbackLng: 'en', // Default language
-    debug: false, // Enable debug mode in development
+    lng: 'en', // Explicitly set English as default
+    fallbackLng: 'en', // Fallback language
+    debug: false, // Debug mode disabled
 
     interpolation: {
       escapeValue: false, // Not needed for React
     },
 
+    // Store language preference
     detection: {
-      order: ['querystring', 'cookie', 'localStorage', 'navigator'],
+      order: ['querystring', 'localStorage', 'cookie'],
       lookupQuerystring: 'lang',
       lookupCookie: 'i18next',
       lookupLocalStorage: 'i18nextLng',
