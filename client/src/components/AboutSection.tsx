@@ -32,21 +32,24 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch">
           <motion.div 
-            className="mb-10 lg:mb-0 flex items-start"
+            className="mb-10 lg:mb-0 flex items-center justify-center"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="rounded-lg shadow-xl overflow-hidden relative flex">
-              <img 
-                className="w-full object-cover" 
-                src={beachCardImage} 
-                alt="TECNARIT business card on beach in Morocco" 
-                style={{ height: '220px' }}
-              />
-              {/* Overlay with gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-tecnarit-green/20 to-transparent"></div>
+            <div className="p-2 bg-white rounded-lg shadow-2xl" style={{ transform: 'rotate(-2deg)' }}>
+              <div className="rounded-lg overflow-hidden relative max-w-sm border-2 border-neutral-200">
+                <img 
+                  className="w-full aspect-[4/3] object-cover" 
+                  src={beachCardImage} 
+                  alt="TECNARIT business card on beach in Morocco" 
+                />
+                {/* Overlay with gradient */}
+                <div className="absolute inset-0 bg-gradient-to-br from-tecnarit-green/20 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/40 to-transparent h-16"></div>
+                <div className="absolute bottom-2 left-2 text-white text-sm font-medium">TECNARIT - Agadir, Morocco</div>
+              </div>
             </div>
           </motion.div>
           
