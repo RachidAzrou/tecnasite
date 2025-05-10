@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { aboutUsHighlights } from "@/lib/data";
 import { CheckCircle2, Users, Globe, MapPin } from "lucide-react";
 
-// Import the Tecnarit logo for decoration
+// Import the TECNARIT logo for decoration
 import tecnaritIcon from "../assets/tecnarit-icon.png";
 
 const AboutPage = () => {
@@ -16,7 +16,7 @@ const AboutPage = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl">
-                About Tecnarit
+                About Us
               </h1>
               <p className="mt-4 max-w-2xl mx-auto text-lg text-neutral-light">
                 Your trusted partner for quality software testing with a global approach.
@@ -48,7 +48,7 @@ const AboutPage = () => {
             <div className="grid gap-12 md:grid-cols-2 items-center">
               <div>
                 <p className="text-lg text-neutral-dark mb-6">
-                  Tecnarit is a specialized software testing company that operates on a nearshoring model, combining the expertise of our management team in Belgium with our talented technical team in Morocco.
+                  TECNARIT is a specialized software testing company that operates on a nearshoring model, combining the expertise of our management team in Belgium with our talented technical team in Morocco.
                 </p>
                 <p className="text-lg text-neutral-dark mb-6">
                   This unique approach allows us to deliver high-quality testing services at competitive rates while maintaining excellent communication and project management.
@@ -61,7 +61,7 @@ const AboutPage = () => {
                   <div className="flex items-center p-4 bg-white rounded-lg shadow border border-neutral-light">
                     <MapPin className="h-8 w-8 text-tecnarit-green mr-4" />
                     <div>
-                      <h4 className="font-medium text-tecnarit-dark">Belgium</h4>
+                      <h4 className="font-medium text-tecnarit-dark">Belgium (Antwerpen)</h4>
                       <p className="text-sm text-neutral-dark">Management Team</p>
                     </div>
                   </div>

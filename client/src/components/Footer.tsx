@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="mt-6 space-y-3">
               <div className="flex items-center">
                 <Phone className="h-5 w-5 text-tecnarit-green mr-3" />
-                <span className="text-neutral-light">+31 (0)6 123 456 78</span>
+                <span className="text-neutral-light">+32 71 55 09 46</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-tecnarit-green mr-3" />
@@ -28,17 +28,13 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 text-tecnarit-green mr-3" />
-                <span className="text-neutral-light">Netherlands</span>
+                <span className="text-neutral-light">Cleydaellaan 16/5, 2630 Aartselaar, Belgium</span>
               </div>
             </div>
             <div className="mt-6 flex space-x-6">
-              <a href="#" className="text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
+              <a href="https://www.linkedin.com/company/tecnarit/" target="_blank" rel="noopener noreferrer" className="text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
                 <span className="sr-only">LinkedIn</span>
                 <Linkedin className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                <span className="sr-only">Twitter</span>
-                <Twitter className="h-6 w-6" />
               </a>
             </div>
           </div>

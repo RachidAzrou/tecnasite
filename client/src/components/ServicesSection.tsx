@@ -29,11 +29,7 @@ const ServiceCard = ({
         <p className="mt-2 text-base text-neutral-dark">
           {description}
         </p>
-        <div className="mt-4">
-          <a href="#contact" className="text-tecnarit-green hover:text-tecnarit-lime font-medium transition-colors duration-200">
-            Learn more →
-          </a>
-        </div>
+
       </div>
     </motion.div>
   );
