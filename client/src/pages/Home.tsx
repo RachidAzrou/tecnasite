@@ -20,6 +20,7 @@ const Home = () => {
     <div className="bg-neutral-lightest min-h-screen flex flex-col">
       <Navbar />
       <main>
+        <div className="h-2 w-full bg-gradient-to-r from-tecnarit-dark via-tecnarit-dark/90 to-tecnarit-dark"></div>
         <HeroSection />
         
         {/* About Section before services */}

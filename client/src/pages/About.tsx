@@ -14,17 +14,31 @@ const AboutPage = () => {
     <div className="bg-neutral-lightest min-h-screen flex flex-col">
       <Navbar />
       <main>
-        <section className="py-16 bg-tecnarit-dark text-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">{t('about.title')}</span>
+        <div className="h-2 w-full bg-gradient-to-r from-tecnarit-dark via-tecnarit-dark/90 to-tecnarit-dark"></div>
+        <section className="pt-14 pb-16 relative overflow-hidden text-white" style={{ background: 'linear-gradient(180deg, #0f1729 0%, #132b23 50%, #183728 100%)' }}>
+          {/* Animated background elements */}
+          <div className="absolute top-0 left-0 w-full h-full">
+            <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-tecnarit-green/5 animate-pulse" style={{ animationDuration: '7s' }}></div>
+            <div className="absolute bottom-10 right-10 w-32 h-32 rounded-full bg-tecnarit-lime/5 animate-pulse" style={{ animationDuration: '5s' }}></div>
+            <div className="absolute top-1/2 right-1/4 w-24 h-24 rounded-full bg-tecnarit-green/5 animate-pulse" style={{ animationDuration: '8s' }}></div>
+          </div>
+          
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <motion.div 
+              className="text-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/20 text-tecnarit-lime text-sm font-medium mb-3">{t('about.title')}</span>
               <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl">
                 {t('about.title')}
               </h1>
               <p className="mt-4 max-w-2xl mx-auto text-lg text-neutral-light">
                 {t('about.subtitle')}
               </p>
-            </div>
+              <div className="w-20 h-1 mx-auto mt-6 bg-gradient-to-r from-tecnarit-green to-tecnarit-lime rounded-full"></div>
+            </motion.div>
           </div>
         </section>
         
