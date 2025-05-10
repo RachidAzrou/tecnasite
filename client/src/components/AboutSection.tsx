@@ -43,7 +43,7 @@ const AboutSection = () => {
                 className="w-full object-cover" 
                 src={beachCardImage} 
                 alt="TECNARIT business card on beach in Morocco" 
-                style={{ height: '350px' }}
+                style={{ height: '350px', objectPosition: 'center bottom' }}
               />
               {/* Overlay with gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-tecnarit-green/10 to-transparent"></div>
