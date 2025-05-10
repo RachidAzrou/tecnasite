@@ -13,7 +13,9 @@
   "home": {
     "cta": {
       "title": "Ready to enhance your software quality?",
-      "description": "Our nearshoring model combines Belgian management expertise with our talented Moroccan team to deliver cost-effective, high-quality testing solutions."
+      "description": "Our nearshoring model combines Belgian management expertise with our talented Moroccan team to deliver cost-effective, high-quality testing solutions.",
+      "contact_button": "Get in touch",
+      "services_button": "Explore our services"
     }
   },
   "services": {

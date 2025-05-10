@@ -36,10 +36,10 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
               <Button className="tecnarit-gradient-bg hover:opacity-90 text-white" size="lg" asChild>
-                <Link href="/contact">{t('navigation.contact')}</Link>
+                <Link href="/contact">{t('home.cta.contact_button')}</Link>
               </Button>
               <Button className="bg-white text-tecnarit-dark hover:bg-neutral-100" size="lg" asChild>
-                <Link href="/services">{t('navigation.services')}</Link>
+                <Link href="/services">{t('home.cta.services_button')}</Link>
               </Button>
             </div>
           </div>

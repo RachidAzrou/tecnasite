@@ -13,7 +13,9 @@
   "home": {
     "cta": {
       "title": "Prêt à améliorer la qualité de votre logiciel?",
-      "description": "Notre modèle de nearshoring combine l'expertise de gestion belge avec notre talentueuse équipe marocaine pour fournir des solutions de test rentables et de haute qualité."
+      "description": "Notre modèle de nearshoring combine l'expertise de gestion belge avec notre talentueuse équipe marocaine pour fournir des solutions de test rentables et de haute qualité.",
+      "contact_button": "Contactez-nous",
+      "services_button": "Découvrez nos services"
     }
   },
   "services": {

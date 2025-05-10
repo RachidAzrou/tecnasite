@@ -13,7 +13,9 @@
   "home": {
     "cta": {
       "title": "Klaar om uw softwarekwaliteit te verbeteren?",
-      "description": "Ons nearshoring-model combineert Belgische managementexpertise met ons getalenteerde Marokkaanse team om kosteneffectieve, hoogwaardige testoplossingen te leveren."
+      "description": "Ons nearshoring-model combineert Belgische managementexpertise met ons getalenteerde Marokkaanse team om kosteneffectieve, hoogwaardige testoplossingen te leveren.",
+      "contact_button": "Neem contact op",
+      "services_button": "Ontdek onze diensten"
     }
   },
   "services": {
