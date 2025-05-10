@@ -39,7 +39,7 @@ const LanguageSwitcher = () => {
           <DropdownMenuItem 
             key={language.code}
             onClick={() => changeLanguage(language.code)}
-            className={language.code === i18n.language ? "bg-neutral-light/10" : ""}
+            className={`text-neutral-dark hover:text-white ${language.code === i18n.language ? "bg-neutral-light/10" : ""}`}
           >
             {language.name}
           </DropdownMenuItem>
