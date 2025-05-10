@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-// Import the TECNARIT logo for decoration and map image
+// Import the TECNARIT logo for decoration
 import tecnaritIcon from "../assets/tecnarit-icon.png";
-import mapImage from "../assets/belgium_morocco_map.webp";
+import teamImage from "@assets/Naamloos-5.webp";
 
 const AboutSection = () => {
   const { t } = useTranslation();
@@ -40,9 +40,9 @@ const AboutSection = () => {
           >
             <div className="rounded-lg shadow-md overflow-hidden relative w-full bg-white p-4">
               <img 
-                className="w-full object-contain" 
-                src={mapImage} 
-                alt="Map showing TECNARIT offices in Belgium and Morocco" 
+                className="w-full object-cover" 
+                src={teamImage} 
+                alt="TECNARIT team members" 
                 style={{ height: 'auto', maxHeight: '350px' }}
               />
             </div>
