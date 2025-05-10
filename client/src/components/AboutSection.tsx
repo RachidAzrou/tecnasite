@@ -40,8 +40,8 @@ const AboutSection = () => {
             <div className="rounded-lg shadow-xl overflow-hidden relative">
               <img 
                 className="w-full" 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800" 
-                alt="IT professional analyzing software testing results" 
+                src="https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800" 
+                alt="IT professionals working together on software testing" 
               />
               {/* Overlay with gradient */}
               <div className="absolute inset-0 bg-gradient-to-br from-tecnarit-green/20 to-transparent"></div>
@@ -58,9 +58,6 @@ const AboutSection = () => {
             <h2 className="text-3xl font-extrabold text-tecnarit-dark sm:text-4xl">
               {t('about_section.title')}
             </h2>
-            <p className="mt-4 text-lg text-neutral-dark">
-              {t('about_section.subtitle')}
-            </p>
             
             <div className="mt-6">
               <p className="text-base text-neutral-dark mb-4">

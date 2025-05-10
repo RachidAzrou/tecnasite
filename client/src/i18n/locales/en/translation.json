@@ -37,6 +37,10 @@
       "title": "Functional Testing",
       "description": "Verify your software behaves exactly as expected by testing it against functional requirements and specifications."
     },
+    "nonfunctional": {
+      "title": "Non-Functional Testing",
+      "description": "Evaluate the performance, security, usability and reliability aspects of your software to ensure it meets quality standards."
+    },
     "automation": {
       "title": "Test Automation",
       "description": "Accelerate testing cycles with customized test automation solutions that improve efficiency and test coverage."
@@ -148,7 +152,7 @@
     "label": "About Us",
     "title": "About TECNARIT",
     "subtitle": "TECNARIT is a leading software testing and quality assurance company dedicated to helping businesses deliver flawless digital experiences.",
-    "paragraph1": "Founded with a passion for quality and precision, we have evolved to become specialists in software testing. Our team of certified testing professionals brings extensive experience across various industries and technologies.",
+    "paragraph1": "Founded by professionals in the testing world with more than 20 years of experience, we have evolved to become specialists in software testing. Our team of certified testing professionals brings extensive expertise across various industries and technologies.",
     "paragraph2": "Our mission is to partner with you to ensure your software meets the highest standards of quality, performance, and security. Whether you need comprehensive testing services or specialized expertise for a specific project, TECNARIT delivers results you can trust.",
     "points": {
       "point1": "Expert testing team with certified professionals",

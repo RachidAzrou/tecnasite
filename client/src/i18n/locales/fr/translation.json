@@ -37,6 +37,10 @@
       "title": "Tests Fonctionnels",
       "description": "Vérifiez que votre logiciel se comporte exactement comme prévu en le testant par rapport aux exigences et spécifications fonctionnelles."
     },
+    "nonfunctional": {
+      "title": "Tests Non-Fonctionnels",
+      "description": "Évaluez les aspects de performance, sécurité, convivialité et fiabilité de votre logiciel pour garantir qu'il répond aux normes de qualité."
+    },
     "automation": {
       "title": "Automatisation des Tests",
       "description": "Accélérez les cycles de test avec des solutions d'automatisation personnalisées qui améliorent l'efficacité et la couverture des tests."

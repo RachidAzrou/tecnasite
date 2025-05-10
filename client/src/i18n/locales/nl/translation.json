@@ -37,6 +37,10 @@
       "title": "Functioneel Testen",
       "description": "Verifieer dat uw software exact werkt zoals verwacht door het te testen tegen functionele vereisten en specificaties."
     },
+    "nonfunctional": {
+      "title": "Niet-Functioneel Testen",
+      "description": "Evalueer de prestaties, beveiliging, bruikbaarheid en betrouwbaarheid van uw software om te zorgen dat het aan kwaliteitsnormen voldoet."
+    },
     "automation": {
       "title": "Test Automatisering",
       "description": "Versnel testcycli met aangepaste automatiseringsoplossingen die efficiëntie en testdekking verbeteren."
