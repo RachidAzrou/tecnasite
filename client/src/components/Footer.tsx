@@ -1,7 +1,7 @@
 import { Linkedin, Twitter, Phone, Mail, MapPin } from "lucide-react";
 
 // Import the Tecnarit logo
-import tecnaritLogo from "../assets/tecnarit-logo.png";
+import tecnaritLogo from "@assets/Color logo - no background.png";
 
 const Footer = () => {
   return (
@@ -51,28 +51,23 @@ const Footer = () => {
             </h3>
             <ul role="list" className="mt-4 space-y-4">
               <li>
-                <a href="#services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
+                <a href="/services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
                   Functional Testing
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  Performance Testing
+                <a href="/services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
+                  Test Automation
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  Security Testing
+                <a href="/services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
+                  UI/UX Testing
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  Automated Testing
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  QA Consulting
+                <a href="/services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
+                  Integration Testing
                 </a>
               </li>
             </ul>
@@ -84,23 +79,18 @@ const Footer = () => {
             </h3>
             <ul role="list" className="mt-4 space-y-4">
               <li>
-                <a href="#about" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  About
+                <a href="/about" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
+                  About Us
                 </a>
               </li>
               <li>
-                <a href="#case-studies" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  Case Studies
+                <a href="/about" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
+                  Our Nearshoring Model
                 </a>
               </li>
               <li>
-                <a href="#testimonials" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  Testimonials
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  Contact
+                <a href="/contact" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
+                  Contact Us
                 </a>
               </li>
             </ul>

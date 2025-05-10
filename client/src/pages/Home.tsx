@@ -9,31 +9,9 @@ import { useEffect } from "react";
 import { Link } from "wouter";
 
 const Home = () => {
-  // Implement smooth scrolling for anchor links
+  // No smooth scrolling needed anymore since we use proper page navigation
   useEffect(() => {
-    const handleAnchorClick = (e: MouseEvent) => {
-      const target = e.target as HTMLElement;
-      if (target.tagName === 'A') {
-        const href = target.getAttribute('href');
-        if (href && href.startsWith('#')) {
-          e.preventDefault();
-          const targetId = href.substring(1);
-          const element = document.getElementById(targetId);
-          if (element) {
-            window.scrollTo({
-              top: element.offsetTop,
-              behavior: 'smooth'
-            });
-          }
-        }
-      }
-    };
-
-    document.addEventListener('click', handleAnchorClick);
-    
-    return () => {
-      document.removeEventListener('click', handleAnchorClick);
-    };
+    // Effect can be used for other initialization if needed in the future
   }, []);
 
   return (
