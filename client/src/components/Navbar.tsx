@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link } from "wouter";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 // Import the Tecnarit logo
 import tecnaritLogo from "../assets/tecnarit-logo.png";
@@ -32,11 +34,13 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  const { t } = useTranslation();
+  
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: t('nav.home'), href: "/" },
+    { name: t('nav.services'), href: "/services" },
+    { name: t('nav.about'), href: "/about" },
+    { name: t('nav.contact'), href: "/contact" },
   ];
 
   return (
@@ -63,7 +67,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -74,6 +78,7 @@ const Navbar = () => {
                 <span className="absolute w-0 h-0.5 tecnarit-gradient-bg bottom-[-2px] left-0 transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
+            <LanguageSwitcher />
           </nav>
 
           {/* Mobile Menu Toggle */}
@@ -113,7 +118,9 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-
+            <div className="px-3 py-2">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       </div>
