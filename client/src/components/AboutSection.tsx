@@ -31,10 +31,12 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">{t('about_section.label')}</span>
-            <h2 className="text-3xl font-extrabold text-tecnarit-dark sm:text-4xl">
-              {t('about_section.title')}
-            </h2>
+            <div className="text-center">
+              <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">{t('about_section.label')}</span>
+              <h2 className="text-3xl font-extrabold text-tecnarit-dark sm:text-4xl">
+                {t('about_section.title')}
+              </h2>
+            </div>
             
             <div className="mt-6">
               <p className="text-base text-neutral-dark mb-4">
