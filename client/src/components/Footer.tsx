@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-tecnarit-dark">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center">
               <img 
@@ -39,34 +39,6 @@ const Footer = () => {
                 <Linkedin className="h-6 w-6" />
               </a>
             </div>
-          </div>
-
-          <div>
-            <h3 className="text-sm font-semibold text-tecnarit-green tracking-wider uppercase">
-              {t('footer.services')}
-            </h3>
-            <ul role="list" className="mt-4 space-y-4">
-              <li>
-                <a href="/services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  {t('services.functional.title')}
-                </a>
-              </li>
-              <li>
-                <a href="/services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  {t('services.automation.title')}
-                </a>
-              </li>
-              <li>
-                <a href="/services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  {t('services.ui.title')}
-                </a>
-              </li>
-              <li>
-                <a href="/services" className="text-base text-neutral-light hover:text-tecnarit-lime transition-colors duration-200">
-                  {t('services.integration.title')}
-                </a>
-              </li>
-            </ul>
           </div>
 
           <div>
