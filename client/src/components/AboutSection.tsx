@@ -22,21 +22,7 @@ const AboutSection = () => {
       {/* No background decoration */}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-stretch">
-          <motion.div 
-            className="mb-10 lg:mb-0 flex items-center justify-center"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
-            <img 
-                className="w-full object-cover rounded-lg" 
-                src={teamImage} 
-                alt="TECNARIT team members" 
-                style={{ height: 'auto', maxHeight: '350px' }}
-              />
-          </motion.div>
+        <div className="lg:grid lg:grid-cols-1 lg:gap-12 lg:items-stretch">
           
           <motion.div
             className="flex flex-col"
