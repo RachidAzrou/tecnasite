@@ -20,10 +20,10 @@ const Home = () => {
     <div className="bg-neutral-lightest min-h-screen flex flex-col">
       <Navbar />
       <main>
+        <AboutSection />
         <HeroSection />
         <ServicesSection />
         <WhyChooseUs />
-        <AboutSection />
         
         {/* Call-to-Action Section */}
         <section className="py-16 bg-tecnarit-dark text-white">
