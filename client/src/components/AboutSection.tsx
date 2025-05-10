@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-// Import the TECNARIT logo for decoration and beach card image
+// Import the TECNARIT logo for decoration and map image
 import tecnaritIcon from "../assets/tecnarit-icon.png";
-import beachCardImage from "../assets/beach_card.jpg";
+import mapImage from "../assets/belgium_morocco_map.webp";
 
 const AboutSection = () => {
   const { t } = useTranslation();
@@ -38,15 +38,14 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="rounded-lg shadow-md overflow-hidden relative w-full">
+            <div className="rounded-lg shadow-md overflow-hidden relative w-full bg-white p-4">
               <img 
-                className="w-full object-cover" 
-                src={beachCardImage} 
-                alt="TECNARIT business card on beach in Morocco" 
-                style={{ height: '350px', objectPosition: 'center bottom' }}
+                className="w-full object-contain" 
+                src={mapImage} 
+                alt="Map showing TECNARIT offices in Belgium and Morocco" 
+                style={{ height: '350px' }}
               />
-              {/* Overlay with gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-tecnarit-green/10 to-transparent"></div>
+              <div className="absolute bottom-2 right-2 text-xs text-tecnarit-dark/70 font-medium">TECNARIT: België - Marokko</div>
             </div>
           </motion.div>
           
