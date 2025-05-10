@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+        <div className="max-w-3xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -71,23 +71,6 @@ const WhyChooseUs = () => {
                   description={feature.description} 
                 />
               ))}
-            </div>
-          </motion.div>
-          
-          <motion.div 
-            className="mt-10 lg:mt-0"
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <div className="rounded-lg shadow-xl overflow-hidden relative">
-              <img 
-                className="w-full" 
-                src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=800" 
-                alt="Software testing and quality assurance" 
-              />
-
             </div>
           </motion.div>
         </div>
