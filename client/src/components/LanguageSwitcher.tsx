@@ -10,9 +10,9 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 const languages = [
-  { code: 'en', name: 'English' },
-  { code: 'nl', name: 'Nederlands' },
-  { code: 'fr', name: 'Français' }
+  { code: 'en', name: 'English', shortcode: 'EN' },
+  { code: 'nl', name: 'Nederlands', shortcode: 'NL' },
+  { code: 'fr', name: 'Français', shortcode: 'FR' }
 ];
 
 const LanguageSwitcher = () => {
@@ -31,7 +31,7 @@ const LanguageSwitcher = () => {
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="sm" className="flex items-center gap-1 text-sm font-medium text-white hover:text-tecnarit-lime">
           <Globe className="h-4 w-4" />
-          <span className="hidden sm:inline-block">{currentLanguage.name}</span>
+          <span className="inline-block font-medium">{currentLanguage.shortcode}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
@@ -39,9 +39,10 @@ const LanguageSwitcher = () => {
           <DropdownMenuItem 
             key={language.code}
             onClick={() => changeLanguage(language.code)}
-            className={`text-neutral-dark hover:text-white ${language.code === i18n.language ? "bg-neutral-light/10" : ""}`}
+            className={`text-neutral-dark hover:text-white ${language.code === i18n.language ? "bg-tecnarit-green/10 font-medium" : ""}`}
           >
-            {language.name}
+            <span className="w-8 inline-block font-bold">{language.shortcode}</span>
+            <span>{language.name}</span>
           </DropdownMenuItem>
         ))}
       </DropdownMenuContent>

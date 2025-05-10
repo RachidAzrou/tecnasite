@@ -49,9 +49,9 @@ const Navbar = () => {
       scrolled ? "shadow-md" : "shadow-sm"
     )}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-3 items-center py-4">
+        <div className="flex justify-between items-center py-4">
           {/* Logo - Left aligned */}
-          <div className="justify-self-start">
+          <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <img 
                 src={tecnaritLogo} 
@@ -67,7 +67,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation - Centered */}
-          <div className="hidden md:block justify-self-center">
+          <div className="hidden md:block mx-auto">
             <nav className="flex items-center justify-center space-x-8">
               {navLinks.map((link) => (
                 <a
@@ -83,12 +83,12 @@ const Navbar = () => {
           </div>
           
           {/* Language Switcher - Right aligned */}
-          <div className="hidden md:flex justify-self-end">
+          <div className="hidden md:flex">
             <LanguageSwitcher />
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="md:hidden justify-self-end col-start-3 col-end-4">
+          <div className="md:hidden flex-shrink-0">
             <button
               type="button"
               className="text-white focus:outline-none"
@@ -111,18 +111,20 @@ const Navbar = () => {
             isMenuOpen ? "max-h-96" : "max-h-0"
           }`}
         >
-          <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="px-2 pt-2 pb-4 space-y-2">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-tecnarit-green hover:text-white transition duration-150"
+                className="flex items-center justify-between px-4 py-3 rounded-md text-base font-medium text-white hover:bg-tecnarit-green/20 hover:text-tecnarit-lime transition duration-150"
                 onClick={closeMenu}
               >
-                {link.name}
+                <span>{link.name}</span>
+                <span className="h-1.5 w-1.5 rounded-full bg-tecnarit-lime"></span>
               </a>
             ))}
-            <div className="px-3 py-2">
+            <div className="flex justify-between items-center mt-4 px-4 py-3 border-t border-white/10">
+              <span className="text-white/70 text-sm">Taal / Language</span>
               <LanguageSwitcher />
             </div>
           </div>
