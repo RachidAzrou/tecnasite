@@ -51,22 +51,22 @@ const ServicesPage = () => {
                   <div className="flex items-center justify-center h-16 w-16 rounded-md tecnarit-gradient-bg text-white mb-6">
                     {React.createElement(icons[index % icons.length], { className: "h-8 w-8" })}
                   </div>
-                  <h3 className="text-xl font-bold text-tecnarit-dark mb-4">{service.title}</h3>
-                  <p className="text-neutral-dark mb-6">{service.description}</p>
+                  <h3 className="text-xl font-bold text-tecnarit-dark mb-4">{t(`services.${service.key}.title`)}</h3>
+                  <p className="text-neutral-dark mb-6">{t(`services.${service.key}.description`)}</p>
                   <div className="border-t border-neutral-light pt-4">
-                    <h4 className="font-medium text-tecnarit-dark mb-2">Benefits:</h4>
+                    <h4 className="font-medium text-tecnarit-dark mb-2">{t('services.benefits')}:</h4>
                     <ul className="space-y-2">
                       <li className="flex items-center">
                         <Check className="h-5 w-5 text-tecnarit-green mr-2 flex-shrink-0" />
-                        <span>Improved software quality</span>
+                        <span>{t('services.benefit1')}</span>
                       </li>
                       <li className="flex items-center">
                         <Check className="h-5 w-5 text-tecnarit-green mr-2 flex-shrink-0" />
-                        <span>Reduced development costs</span>
+                        <span>{t('services.benefit2')}</span>
                       </li>
                       <li className="flex items-center">
                         <Check className="h-5 w-5 text-tecnarit-green mr-2 flex-shrink-0" />
-                        <span>Faster time-to-market</span>
+                        <span>{t('services.benefit3')}</span>
                       </li>
                     </ul>
                   </div>
@@ -75,18 +75,18 @@ const ServicesPage = () => {
             </div>
             
             <div className="mt-16 bg-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-xl font-bold text-tecnarit-dark mb-4">Our Nearshoring Model</h3>
+              <h3 className="text-xl font-bold text-tecnarit-dark mb-4">{t('services.nearshoring.title')}</h3>
               <p className="text-neutral-dark mb-4">
-                We operate on a nearshoring model with our talented team of testing professionals based in Morocco and our management team in Belgium. This approach allows us to provide:
+                {t('services.nearshoring.description')}
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <Check className="h-5 w-5 text-tecnarit-green mr-2 flex-shrink-0" />
-                  <span>Cost-effective testing solutions</span>
+                  <span>{t('services.nearshoring.benefit1')}</span>
                 </li>
                 <li className="flex items-center">
                   <Check className="h-5 w-5 text-tecnarit-green mr-2 flex-shrink-0" />
-                  <span>Minimal time zone differences with European clients</span>
+                  <span>{t('services.nearshoring.benefit2')}</span>
                 </li>
                 <li className="flex items-center">
                   <Check className="h-5 w-5 text-tecnarit-green mr-2 flex-shrink-0" />
