@@ -49,7 +49,7 @@ const Navbar = () => {
       scrolled ? "shadow-md" : "shadow-sm"
     )}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex items-center py-4">
           {/* Logo - Left aligned */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
@@ -67,7 +67,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation - Centered */}
-          <div className="hidden md:block mx-auto">
+          <div className="hidden md:flex flex-grow justify-center">
             <nav className="flex items-center justify-center space-x-8">
               {navLinks.map((link) => (
                 <a
@@ -83,7 +83,7 @@ const Navbar = () => {
           </div>
           
           {/* Language Switcher - Right aligned */}
-          <div className="hidden md:flex">
+          <div className="hidden md:flex ml-auto">
             <LanguageSwitcher />
           </div>
 
