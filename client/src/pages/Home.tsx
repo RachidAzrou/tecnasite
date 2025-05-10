@@ -3,8 +3,6 @@ import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import AboutSection from "@/components/AboutSection";
-import CaseStudies from "@/components/CaseStudies";
-import Testimonials from "@/components/Testimonials";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
@@ -45,8 +43,6 @@ const Home = () => {
         <ServicesSection />
         <WhyChooseUs />
         <AboutSection />
-        <CaseStudies />
-        <Testimonials />
         <ContactSection />
       </main>
       <Footer />

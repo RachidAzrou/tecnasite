@@ -1,0 +1,157 @@
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { motion } from "framer-motion";
+import { aboutUsHighlights } from "@/lib/data";
+import { CheckCircle2, Users, Globe, MapPin } from "lucide-react";
+
+// Import the Tecnarit logo for decoration
+import tecnaritIcon from "../assets/tecnarit-icon.png";
+
+const AboutPage = () => {
+  return (
+    <div className="bg-neutral-lightest min-h-screen flex flex-col">
+      <Navbar />
+      <main>
+        <section className="py-16 bg-tecnarit-dark text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h1 className="text-4xl tracking-tight font-extrabold sm:text-5xl">
+                About Tecnarit
+              </h1>
+              <p className="mt-4 max-w-2xl mx-auto text-lg text-neutral-light">
+                Your trusted partner for quality software testing with a global approach.
+              </p>
+            </div>
+          </div>
+        </section>
+        
+        <section className="py-16 relative overflow-hidden">
+          {/* Background decoration */}
+          <div className="absolute right-0 bottom-0 opacity-5 pointer-events-none">
+            <img 
+              src={tecnaritIcon} 
+              alt="" 
+              className="w-72 h-72"
+              aria-hidden="true"
+            />
+          </div>
+          
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center mb-16">
+              <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">Our Story</span>
+              <h2 className="text-3xl font-extrabold text-tecnarit-dark">
+                Who We Are
+              </h2>
+              <div className="w-20 h-1 mx-auto mt-6 tecnarit-gradient-bg rounded-full"></div>
+            </div>
+            
+            <div className="grid gap-12 md:grid-cols-2 items-center">
+              <div>
+                <p className="text-lg text-neutral-dark mb-6">
+                  Tecnarit is a specialized software testing company that operates on a nearshoring model, combining the expertise of our management team in Belgium with our talented technical team in Morocco.
+                </p>
+                <p className="text-lg text-neutral-dark mb-6">
+                  This unique approach allows us to deliver high-quality testing services at competitive rates while maintaining excellent communication and project management.
+                </p>
+                <p className="text-lg text-neutral-dark">
+                  Our mission is to help businesses deliver flawless software through rigorous testing methodologies and dedicated expertise.
+                </p>
+                
+                <div className="mt-8 grid md:grid-cols-2 gap-4">
+                  <div className="flex items-center p-4 bg-white rounded-lg shadow border border-neutral-light">
+                    <MapPin className="h-8 w-8 text-tecnarit-green mr-4" />
+                    <div>
+                      <h4 className="font-medium text-tecnarit-dark">Belgium</h4>
+                      <p className="text-sm text-neutral-dark">Management Team</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center p-4 bg-white rounded-lg shadow border border-neutral-light">
+                    <MapPin className="h-8 w-8 text-tecnarit-green mr-4" />
+                    <div>
+                      <h4 className="font-medium text-tecnarit-dark">Morocco</h4>
+                      <p className="text-sm text-neutral-dark">Technical Team</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <div className="bg-white p-8 rounded-lg shadow-lg">
+                  <h3 className="text-xl font-bold text-tecnarit-dark mb-6">Our Nearshoring Advantages</h3>
+                  
+                  <div className="space-y-6">
+                    <div className="flex">
+                      <div className="flex-shrink-0">
+                        <div className="flex items-center justify-center h-12 w-12 rounded-md tecnarit-gradient-bg text-white">
+                          <Globe className="h-6 w-6" />
+                        </div>
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="text-lg font-medium text-tecnarit-dark">Cross-Cultural Expertise</h4>
+                        <p className="mt-2 text-neutral-dark">
+                          Our Belgian-Moroccan structure gives us unique cross-cultural insights and communication capabilities.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex">
+                      <div className="flex-shrink-0">
+                        <div className="flex items-center justify-center h-12 w-12 rounded-md tecnarit-gradient-bg text-white">
+                          <Users className="h-6 w-6" />
+                        </div>
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="text-lg font-medium text-tecnarit-dark">Talent Pool</h4>
+                        <p className="mt-2 text-neutral-dark">
+                          Access to Morocco's growing tech talent combined with European management expertise.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex">
+                      <div className="flex-shrink-0">
+                        <div className="flex items-center justify-center h-12 w-12 rounded-md tecnarit-gradient-bg text-white">
+                          <CheckCircle2 className="h-6 w-6" />
+                        </div>
+                      </div>
+                      <div className="ml-4">
+                        <h4 className="text-lg font-medium text-tecnarit-dark">Cost-Effective Quality</h4>
+                        <p className="mt-2 text-neutral-dark">
+                          Premium testing services at competitive rates without sacrificing quality or communication.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+            
+            <div className="mt-16 grid gap-8 md:grid-cols-3">
+              {aboutUsHighlights.map((highlight, index) => (
+                <motion.div 
+                  key={index}
+                  className="bg-white p-6 rounded-lg shadow-md border border-neutral-light"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                >
+                  <h3 className="text-lg font-bold text-tecnarit-dark mb-3">{highlight.title}</h3>
+                  <p className="text-neutral-dark">{highlight.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default AboutPage;
