@@ -55,12 +55,26 @@ Als je een ander afzenderadres wilt gebruiken:
 
 ## Problemen oplossen
 
-Als het contactformulier niet werkt:
+### Als het contactformulier niet werkt:
 
 1. Controleer in Vercel dashboard onder "Functions" of de api/index.js functie correct is gedeployed
 2. Controleer de Function logs in het Vercel dashboard
 3. Verifieer dat je SendGrid API key nog geldig is
 4. Controleer of het "from" e-mailadres geverifieerd is in SendGrid
+
+### Als je 404 fouten krijgt bij directe URL's:
+
+De vercel.json bevat een belangrijke "rewrites" configuratie die ervoor zorgt dat de React router correct werkt:
+
+```json
+"rewrites": [
+  { "source": "/api", "destination": "/api/index" },
+  { "source": "/(.*)", "destination": "/index.html" }
+]
+```
+
+Deze configuratie zorgt ervoor dat Vercel alle requests doorstuurt naar de React app, behalve 
+het API endpoint. Zo werken URL's zoals /privacy, /about, etc. ook bij directe toegang of refresh.
 
 ---
 
