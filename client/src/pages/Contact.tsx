@@ -42,7 +42,22 @@ const ContactPage = () => {
   const onSubmit = async (data: ContactFormValues) => {
     setIsSubmitting(true);
     try {
-      await apiRequest("POST", "/api/contact", data);
+      // Prepare mailto link with form data
+      const subject = encodeURIComponent(`Contact from ${data.name} - TECNARIT Website`);
+      const body = encodeURIComponent(
+        `Name: ${data.name}\nEmail: ${data.email}\nCompany: ${data.company}\n\nMessage:\n${data.message}`
+      );
+      
+      // Try to open mailto link
+      window.location.href = `mailto:info@tecnarit.com?subject=${subject}&body=${body}`;
+      
+      // Also send to server for backup
+      try {
+        await apiRequest("POST", "/api/contact", data);
+      } catch (e) {
+        console.log("Backend storage failed, but email was opened", e);
+      }
+      
       toast({
         title: t('contact.form.success.title'),
         description: t('contact.form.success.description'),
@@ -55,6 +70,7 @@ const ContactPage = () => {
         description: t('contact.form.error.description'),
         variant: "destructive",
       });
+      console.error("Contact form error:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -91,7 +107,7 @@ const ContactPage = () => {
           </div>
 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -105,13 +121,13 @@ const ContactPage = () => {
                   </p>
                   
                   <div className="space-y-6 mb-10">
-                    <div className="flex items-start">
-                      <div className="flex-shrink-0">
+                    <div className="flex flex-col sm:flex-row sm:items-start">
+                      <div className="flex-shrink-0 mb-4 sm:mb-0">
                         <div className="flex items-center justify-center h-10 w-10 rounded-md tecnarit-gradient-bg text-white">
                           <MapPin className="h-5 w-5" />
                         </div>
                       </div>
-                      <div className="ml-4">
+                      <div className="sm:ml-4">
                         <h4 className="text-base font-medium text-tecnarit-dark">{t('contact.offices')}</h4>
                         <div className="mt-1">
                           <p className="text-neutral-dark">{t('contact.management_address')}</p>
@@ -120,25 +136,25 @@ const ContactPage = () => {
                       </div>
                     </div>
                     
-                    <div className="flex items-start">
-                      <div className="flex-shrink-0">
+                    <div className="flex flex-col sm:flex-row sm:items-start">
+                      <div className="flex-shrink-0 mb-4 sm:mb-0">
                         <div className="flex items-center justify-center h-10 w-10 rounded-md tecnarit-gradient-bg text-white">
                           <Mail className="h-5 w-5" />
                         </div>
                       </div>
-                      <div className="ml-4">
+                      <div className="sm:ml-4">
                         <h4 className="text-base font-medium text-tecnarit-dark">{t('contact.email')}</h4>
                         <p className="mt-1 text-neutral-dark">info@tecnarit.com</p>
                       </div>
                     </div>
                     
-                    <div className="flex items-start">
-                      <div className="flex-shrink-0">
+                    <div className="flex flex-col sm:flex-row sm:items-start">
+                      <div className="flex-shrink-0 mb-4 sm:mb-0">
                         <div className="flex items-center justify-center h-10 w-10 rounded-md tecnarit-gradient-bg text-white">
                           <Phone className="h-5 w-5" />
                         </div>
                       </div>
-                      <div className="ml-4">
+                      <div className="sm:ml-4">
                         <h4 className="text-base font-medium text-tecnarit-dark">{t('contact.phone')}</h4>
                         <p className="mt-1 text-neutral-dark">+32 71 55 09 46</p>
                       </div>

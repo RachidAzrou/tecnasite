@@ -24,14 +24,14 @@ const HeroSection = () => {
               <p className="mt-3 text-base text-neutral-light sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl mx-auto">
                 {t('hero.subtitle')}
               </p>
-              <div className="mt-5 sm:mt-8 flex justify-center">
+              <div className="mt-5 sm:mt-8 flex flex-col sm:flex-row justify-center gap-3 sm:gap-0">
                 <div className="rounded-md shadow">
-                  <Button size="lg" className="tecnarit-gradient-bg hover:opacity-90 text-white border-none" asChild>
+                  <Button size="lg" className="w-full sm:w-auto tecnarit-gradient-bg hover:opacity-90 text-white border-none" asChild>
                     <a href="/contact">{t('hero.cta')}</a>
                   </Button>
                 </div>
-                <div className="mt-0 ml-3">
-                  <Button size="lg" variant="outline" className="border-tecnarit-lime bg-tecnarit-lime/20 text-white hover:bg-tecnarit-lime/40" asChild>
+                <div className="sm:mt-0 sm:ml-3">
+                  <Button size="lg" variant="outline" className="w-full sm:w-auto border-tecnarit-lime bg-tecnarit-lime/20 text-white hover:bg-tecnarit-lime/40" asChild>
                     <a href="/services">{t('services.title')}</a>
                   </Button>
                 </div>
@@ -59,6 +59,7 @@ const HeroSection = () => {
             className="absolute inset-0 h-full w-full object-cover" 
             src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&h=1000" 
             alt="Software testing professional working with code"
+            loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-tecnarit-dark to-transparent"></div>
         </div>

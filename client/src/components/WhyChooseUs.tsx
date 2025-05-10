@@ -15,18 +15,18 @@ const FeatureItem = ({
 }) => {
   return (
     <motion.div 
-      className="flex"
+      className="flex flex-col sm:flex-row"
       initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 mb-4 sm:mb-0">
         <div className="flex items-center justify-center h-10 w-10 rounded-md tecnarit-gradient-bg text-white">
           <Icon className="h-6 w-6" />
         </div>
       </div>
-      <div className="ml-4">
+      <div className="sm:ml-4">
         <h3 className="text-lg font-medium text-tecnarit-dark">{title}</h3>
         <p className="mt-2 text-base text-neutral-dark">
           {description}

@@ -43,7 +43,7 @@ const AboutSection = () => {
                 className="w-full object-contain" 
                 src={mapImage} 
                 alt="Map showing TECNARIT offices in Belgium and Morocco" 
-                style={{ height: '350px' }}
+                style={{ height: 'auto', maxHeight: '350px' }}
               />
             </div>
           </motion.div>

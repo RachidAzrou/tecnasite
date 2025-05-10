@@ -104,39 +104,40 @@ const ContactSection = () => {
               </p>
               
               <div className="mt-8 space-y-6">
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
+                <div className="flex flex-col sm:flex-row sm:items-start">
+                  <div className="flex-shrink-0 mb-4 sm:mb-0">
                     <div className="flex items-center justify-center h-10 w-10 rounded-md tecnarit-gradient-bg text-white">
                       <Phone className="h-5 w-5" />
                     </div>
                   </div>
-                  <div className="ml-4">
+                  <div className="sm:ml-4">
                     <h4 className="text-base font-medium text-white">Phone</h4>
-                    <p className="mt-1 text-neutral-light">+31 (0)6 123 456 78</p>
+                    <p className="mt-1 text-neutral-light">+32 71 55 09 46</p>
                   </div>
                 </div>
 
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
+                <div className="flex flex-col sm:flex-row sm:items-start">
+                  <div className="flex-shrink-0 mb-4 sm:mb-0">
                     <div className="flex items-center justify-center h-10 w-10 rounded-md tecnarit-gradient-bg text-white">
                       <Mail className="h-5 w-5" />
                     </div>
                   </div>
-                  <div className="ml-4">
+                  <div className="sm:ml-4">
                     <h4 className="text-base font-medium text-white">Email</h4>
                     <p className="mt-1 text-neutral-light">info@tecnarit.com</p>
                   </div>
                 </div>
 
-                <div className="flex items-start">
-                  <div className="flex-shrink-0">
+                <div className="flex flex-col sm:flex-row sm:items-start">
+                  <div className="flex-shrink-0 mb-4 sm:mb-0">
                     <div className="flex items-center justify-center h-10 w-10 rounded-md tecnarit-gradient-bg text-white">
                       <MapPin className="h-5 w-5" />
                     </div>
                   </div>
-                  <div className="ml-4">
-                    <h4 className="text-base font-medium text-white">Location</h4>
-                    <p className="mt-1 text-neutral-light">Netherlands</p>
+                  <div className="sm:ml-4">
+                    <h4 className="text-base font-medium text-white">Locations</h4>
+                    <p className="mt-1 text-neutral-light">Belgium: Antwerpen</p>
+                    <p className="text-neutral-light">Morocco: Agadir</p>
                   </div>
                 </div>
               </div>
