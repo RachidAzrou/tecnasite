@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À Propos",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Services Professionnels de Test Logiciel",
+    "subtitle": "Solutions d'assurance qualité pour votre entreprise",
+    "cta": "Contactez-Nous"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Solutions complètes de test logiciel",
+    "functional": {
+      "title": "Tests Fonctionnels",
+      "description": "Vérifiez que votre logiciel se comporte exactement comme prévu en le testant par rapport aux exigences et spécifications fonctionnelles."
+    },
+    "automation": {
+      "title": "Automatisation des Tests",
+      "description": "Accélérez les cycles de test avec des solutions d'automatisation personnalisées qui améliorent l'efficacité et la couverture des tests."
+    },
+    "ui": {
+      "title": "Tests UI/UX",
+      "description": "Évaluez votre logiciel du point de vue de l'utilisateur pour améliorer la convivialité, l'accessibilité et l'expérience globale."
+    },
+    "integration": {
+      "title": "Tests d'Intégration",
+      "description": "Assurez-vous que tous les composants et systèmes fonctionnent ensemble de manière transparente en validant les interactions entre les unités intégrées."
+    }
+  },
+  "about": {
+    "title": "À Propos",
+    "subtitle": "Votre partenaire de confiance pour des tests logiciels de qualité avec une approche globale",
+    "story": "Notre Histoire",
+    "who": "Qui Sommes-Nous",
+    "overview": {
+      "p1": "TECNARIT est une société spécialisée dans les tests logiciels qui fonctionne sur un modèle de nearshoring, combinant l'expertise de notre équipe de gestion en Belgique avec notre talentueuse équipe technique au Maroc.",
+      "p2": "Cette approche unique nous permet de fournir des services de test de haute qualité à des tarifs compétitifs tout en maintenant une excellente communication et gestion de projet.",
+      "p3": "Notre mission est d'aider les entreprises à livrer des logiciels sans faille grâce à des méthodologies de test rigoureuses et une expertise dédiée."
+    },
+    "locations": {
+      "belgium": "Belgique (Anvers)",
+      "belgium_team": "Équipe de Gestion",
+      "morocco": "Maroc (Agadir)",
+      "morocco_team": "Équipe Technique"
+    },
+    "advantages": {
+      "title": "Nos Avantages de Nearshoring",
+      "expertise": {
+        "title": "Expertise Interculturelle",
+        "description": "Notre structure belgo-marocaine nous donne des perspectives interculturelles uniques et des capacités de communication."
+      },
+      "talent": {
+        "title": "Vivier de Talents",
+        "description": "Accès aux talents technologiques croissants du Maroc combiné à l'expertise de gestion européenne."
+      },
+      "cost": {
+        "title": "Qualité Rentable",
+        "description": "Services de test premium à des tarifs compétitifs sans sacrifier la qualité ou la communication."
+      }
+    },
+    "highlights": {
+      "approach": {
+        "title": "Notre Approche",
+        "description": "Nous combinons l'expertise de gestion belge avec des professionnels de test marocains qualifiés pour fournir des services de test logiciel de haute qualité et rentables."
+      },
+      "team": {
+        "title": "Notre Équipe",
+        "description": "Notre équipe de gestion en Belgique travaille en étroite collaboration avec notre équipe technique au Maroc pour assurer une communication fluide et la livraison du projet."
+      },
+      "experience": {
+        "title": "Notre Expérience",
+        "description": "Avec des années d'expérience dans les tests logiciels, nous avons aidé des entreprises de divers secteurs à livrer des applications de haute qualité."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Contactez notre équipe pour discuter de vos besoins en matière de tests logiciels",
+    "reach": "Contactez-Nous",
+    "intro": "Notre modèle de nearshoring combine le meilleur des deux mondes - la gestion belge avec notre talentueuse équipe marocaine. TECNARIT est là pour vous aider avec tous vos besoins de test logiciel.",
+    "offices": "Nos Bureaux",
+    "email": "Email",
+    "phone": "Téléphone",
+    "benefits": {
+      "title": "Avantages de Notre Modèle de Nearshoring",
+      "cost": "Solutions de test logiciel rentables",
+      "communication": "La gestion belge assure une communication fluide",
+      "quality": "L'équipe marocaine talentueuse fournit des tests de haute qualité"
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "name": "Nom",
+      "name_placeholder": "Votre nom",
+      "email": "Email",
+      "email_placeholder": "votre.email@exemple.com",
+      "company": "Entreprise",
+      "company_placeholder": "Le nom de votre entreprise",
+      "message": "Message",
+      "message_placeholder": "Parlez-nous de votre projet et de vos besoins de test",
+      "submit": "Envoyer le Message",
+      "sending": "Envoi en cours..."
+    },
+    "success": {
+      "title": "Message envoyé!",
+      "description": "Merci pour votre message. Nous vous répondrons bientôt."
+    },
+    "error": {
+      "title": "Quelque chose s'est mal passé",
+      "description": "Veuillez réessayer plus tard."
+    }
+  },
+  "footer": {
+    "company": "Entreprise",
+    "services": "Services",
+    "legal": "Légal",
+    "copyright": "© 2023 TECNARIT. Tous droits réservés.",
+    "terms": "Conditions d'Utilisation",
+    "privacy": "Politique de Confidentialité"
+  }
+}

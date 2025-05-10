@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Diensten",
+    "about": "Over Ons",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Professionele Software Testdiensten",
+    "subtitle": "Kwaliteitsborging-oplossingen voor uw bedrijf",
+    "cta": "Neem Contact Op"
+  },
+  "services": {
+    "title": "Onze Diensten",
+    "subtitle": "Uitgebreide software testoplossingen",
+    "functional": {
+      "title": "Functioneel Testen",
+      "description": "Verifieer dat uw software exact werkt zoals verwacht door het te testen tegen functionele vereisten en specificaties."
+    },
+    "automation": {
+      "title": "Test Automatisering",
+      "description": "Versnel testcycli met aangepaste automatiseringsoplossingen die efficiëntie en testdekking verbeteren."
+    },
+    "ui": {
+      "title": "UI/UX Testen",
+      "description": "Evalueer uw software vanuit het perspectief van de gebruiker om bruikbaarheid, toegankelijkheid en algemene ervaring te verbeteren."
+    },
+    "integration": {
+      "title": "Integratietesten",
+      "description": "Zorg ervoor dat alle componenten en systemen naadloos samenwerken door de interacties tussen geïntegreerde eenheden te valideren."
+    }
+  },
+  "about": {
+    "title": "Over Ons",
+    "subtitle": "Uw betrouwbare partner voor kwalitatief softwaretesten met een globale aanpak",
+    "story": "Ons Verhaal",
+    "who": "Wie We Zijn",
+    "overview": {
+      "p1": "TECNARIT is een gespecialiseerd softwaretestbedrijf dat werkt volgens een nearshoring-model, waarbij we de expertise van ons managementteam in België combineren met ons getalenteerde technische team in Marokko.",
+      "p2": "Deze unieke aanpak stelt ons in staat om hoogwaardige testdiensten tegen concurrerende tarieven te leveren, met behoud van uitstekende communicatie en projectbeheer.",
+      "p3": "Onze missie is om bedrijven te helpen foutloze software te leveren door middel van rigoureuze testmethodologieën en toegewijde expertise."
+    },
+    "locations": {
+      "belgium": "België (Antwerpen)",
+      "belgium_team": "Managementteam",
+      "morocco": "Marokko (Agadir)",
+      "morocco_team": "Technisch Team"
+    },
+    "advantages": {
+      "title": "Onze Nearshoring Voordelen",
+      "expertise": {
+        "title": "Cross-Culturele Expertise",
+        "description": "Onze Belgisch-Marokkaanse structuur geeft ons unieke cross-culturele inzichten en communicatiemogelijkheden."
+      },
+      "talent": {
+        "title": "Talent Pool",
+        "description": "Toegang tot Marokko's groeiende tech-talent gecombineerd met Europese managementexpertise."
+      },
+      "cost": {
+        "title": "Kosteneffectieve Kwaliteit",
+        "description": "Premium testdiensten tegen concurrerende tarieven zonder in te leveren op kwaliteit of communicatie."
+      }
+    },
+    "highlights": {
+      "approach": {
+        "title": "Onze Aanpak",
+        "description": "We combineren Belgische managementexpertise met bekwame Marokkaanse testprofessionals om hoogwaardige, kosteneffectieve softwaretestdiensten te bieden."
+      },
+      "team": {
+        "title": "Ons Team",
+        "description": "Ons managementteam in België werkt nauw samen met ons technische team in Marokko om een soepele communicatie en projectoplevering te garanderen."
+      },
+      "experience": {
+        "title": "Onze Ervaring",
+        "description": "Met jarenlange ervaring in softwaretesten hebben we bedrijven in verschillende industrieën geholpen hoogwaardige applicaties te leveren."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Neem contact op met ons team om uw softwaretestbehoeften te bespreken",
+    "reach": "Neem Contact Met Ons Op",
+    "intro": "Ons nearshoring-model combineert het beste van twee werelden - Belgisch management met ons getalenteerde Marokkaanse team. TECNARIT staat klaar om u te helpen met al uw softwaretestbehoeften.",
+    "offices": "Onze Kantoren",
+    "email": "E-mail",
+    "phone": "Telefoon",
+    "benefits": {
+      "title": "Voordelen Van Ons Nearshoring-Model",
+      "cost": "Kosteneffectieve softwaretestoplossingen",
+      "communication": "Belgisch management zorgt voor soepele communicatie",
+      "quality": "Getalenteerd Marokkaans team levert hoge kwaliteit testen"
+    },
+    "form": {
+      "title": "Stuur ons een bericht",
+      "name": "Naam",
+      "name_placeholder": "Uw naam",
+      "email": "E-mail",
+      "email_placeholder": "uw.email@voorbeeld.com",
+      "company": "Bedrijf",
+      "company_placeholder": "Uw bedrijfsnaam",
+      "message": "Bericht",
+      "message_placeholder": "Vertel ons over uw project en testbehoeften",
+      "submit": "Verstuur Bericht",
+      "sending": "Verzenden..."
+    },
+    "success": {
+      "title": "Bericht verzonden!",
+      "description": "Bedankt voor uw bericht. We nemen binnenkort contact met u op."
+    },
+    "error": {
+      "title": "Er is iets misgegaan",
+      "description": "Probeer het later opnieuw."
+    }
+  },
+  "footer": {
+    "company": "Bedrijf",
+    "services": "Diensten",
+    "legal": "Juridisch",
+    "copyright": "© 2023 TECNARIT. Alle rechten voorbehouden.",
+    "terms": "Servicevoorwaarden",
+    "privacy": "Privacybeleid"
+  }
+}

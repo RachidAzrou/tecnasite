@@ -1,0 +1,123 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Professional Software Testing Services",
+    "subtitle": "Quality assurance solutions for your business",
+    "cta": "Contact Us"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive software testing solutions",
+    "functional": {
+      "title": "Functional Testing",
+      "description": "Verify your software behaves exactly as expected by testing it against functional requirements and specifications."
+    },
+    "automation": {
+      "title": "Test Automation",
+      "description": "Accelerate testing cycles with customized test automation solutions that improve efficiency and test coverage."
+    },
+    "ui": {
+      "title": "UI/UX Testing",
+      "description": "Evaluate your software from the user's perspective to enhance usability, accessibility, and overall experience."
+    },
+    "integration": {
+      "title": "Integration Testing",
+      "description": "Ensure all components and systems work together seamlessly by validating the interactions between integrated units."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Your trusted partner for quality software testing with a global approach",
+    "story": "Our Story",
+    "who": "Who We Are",
+    "overview": {
+      "p1": "TECNARIT is a specialized software testing company that operates on a nearshoring model, combining the expertise of our management team in Belgium with our talented technical team in Morocco.",
+      "p2": "This unique approach allows us to deliver high-quality testing services at competitive rates while maintaining excellent communication and project management.",
+      "p3": "Our mission is to help businesses deliver flawless software through rigorous testing methodologies and dedicated expertise."
+    },
+    "locations": {
+      "belgium": "Belgium (Antwerpen)",
+      "belgium_team": "Management Team",
+      "morocco": "Morocco (Agadir)",
+      "morocco_team": "Technical Team"
+    },
+    "advantages": {
+      "title": "Our Nearshoring Advantages",
+      "expertise": {
+        "title": "Cross-Cultural Expertise",
+        "description": "Our Belgian-Moroccan structure gives us unique cross-cultural insights and communication capabilities."
+      },
+      "talent": {
+        "title": "Talent Pool",
+        "description": "Access to Morocco's growing tech talent combined with European management expertise."
+      },
+      "cost": {
+        "title": "Cost-Effective Quality",
+        "description": "Premium testing services at competitive rates without sacrificing quality or communication."
+      }
+    },
+    "highlights": {
+      "approach": {
+        "title": "Our Approach",
+        "description": "We combine Belgian management expertise with skilled Moroccan testing professionals to provide high-quality, cost-effective software testing services."
+      },
+      "team": {
+        "title": "Our Team",
+        "description": "Our management team in Belgium works closely with our technical team in Morocco to ensure smooth communication and project delivery."
+      },
+      "experience": {
+        "title": "Our Experience",
+        "description": "With years of experience in software testing, we've helped companies across various industries deliver high-quality applications."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team to discuss your software testing needs",
+    "reach": "Reach Out To Us",
+    "intro": "Our nearshoring model combines the best of both worlds - Belgian management with our talented Moroccan team. TECNARIT is here to help with all your software testing needs.",
+    "offices": "Our Offices",
+    "email": "Email",
+    "phone": "Phone",
+    "benefits": {
+      "title": "Our Nearshoring Model Benefits",
+      "cost": "Cost-effective software testing solutions",
+      "communication": "Belgian management ensures smooth communication",
+      "quality": "Talented Moroccan team delivers high-quality testing"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Name",
+      "name_placeholder": "Your name",
+      "email": "Email",
+      "email_placeholder": "your.email@example.com",
+      "company": "Company",
+      "company_placeholder": "Your company name",
+      "message": "Message",
+      "message_placeholder": "Tell us about your project and testing needs",
+      "submit": "Send Message",
+      "sending": "Sending..."
+    },
+    "success": {
+      "title": "Message sent!",
+      "description": "Thank you for your message. We'll get back to you soon."
+    },
+    "error": {
+      "title": "Something went wrong",
+      "description": "Please try again later."
+    }
+  },
+  "footer": {
+    "company": "Company",
+    "services": "Services",
+    "legal": "Legal",
+    "copyright": "© 2023 TECNARIT. All rights reserved.",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
+  }
+}
