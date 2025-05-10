@@ -10,9 +10,29 @@
     "subtitle": "Quality assurance solutions for your business",
     "cta": "Contact Us"
   },
+  "home": {
+    "cta": {
+      "title": "Ready to enhance your software quality?",
+      "description": "Our nearshoring model combines Belgian management expertise with our talented Moroccan team to deliver cost-effective, high-quality testing solutions."
+    }
+  },
   "services": {
     "title": "Our Services",
     "subtitle": "Comprehensive software testing solutions",
+    "offer": "What We Offer",
+    "solutions": "Comprehensive Testing Solutions",
+    "benefits": "Benefits",
+    "benefit1": "Improved software quality",
+    "benefit2": "Reduced development costs",
+    "benefit3": "Faster time-to-market",
+    "nearshoring": {
+      "title": "Our Nearshoring Model",
+      "description": "We operate on a nearshoring model with our talented team of testing professionals based in Morocco and our management team in Belgium. This approach allows us to provide:",
+      "benefit1": "Cost-effective testing solutions",
+      "benefit2": "Minimal time zone differences with European clients",
+      "benefit3": "Seamless communication and project management",
+      "benefit4": "High-quality testing expertise at competitive rates"
+    },
     "functional": {
       "title": "Functional Testing",
       "description": "Verify your software behaves exactly as expected by testing it against functional requirements and specifications."
@@ -103,15 +123,15 @@
       "message": "Message",
       "message_placeholder": "Tell us about your project and testing needs",
       "submit": "Send Message",
-      "sending": "Sending..."
-    },
-    "success": {
-      "title": "Message sent!",
-      "description": "Thank you for your message. We'll get back to you soon."
-    },
-    "error": {
-      "title": "Something went wrong",
-      "description": "Please try again later."
+      "sending": "Sending...",
+      "success": {
+        "title": "Message sent!",
+        "description": "Thank you for your message. We'll get back to you soon."
+      },
+      "error": {
+        "title": "Something went wrong",
+        "description": "Please try again later."
+      }
     }
   },
   "footer": {
@@ -123,5 +143,41 @@
     "privacy": "Privacy Policy",
     "address": "Cleydaellaan 16/5, 2630 Aartselaar, Belgium",
     "nearshoring": "Our Nearshoring Model"
+  },
+  "about_section": {
+    "label": "About Us",
+    "title": "About TECNARIT",
+    "subtitle": "TECNARIT is a leading software testing and quality assurance company dedicated to helping businesses deliver flawless digital experiences.",
+    "paragraph1": "Founded with a passion for quality and precision, we have evolved to become specialists in software testing. Our team of certified testing professionals brings extensive experience across various industries and technologies.",
+    "paragraph2": "Our mission is to partner with you to ensure your software meets the highest standards of quality, performance, and security. Whether you need comprehensive testing services or specialized expertise for a specific project, TECNARIT delivers results you can trust.",
+    "points": {
+      "point1": "Expert testing team with certified professionals",
+      "point2": "Experience across diverse industries and technologies",
+      "point3": "Focus on quality, precision and thorough methodology",
+      "point4": "Commitment to reliable, secure software solutions"
+    }
+  },
+  "why_choose": {
+    "label": "Why Choose Us",
+    "title": "Why Choose TECNARIT for Software Testing",
+    "subtitle": "We deliver excellence in software testing with a focus on precision, efficiency, and valuable insights."
+  },
+  "features": {
+    "expertise": {
+      "title": "Expert Testing Team",
+      "description": "Our certified testing professionals are dedicated to finding even the most elusive issues in your software."
+    },
+    "agility": {
+      "title": "Agile Approach",
+      "description": "We adapt to your development methodology, working in sync with your team to deliver consistent quality."
+    },
+    "efficiency": {
+      "title": "Cost Efficiency",
+      "description": "Our nearshoring model offers premium testing services at competitive rates without compromising on quality."
+    },
+    "collaboration": {
+      "title": "Seamless Collaboration",
+      "description": "Despite geographic distance, our testing team works as an extension of your development team."
+    }
   }
 }

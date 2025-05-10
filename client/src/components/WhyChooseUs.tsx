@@ -37,6 +37,7 @@ const FeatureItem = ({
 };
 
 const WhyChooseUs = () => {
+  const { t } = useTranslation();
   const icons = [Check, Zap, Award, Calendar];
 
   return (
@@ -55,12 +56,12 @@ const WhyChooseUs = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">Why Choose Us</span>
+            <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">{t('why_choose.label')}</span>
             <h2 className="text-3xl font-extrabold text-tecnarit-dark sm:text-4xl">
-              Why Choose TECNARIT for Software Testing
+              {t('why_choose.title')}
             </h2>
             <p className="mt-3 max-w-2xl text-lg text-neutral-dark">
-              We deliver excellence in software testing with a focus on precision, efficiency, and valuable insights.
+              {t('why_choose.subtitle')}
             </p>
             
             <div className="mt-8 space-y-6">
@@ -68,8 +69,8 @@ const WhyChooseUs = () => {
                 <FeatureItem 
                   key={index}
                   icon={icons[index % icons.length]} 
-                  title={feature.title} 
-                  description={feature.description} 
+                  title={t(`features.${feature.key}.title`)} 
+                  description={t(`features.${feature.key}.description`)} 
                 />
               ))}
             </div>
