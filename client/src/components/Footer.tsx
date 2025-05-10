@@ -1,9 +1,11 @@
-import { Linkedin, Twitter, Phone, Mail, MapPin } from "lucide-react";
+import { Linkedin, Phone, Mail, MapPin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 // Import the Tecnarit logo
 import tecnaritLogo from "@assets/Color logo - no background.png";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="bg-tecnarit-dark">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -41,7 +43,7 @@ const Footer = () => {
 
           <div>
             <h3 className="text-sm font-semibold text-tecnarit-green tracking-wider uppercase">
-              Services
+              {t('footer.services')}
             </h3>
             <ul role="list" className="mt-4 space-y-4">
               <li>
@@ -69,7 +71,7 @@ const Footer = () => {
 
           <div>
             <h3 className="text-sm font-semibold text-tecnarit-green tracking-wider uppercase">
-              Company
+              {t('footer.company')}
             </h3>
             <ul role="list" className="mt-4 space-y-4">
               <li>

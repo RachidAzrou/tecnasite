@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Check, Zap, Shield, RefreshCw, Monitor, ClipboardList } from "lucide-react";
 import { serviceItems } from "@/lib/data";
+import { useTranslation } from "react-i18next";
 
 const ServiceCard = ({ 
   title, 
@@ -36,6 +37,7 @@ const ServiceCard = ({
 };
 
 const ServicesSection = () => {
+  const { t } = useTranslation();
   const icons = [Check, Zap, Shield, RefreshCw, Monitor, ClipboardList];
 
   return (
@@ -48,27 +50,46 @@ const ServicesSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">Our Services</span>
+          <span className="inline-block py-1 px-3 rounded-full bg-tecnarit-green/10 text-tecnarit-green text-sm font-medium mb-3">{t('services.title')}</span>
           <h2 className="text-3xl font-extrabold text-tecnarit-dark sm:text-4xl">
-            Our Software Testing Services
+            {t('services.title')}
           </h2>
           <div className="mt-4 max-w-2xl lg:mx-auto">
             <p className="text-xl text-neutral-dark">
-              Comprehensive testing solutions tailored to your specific needs
+              {t('services.subtitle')}
             </p>
             <div className="w-20 h-1 mx-auto mt-6 tecnarit-gradient-bg rounded-full"></div>
           </div>
         </motion.div>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {serviceItems.map((service, index) => (
-            <ServiceCard 
-              key={index}
-              title={service.title}
-              description={service.description}
-              icon={icons[index % icons.length]}
-            />
-          ))}
+          {serviceItems.map((service, index) => {
+            let serviceKey = '';
+            switch(index) {
+              case 0:
+                serviceKey = 'functional';
+                break;
+              case 1:
+                serviceKey = 'automation';
+                break;
+              case 2:
+                serviceKey = 'ui';
+                break;
+              case 3:
+                serviceKey = 'integration';
+                break;
+              default:
+                serviceKey = 'functional';
+            }
+            return (
+              <ServiceCard 
+                key={index}
+                title={t(`services.${serviceKey}.title`)}
+                description={t(`services.${serviceKey}.description`)}
+                icon={icons[index % icons.length]}
+              />
+            );
+          })}
         </div>
       </div>
     </section>
