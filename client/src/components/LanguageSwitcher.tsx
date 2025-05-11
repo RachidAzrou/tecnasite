@@ -18,38 +18,54 @@ const languages = [
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
+  const [currentLang, setCurrentLang] = useState(localStorage.getItem('i18nextLng') || 'en');
+  
+  // Update language in all contexts when the component mounts
+  useEffect(() => {
+    // Force the i18n to use the stored language on mount
+    const storedLanguage = localStorage.getItem('i18nextLng');
+    if (storedLanguage) {
+      i18n.changeLanguage(storedLanguage);
+      setCurrentLang(storedLanguage);
+    }
+  }, [i18n]);
   
   // Ensure we always have a valid language code
-  const effectiveLanguage = i18n.language?.split('-')[0] || 'en'; // Handle 'en-US' format
-  const currentLanguage = languages.find(lang => lang.code === effectiveLanguage) || languages[0];
+  const effectiveLanguage = currentLang.split('-')[0] || 'en'; // Handle 'en-US' format
+  const currentLangObj = languages.find(lang => lang.code === effectiveLanguage) || languages[0];
 
-  // Persistent language change handler
-  const changeLanguage = (languageCode: string) => {
-    // Explicitly store in localStorage for persistence across page navigations
+  // Handler for language change
+  const handleLanguageChange = (languageCode: string) => {
+    // Store in localStorage
     localStorage.setItem('i18nextLng', languageCode);
+    
+    // Update i18n
     i18n.changeLanguage(languageCode);
+    
+    // Update local state
+    setCurrentLang(languageCode);
     setOpen(false);
   };
-  
-  // Debug - log current language on mount and when it changes
+
+  // For debugging - log language info
   useEffect(() => {
-    console.log('Current language:', i18n.language);
-    console.log('Stored language:', localStorage.getItem('i18nextLng'));
-  }, [i18n.language]);
+    console.log('Current i18n language:', i18n.language);
+    console.log('Current localStorage language:', localStorage.getItem('i18nextLng'));
+  }, [i18n.language, currentLang]);
 
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="sm" className="flex items-center gap-1 text-sm font-medium text-white hover:text-tecnarit-lime">
           <Globe className="h-4 w-4" />
-          <span className="inline-block font-medium">{currentLanguage.shortcode}</span>
+          <span className="inline-block font-medium">{currentLangObj.shortcode}</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         {languages.map((language) => (
           <DropdownMenuItem 
             key={language.code}
-            onClick={() => changeLanguage(language.code)}
+            onClick={() => handleLanguageChange(language.code)}
             className={`text-neutral-dark hover:text-white ${language.code === effectiveLanguage ? "bg-tecnarit-green/10 font-medium" : ""}`}
           >
             <span className="w-8 inline-block font-bold">{language.shortcode}</span>

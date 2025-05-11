@@ -31,11 +31,23 @@ i18n
       escapeValue: false, // Not needed for React
     },
 
-    // Store language preference
+    // Enhanced persistence configuration
     detection: {
       order: ['localStorage', 'navigator'], // First check localStorage, then browser settings
       lookupLocalStorage: 'i18nextLng',
       caches: ['localStorage'], // Save to localStorage for persistence
+    },
+    
+    // Keep language choice across page visits
+    load: 'languageOnly', // Simplify language codes (en-US -> en)
+    
+    // Enable dots in keys for nested translations
+    keySeparator: '.', // Use dots for nested keys (default)
+    nsSeparator: ':', // Use colons for namespace separator (default)
+    
+    // Don't reset language on page reload
+    react: {
+      useSuspense: false, // Disable suspense for language loading
     }
   });
 
