@@ -7,8 +7,8 @@
     "privacy": "Privacy"
   },
   "hero": {
-    "title": "Your Code, Our Commitment.",
-    "subtitle": "Kwaliteitsborging-oplossingen voor uw bedrijf",
+    "title": "Test IT Better",
+    "subtitle": "Kwaliteitsborgingsoplossingen voor uw bedrijf",
     "cta": "Neem Contact Op"
   },
   "home": {
@@ -26,11 +26,11 @@
     "solutions": "Uitgebreide Testoplossingen",
     "benefits": "Voordelen",
     "benefit1": "Verbeterde softwarekwaliteit",
-    "benefit2": "Verminderde ontwikkelingskosten",
+    "benefit2": "Lagere ontwikkelingskosten",
     "benefit3": "Snellere marktintroductie",
     "nearshoring": {
-      "title": "Ons Nearshoring Model",
-      "description": "We werken volgens een nearshoring-model met ons getalenteerde team van testprofessionals in Marokko en ons managementteam in België. Deze aanpak stelt ons in staat om te bieden:",
+      "title": "Ons Nearshoring-Model",
+      "description": "We werken volgens een nearshoring-model met ons getalenteerde team van testprofessionals in Marokko en ons managementteam in België. Deze aanpak stelt ons in staat om het volgende te bieden:",
       "benefit1": "Kosteneffectieve testoplossingen",
       "benefit2": "Minimale tijdsverschillen met Europese klanten",
       "benefit3": "Naadloze communicatie en projectmanagement",
@@ -41,7 +41,7 @@
       "description": "Verifieer dat uw software exact werkt zoals verwacht door het te testen tegen functionele vereisten en specificaties."
     },
     "nonfunctional": {
-      "title": "Niet-Functioneel Testen",
+      "title": "Niet-Functionele Tests",
       "description": "Evalueer de prestaties, beveiliging, bruikbaarheid en betrouwbaarheid van uw software om te zorgen dat het aan kwaliteitsnormen voldoet."
     },
     "automation": {

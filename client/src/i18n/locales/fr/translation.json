@@ -7,7 +7,7 @@
     "privacy": "Confidentialité"
   },
   "hero": {
-    "title": "Your Code, Our Commitment.",
+    "title": "Test IT Better",
     "subtitle": "Solutions d'assurance qualité pour votre entreprise",
     "cta": "Contactez-Nous"
   },
@@ -30,7 +30,7 @@
     "benefit3": "Mise sur le marché plus rapide",
     "nearshoring": {
       "title": "Notre Modèle de Nearshoring",
-      "description": "Nous fonctionnons selon un modèle de nearshoring avec notre talentueuse équipe de professionnels de test basée au Maroc et notre équipe de gestion en Belgique. Cette approche nous permet de fournir:",
+      "description": "Nous travaillons selon un modèle de nearshoring avec notre talentueuse équipe de professionnels de test basée au Maroc et notre équipe de gestion en Belgique. Cette approche nous permet de fournir :",
       "benefit1": "Solutions de test rentables",
       "benefit2": "Différences de fuseau horaire minimales avec les clients européens",
       "benefit3": "Communication et gestion de projet transparentes",
@@ -42,7 +42,7 @@
     },
     "nonfunctional": {
       "title": "Tests Non-Fonctionnels",
-      "description": "Évaluez les aspects de performance, sécurité, convivialité et fiabilité de votre logiciel pour garantir qu'il répond aux normes de qualité."
+      "description": "Évaluez la performance, la sécurité, la convivialité et la fiabilité de votre logiciel pour garantir qu'il répond aux normes de qualité."
     },
     "automation": {
       "title": "Automatisation des Tests",
@@ -63,8 +63,8 @@
     "story": "Notre Histoire",
     "who": "Qui Sommes-Nous",
     "overview": {
-      "p1": "TECNARIT est une société spécialisée dans les tests logiciels fondée par des professionnels avec plus de 20 ans d'expérience dans l'industrie du test. Nous fonctionnons sur un modèle de nearshoring, combinant l'expertise de notre équipe de gestion en Belgique avec notre talentueuse équipe technique au Maroc.",
-      "p2": "Cette approche unique nous permet de fournir des services de test de haute qualité à des tarifs compétitifs tout en maintenant une excellente communication et gestion de projet.",
+      "p1": "TECNARIT est une société spécialisée dans les tests logiciels fondée par des professionnels ayant plus de 20 ans d'expérience dans l'industrie du test. Nous travaillons selon un modèle de nearshoring, combinant l'expertise de notre équipe de gestion en Belgique avec notre talentueuse équipe technique au Maroc.",
+      "p2": "Cette approche unique nous permet de fournir des services de test de haute qualité à des tarifs compétitifs tout en maintenant une excellente communication et une gestion de projet efficace.",
       "p3": "Notre mission est d'aider les entreprises à livrer des logiciels sans faille grâce à des méthodologies de test rigoureuses et une expertise dédiée."
     },
     "locations": {
