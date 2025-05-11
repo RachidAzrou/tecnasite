@@ -19,22 +19,23 @@ const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   
-  // Make sure English is set on first load
-  useEffect(() => {
-    // Only force English if the language isn't explicitly set yet
-    if (!localStorage.getItem('i18nextLng')) {
-      i18n.changeLanguage('en');
-    }
-  }, [i18n]);
-  
   // Ensure we always have a valid language code
   const effectiveLanguage = i18n.language?.split('-')[0] || 'en'; // Handle 'en-US' format
   const currentLanguage = languages.find(lang => lang.code === effectiveLanguage) || languages[0];
 
+  // Persistent language change handler
   const changeLanguage = (languageCode: string) => {
+    // Explicitly store in localStorage for persistence across page navigations
+    localStorage.setItem('i18nextLng', languageCode);
     i18n.changeLanguage(languageCode);
     setOpen(false);
   };
+  
+  // Debug - log current language on mount and when it changes
+  useEffect(() => {
+    console.log('Current language:', i18n.language);
+    console.log('Stored language:', localStorage.getItem('i18nextLng'));
+  }, [i18n.language]);
 
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
