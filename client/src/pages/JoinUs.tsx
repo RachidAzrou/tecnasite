@@ -235,7 +235,7 @@ const JoinUs = () => {
             >
               <Link href="/jobs">
                 <Button className="bg-tecnarit-lime hover:bg-tecnarit-lime/90 text-tecnarit-dark font-semibold px-8 py-6 rounded-md text-lg">
-                  Browse Job Openings
+                  {t('join_us.openings.button')}
                 </Button>
               </Link>
             </motion.div>
