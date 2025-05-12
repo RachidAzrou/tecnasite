@@ -4,12 +4,187 @@
     "services": "Services",
     "about": "About Us",
     "contact": "Contact",
-    "privacy": "Privacy"
+    "privacy": "Privacy",
+    "join_us": "Join Us",
+    "jobs": "Jobs"
+  },
+  "page_titles": {
+    "home": "TECNARIT┆Test IT Better",
+    "services": "Services┆TECNARIT",
+    "about": "About Us┆TECNARIT",
+    "contact": "Contact┆TECNARIT",
+    "privacy": "Privacy┆TECNARIT",
+    "join_us": "Join Us┆TECNARIT",
+    "jobs": "Jobs┆TECNARIT"
   },
   "hero": {
     "title": "Test IT Better",
     "subtitle": "Quality assurance solutions for your business",
     "cta": "Contact Us"
+  },
+  "join_us": {
+    "title": "Join Our Software Testing Team",
+    "subtitle": "At TECNARIT, we are building the future of software testing through expertise, innovation, and a passion for quality.",
+    "benefits_title": "Why Work at TECNARIT?",
+    "benefits_description": "We're not just a testing company; we're a team of passionate professionals dedicated to excellence in software quality.",
+    "benefits": {
+      "growth": {
+        "title": "Continuous Growth",
+        "description": "We invest in your development through certifications, training programs, and learning opportunities."
+      },
+      "balance": {
+        "title": "Work-Life Balance",
+        "description": "Flexible working hours and policies that respect your personal time and wellbeing."
+      },
+      "international": {
+        "title": "International Environment",
+        "description": "Gain experience in a multicultural environment with our Belgium-Morocco nearshoring model."
+      },
+      "projects": {
+        "title": "Challenging Projects",
+        "description": "Work on diverse, challenging projects across different industries and technologies."
+      }
+    },
+    "perks": {
+      "title": "Benefits of Working at TECNARIT",
+      "remote": {
+        "title": "Hybrid Working",
+        "description": "Flexibility to work from home or in the office."
+      },
+      "development": {
+        "title": "Professional Development",
+        "description": "Access to certifications, courses, and conferences."
+      },
+      "collaboration": {
+        "title": "Collaborative Culture",
+        "description": "A supportive, team-oriented work environment."
+      },
+      "career": {
+        "title": "Career Growth",
+        "description": "Clear paths for promotion and development."
+      }
+    },
+    "openings": {
+      "title": "View Our Job Openings",
+      "description": "Ready to take the next step? Check out our current job openings and become part of our team.",
+      "button": "View Job Openings"
+    }
+  },
+  "jobs": {
+    "title": "Current Job Openings",
+    "subtitle": "Join our team of testing experts and help build quality into software systems for our clients",
+    "no_fit": "Don't See the Right Fit?",
+    "spontaneous": "We're always looking for talented individuals to join our team. Submit a spontaneous application and we'll consider you for future opportunities.",
+    "submit_spontaneous": "Spontaneous Application",
+    "immediate_start": "Immediate Start",
+    "form": {
+      "title": "Submit Application",
+      "description": "Submit your application for this position. We'll review it and get back to you soon.",
+      "full_name": "Full Name",
+      "name_placeholder": "Your full name",
+      "email": "Email",
+      "email_placeholder": "Your email address",
+      "phone": "Phone Number",
+      "phone_placeholder": "Your phone number (optional)",
+      "experience": "Years of Experience",
+      "experience_placeholder": "How many years of experience you have",
+      "message": "Motivation / Message",
+      "message_placeholder": "Tell us about yourself, your experience, and why you want to work at TECNARIT",
+      "cv": "CV/Resume File",
+      "cv_placeholder": "Upload your CV (PDF or Word)",
+      "cancel": "Cancel",
+      "submit": "Submit Application",
+      "success_title": "Application Submitted!",
+      "success_message": "Thank you for your interest in TECNARIT. We'll review your application and contact you soon.",
+      "error_title": "Error",
+      "error_message": "There was a problem submitting your application. Please try again."
+    },
+    "position": {
+      "qa_analyst": {
+        "title": "Quality Assurance Analyst",
+        "description": "We're looking for an experienced QA Analyst to join our testing team.",
+        "location": "Hybrid (Belgium or Morocco)",
+        "type": "Full-time",
+        "requirements_title": "Requirements",
+        "requirements": [
+          "4+ years of experience in software quality assurance",
+          "Strong understanding of software testing methodologies and life cycles",
+          "Experience with test case design, test execution, and defect reporting",
+          "Knowledge of testing tools such as JIRA, TestRail, and Zephyr",
+          "ISTQB certification (Foundation level minimum)",
+          "Excellent communication skills in English (Dutch and/or French is a plus)",
+          "Proactive approach to problem-solving and quality improvement",
+          "Bachelor's degree in Computer Science, Information Technology, or related field"
+        ],
+        "responsibilities_title": "Responsibilities",
+        "responsibilities": [
+          "Design, develop and execute test cases for functional and non-functional testing",
+          "Identify, document, and track defects through resolution",
+          "Collaborate with development teams to improve software quality",
+          "Perform regression testing to ensure software stability",
+          "Create detailed test reports and documentation",
+          "Participate in requirement analysis and test planning",
+          "Contribute to continuous improvement of testing processes"
+        ],
+        "apply": "Apply Now"
+      },
+      "qa_automation": {
+        "title": "QA Automation Engineer",
+        "description": "We're seeking a skilled QA Automation Engineer to develop and maintain our test automation frameworks.",
+        "location": "Hybrid (Belgium or Morocco)",
+        "type": "Full-time",
+        "requirements_title": "Requirements",
+        "requirements": [
+          "4+ years of experience in test automation",
+          "Strong programming skills in languages such as Java, JavaScript, or Python",
+          "Experience with test automation frameworks (Selenium, Cypress, Playwright, etc.)",
+          "Knowledge of API testing tools (Postman, REST Assured, etc.)",
+          "Experience with CI/CD pipelines and tools like Jenkins",
+          "ISTQB Advanced Level Test Automation Engineer certification preferred",
+          "Excellent problem-solving and analytical skills",
+          "Bachelor's degree in Computer Science, Information Technology, or related field"
+        ],
+        "responsibilities_title": "Responsibilities",
+        "responsibilities": [
+          "Design, develop, and maintain automated test scripts and frameworks",
+          "Implement API, UI, and integration test automation",
+          "Set up continuous integration for automated testing",
+          "Analyze test results and report defects",
+          "Create test automation documentation and best practices",
+          "Collaborate with development teams to improve software quality",
+          "Mentor team members on test automation best practices"
+        ],
+        "apply": "Apply Now"
+      },
+      "performance_tester": {
+        "title": "Performance Test Engineer",
+        "description": "We're looking for a Performance Test Engineer to ensure our clients' applications meet performance standards.",
+        "location": "Hybrid (Belgium or Morocco)",
+        "type": "Full-time",
+        "requirements_title": "Requirements",
+        "requirements": [
+          "4+ years of experience in performance testing",
+          "Hands-on experience with performance testing tools like JMeter, LoadRunner, or Gatling",
+          "Knowledge of application monitoring tools and performance metrics analysis",
+          "Experience with database performance testing and SQL optimization",
+          "Understanding of web architecture and network protocols",
+          "ISTQB certification with performance testing specialization preferred",
+          "Strong analytical and problem-solving skills",
+          "Bachelor's degree in Computer Science, Information Technology, or related field"
+        ],
+        "responsibilities_title": "Responsibilities",
+        "responsibilities": [
+          "Design and execute performance tests for web and mobile applications",
+          "Analyze performance metrics and identify bottlenecks",
+          "Create and maintain performance test scripts and scenarios",
+          "Collaborate with development teams to improve application performance",
+          "Document performance test results and recommendations",
+          "Set up monitoring for performance metrics in testing environments",
+          "Provide expertise on performance optimization strategies"
+        ],
+        "apply": "Apply Now"
+      }
+    }
   },
   "home": {
     "cta": {

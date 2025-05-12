@@ -4,7 +4,8 @@ import {
   Menu, X, Home, Wrench, Info, Mail, Check, CheckCircle, 
   TestTube, Ribbon, Bug, BugPlay, Code, HelpCircle, 
   FileQuestion, Building, Users, HandMetal, Handshake, 
-  HardHat, Workflow, ScrollText, Microscope, TestTubes
+  HardHat, Workflow, ScrollText, Microscope, TestTubes,
+  BriefcaseBusiness
 } from "lucide-react";
 import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
@@ -72,12 +73,19 @@ const Navbar = () => {
     <Info className="w-5 h-5" />
   ];
   
-  const navLinks = [
+  const mainNavLinks = [
     { name: t('nav.home'), href: "/", icon: <Home className="w-5 h-5" /> },
-    { name: t('nav.services'), href: "/services", icon: <Handshake className="w-5 h-5" /> },
+    { name: t('nav.services'), href: "/services", icon: <Workflow className="w-5 h-5" /> },
     { name: t('nav.about'), href: "/about", icon: <Building className="w-5 h-5" /> },
-    { name: t('nav.contact'), href: "/contact", icon: <Mail className="w-5 h-5" /> },
+    { name: t('nav.join_us'), href: "/join-us", icon: <Handshake className="w-5 h-5" /> },
+    { name: t('nav.jobs'), href: "/jobs", icon: <HardHat className="w-5 h-5" /> },
   ];
+  
+  // Separate contact for special styling
+  const contactLink = { name: t('nav.contact'), href: "/contact", icon: <Mail className="w-5 h-5" /> };
+  
+  // Combined for mobile menu
+  const allNavLinks = [...mainNavLinks, contactLink];
   
   const isActive = (path: string) => location === path;
 
@@ -99,10 +107,10 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation - Centered */}
-          <div className="hidden md:flex flex-grow justify-center">
-            <nav className="flex items-center justify-center space-x-8">
-              {navLinks.map((link) => (
+          {/* Desktop Navigation - Left aligned */}
+          <div className="hidden md:flex justify-start ml-8">
+            <nav className="flex items-center space-x-8">
+              {mainNavLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
@@ -121,8 +129,17 @@ const Navbar = () => {
             </nav>
           </div>
           
-          {/* Language Switcher - Right aligned */}
-          <div className="hidden md:flex ml-auto">
+          {/* Contact Button and Language Switcher - Right aligned */}
+          <div className="hidden md:flex ml-auto space-x-6 items-center">
+            <a
+              href={contactLink.href}
+              className={cn(
+                "tecnarit-gradient-bg hover:opacity-90 text-white px-4 py-2 rounded-md font-medium transition-colors border-none",
+                isActive(contactLink.href) && "opacity-90"
+              )}
+            >
+              {contactLink.name}
+            </a>
             <LanguageSwitcher />
           </div>
 
@@ -184,7 +201,7 @@ const Navbar = () => {
               
               <div className="flex-1 overflow-y-auto py-4">
                 <nav className="flex flex-col space-y-1">
-                  {navLinks.map((link) => (
+                  {allNavLinks.map((link) => (
                     <a
                       key={link.name}
                       href={link.href}

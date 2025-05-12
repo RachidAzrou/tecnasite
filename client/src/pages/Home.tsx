@@ -20,7 +20,7 @@ const Home = () => {
   return (
     <div className="bg-neutral-lightest min-h-screen flex flex-col">
       <Helmet>
-        <title>TECNARIT - Professional Software Testing & QA Services | Test IT Better</title>
+        <title>{t('page_titles.home')}</title>
         <meta name="description" content="TECNARIT offers comprehensive software testing services including functional, performance, automation and load testing with a Belgian-Moroccan nearshoring approach for optimal quality and cost-efficiency." />
         <meta name="keywords" content="software testing, QA services, TECNARIT, test automation, functional testing, performance testing, load testing, nearshoring, Belgian-Moroccan team" />
         <link rel="canonical" href="https://www.tecnarit.com" />

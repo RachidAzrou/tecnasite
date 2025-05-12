@@ -11,7 +11,7 @@ const Privacy = () => {
   return (
     <div className="bg-neutral-lightest min-h-screen flex flex-col">
       <Helmet>
-        <title>Privacy Policy | TECNARIT Software Testing Services</title>
+        <title>{t('page_titles.privacy')}</title>
         <meta name="description" content="TECNARIT's Privacy Policy explains how we protect and process your personal data when you use our software testing, QA and test automation services." />
         <meta name="keywords" content="TECNARIT privacy policy, GDPR compliance, software testing privacy, data protection, secure testing services, QA services privacy" />
         <link rel="canonical" href="https://www.tecnarit.com/privacy" />
@@ -24,7 +24,7 @@ const Privacy = () => {
       
       <Navbar />
       <main className="flex-grow">
-        <div className="h-2 w-full bg-gradient-to-r from-tecnarit-dark via-tecnarit-dark/90 to-tecnarit-dark"></div>
+
         
         {/* Breadcrumb Navigation - Good for SEO and user navigation */}
         <div className="bg-tecnarit-dark/95 py-2 px-4 sm:px-6 lg:px-8">

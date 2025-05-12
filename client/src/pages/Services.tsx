@@ -47,7 +47,7 @@ const ServicesPage = () => {
   return (
     <div className="bg-neutral-lightest min-h-screen flex flex-col">
       <Helmet>
-        <title>Software Testing Services | Functional, Performance, Load & Automation Testing | TECNARIT</title>
+        <title>{t('page_titles.services')}</title>
         <meta name="description" content="TECNARIT delivers comprehensive software testing services including functional testing, performance testing, load testing, test automation, integration testing, and UI/UX testing with our nearshoring approach." />
         <meta name="keywords" content="software testing services, functional testing, performance testing, load testing, test automation, UI testing, integration testing, nearshoring, QA testing, regression testing, security testing" />
         <link rel="canonical" href="https://www.tecnarit.com/services" />
@@ -152,7 +152,7 @@ const ServicesPage = () => {
       
       <Navbar />
       <main className="flex-grow">
-        <div className="h-2 w-full bg-gradient-to-r from-tecnarit-dark via-tecnarit-dark/90 to-tecnarit-dark"></div>
+
         
         {/* Breadcrumb Navigation - Good for SEO and user navigation */}
         <div className="bg-tecnarit-dark/95 py-2 px-4 sm:px-6 lg:px-8">

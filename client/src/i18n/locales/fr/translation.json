@@ -4,12 +4,187 @@
     "services": "Services",
     "about": "À Propos",
     "contact": "Contact",
-    "privacy": "Confidentialité"
+    "privacy": "Confidentialité",
+    "join_us": "Rejoignez-Nous",
+    "jobs": "Emplois"
+  },
+  "page_titles": {
+    "home": "TECNARIT┆Test IT Better",
+    "services": "Services┆TECNARIT",
+    "about": "À Propos┆TECNARIT",
+    "contact": "Contact┆TECNARIT",
+    "privacy": "Confidentialité┆TECNARIT",
+    "join_us": "Rejoignez-Nous┆TECNARIT",
+    "jobs": "Emplois┆TECNARIT"
   },
   "hero": {
     "title": "Test IT Better",
     "subtitle": "Solutions d'assurance qualité pour votre entreprise",
     "cta": "Contactez-Nous"
+  },
+  "join_us": {
+    "title": "Rejoignez Notre Équipe de Test Logiciel",
+    "subtitle": "Chez TECNARIT, nous construisons l'avenir des tests logiciels grâce à l'expertise, l'innovation et une passion pour la qualité.",
+    "benefits_title": "Pourquoi Travailler chez TECNARIT ?",
+    "benefits_description": "Nous ne sommes pas simplement une entreprise de test ; nous sommes une équipe de professionnels passionnés dédiés à l'excellence en matière de qualité logicielle.",
+    "benefits": {
+      "growth": {
+        "title": "Croissance Continue",
+        "description": "Nous investissons dans votre développement via des certifications, des programmes de formation et des opportunités d'apprentissage."
+      },
+      "balance": {
+        "title": "Équilibre Travail-Vie",
+        "description": "Horaires flexibles et politiques qui respectent votre temps personnel et votre bien-être."
+      },
+      "international": {
+        "title": "Environnement International",
+        "description": "Acquérez de l'expérience dans un environnement multiculturel avec notre modèle de nearshoring Belgique-Maroc."
+      },
+      "projects": {
+        "title": "Projets Stimulants",
+        "description": "Travaillez sur des projets divers et stimulants dans différentes industries et technologies."
+      }
+    },
+    "perks": {
+      "title": "Avantages de Travailler chez TECNARIT",
+      "remote": {
+        "title": "Travail Hybride",
+        "description": "Flexibilité pour travailler depuis chez vous ou au bureau."
+      },
+      "development": {
+        "title": "Développement Professionnel",
+        "description": "Accès à des certifications, des cours et des conférences."
+      },
+      "collaboration": {
+        "title": "Culture Collaborative",
+        "description": "Un environnement de travail solidaire et axé sur l'équipe."
+      },
+      "career": {
+        "title": "Évolution de Carrière",
+        "description": "Parcours clairs pour la promotion et le développement."
+      }
+    },
+    "openings": {
+      "title": "Consultez Nos Offres d'Emploi",
+      "description": "Prêt à franchir le pas ? Consultez nos offres d'emploi actuelles et rejoignez notre équipe.",
+      "button": "Voir les Offres d'Emploi"
+    }
+  },
+  "jobs": {
+    "title": "Offres d'Emploi Actuelles",
+    "subtitle": "Rejoignez notre équipe d'experts en test et aidez à intégrer la qualité dans les systèmes logiciels pour nos clients",
+    "no_fit": "Vous ne trouvez pas ce qui vous convient ?",
+    "spontaneous": "Nous sommes toujours à la recherche de personnes talentueuses pour rejoindre notre équipe. Soumettez une candidature spontanée et nous vous considérerons pour de futures opportunités.",
+    "submit_spontaneous": "Candidature Spontanée",
+    "immediate_start": "Démarrage Immédiat",
+    "form": {
+      "title": "Soumettre une Candidature",
+      "description": "Soumettez votre candidature pour ce poste. Nous l'examinerons et reviendrons vers vous prochainement.",
+      "full_name": "Nom Complet",
+      "name_placeholder": "Votre nom complet",
+      "email": "E-mail",
+      "email_placeholder": "Votre adresse e-mail",
+      "phone": "Numéro de Téléphone",
+      "phone_placeholder": "Votre numéro de téléphone (optionnel)",
+      "experience": "Années d'Expérience",
+      "experience_placeholder": "Combien d'années d'expérience avez-vous",
+      "message": "Motivation / Message",
+      "message_placeholder": "Parlez-nous de vous, de votre expérience et pourquoi vous souhaitez rejoindre TECNARIT",
+      "cv": "Fichier CV/Resume",
+      "cv_placeholder": "Téléchargez votre CV (PDF ou Word)",
+      "cancel": "Annuler",
+      "submit": "Soumettre la Candidature",
+      "success_title": "Candidature Soumise !",
+      "success_message": "Merci pour votre intérêt pour TECNARIT. Nous examinerons votre candidature et vous contacterons bientôt.",
+      "error_title": "Erreur",
+      "error_message": "Un problème est survenu lors de la soumission de votre candidature. Veuillez réessayer."
+    },
+    "position": {
+      "qa_analyst": {
+        "title": "Quality Assurance Analyst",
+        "description": "Nous recherchons un analyste QA expérimenté pour rejoindre notre équipe de test.",
+        "location": "Hybride (Belgique ou Maroc)",
+        "type": "Temps plein",
+        "requirements_title": "Exigences",
+        "requirements": [
+          "4+ ans d'expérience en assurance qualité logicielle",
+          "Bonne compréhension des méthodologies de test et des cycles de vie logiciels",
+          "Expérience dans la conception de cas de test, l'exécution de tests et le reporting de défauts",
+          "Connaissance d'outils de test tels que JIRA, TestRail et Zephyr",
+          "Certification ISTQB (niveau Foundation minimum)",
+          "Excellentes compétences en communication en anglais (néerlandais et/ou français est un plus)",
+          "Approche proactive de la résolution de problèmes et de l'amélioration de la qualité",
+          "Diplôme de bachelor en informatique, technologie de l'information ou domaine connexe"
+        ],
+        "responsibilities_title": "Responsabilités",
+        "responsibilities": [
+          "Concevoir, développer et exécuter des cas de test pour des tests fonctionnels et non fonctionnels",
+          "Identifier, documenter et suivre les défauts jusqu'à leur résolution",
+          "Collaborer avec les équipes de développement pour améliorer la qualité des logiciels",
+          "Effectuer des tests de régression pour assurer la stabilité des logiciels",
+          "Créer des rapports de test détaillés et de la documentation",
+          "Participer à l'analyse des exigences et à la planification des tests",
+          "Contribuer à l'amélioration continue des processus de test"
+        ],
+        "apply": "Postuler Maintenant"
+      },
+      "qa_automation": {
+        "title": "QA Automation Engineer",
+        "description": "Nous recherchons un ingénieur QA Automation compétent pour développer et maintenir nos frameworks d'automatisation de tests.",
+        "location": "Hybride (Belgique ou Maroc)",
+        "type": "Temps plein",
+        "requirements_title": "Exigences",
+        "requirements": [
+          "4+ ans d'expérience en automatisation de tests",
+          "Solides compétences en programmation dans des langages tels que Java, JavaScript ou Python",
+          "Expérience avec des frameworks d'automatisation de tests (Selenium, Cypress, Playwright, etc.)",
+          "Connaissance des outils de test API (Postman, REST Assured, etc.)",
+          "Expérience avec les pipelines CI/CD et des outils comme Jenkins",
+          "Certification ISTQB Advanced Level Test Automation Engineer préférée",
+          "Excellentes compétences en résolution de problèmes et analyse",
+          "Diplôme de bachelor en informatique, technologie de l'information ou domaine connexe"
+        ],
+        "responsibilities_title": "Responsabilités",
+        "responsibilities": [
+          "Concevoir, développer et maintenir des scripts de test automatisés et des frameworks",
+          "Mettre en œuvre l'automatisation des tests API, UI et d'intégration",
+          "Configurer l'intégration continue pour les tests automatisés",
+          "Analyser les résultats des tests et signaler les défauts",
+          "Créer de la documentation et des meilleures pratiques d'automatisation de tests",
+          "Collaborer avec les équipes de développement pour améliorer la qualité des logiciels",
+          "Guider les membres de l'équipe sur les meilleures pratiques d'automatisation de tests"
+        ],
+        "apply": "Postuler Maintenant"
+      },
+      "performance_tester": {
+        "title": "Performance Test Engineer",
+        "description": "Nous recherchons un ingénieur de test de performance pour garantir que les applications de nos clients répondent aux normes de performance.",
+        "location": "Hybride (Belgique ou Maroc)",
+        "type": "Temps plein",
+        "requirements_title": "Exigences",
+        "requirements": [
+          "4+ ans d'expérience en tests de performance",
+          "Expérience pratique avec des outils de test de performance comme JMeter, LoadRunner ou Gatling",
+          "Connaissance des outils de surveillance d'applications et d'analyse des métriques de performance",
+          "Expérience en tests de performance de bases de données et optimisation SQL",
+          "Compréhension de l'architecture web et des protocoles réseau",
+          "Certification ISTQB avec spécialisation en tests de performance préférée",
+          "Solides compétences analytiques et de résolution de problèmes",
+          "Diplôme de bachelor en informatique, technologie de l'information ou domaine connexe"
+        ],
+        "responsibilities_title": "Responsabilités",
+        "responsibilities": [
+          "Concevoir et exécuter des tests de performance pour les applications web et mobiles",
+          "Analyser les métriques de performance et identifier les goulots d'étranglement",
+          "Créer et maintenir des scripts et scénarios de test de performance",
+          "Collaborer avec les équipes de développement pour améliorer les performances des applications",
+          "Documenter les résultats des tests de performance et les recommandations",
+          "Mettre en place une surveillance des métriques de performance dans les environnements de test",
+          "Fournir une expertise sur les stratégies d'optimisation des performances"
+        ],
+        "apply": "Postuler Maintenant"
+      }
+    }
   },
   "home": {
     "cta": {
@@ -145,7 +320,7 @@
     "company": "Entreprise",
     "services": "Services",
     "legal": "Légal",
-    "copyright": "© 2023 TECNARIT. Tous droits réservés.",
+    "copyright": "© TECNARIT. Tous droits réservés.",
     "terms": "Conditions d'Utilisation",
     "privacy": "Politique de Confidentialité",
     "address": "Cleydaellaan 16/5, 2630 Aartselaar, Belgique",

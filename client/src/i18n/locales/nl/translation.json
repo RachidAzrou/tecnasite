@@ -4,12 +4,187 @@
     "services": "Diensten",
     "about": "Over Ons",
     "contact": "Contact",
-    "privacy": "Privacy"
+    "privacy": "Privacy",
+    "join_us": "Kom Bij Ons",
+    "jobs": "Vacatures"
+  },
+  "page_titles": {
+    "home": "TECNARIT┆Test IT Better",
+    "services": "Diensten┆TECNARIT",
+    "about": "Over Ons┆TECNARIT",
+    "contact": "Contact┆TECNARIT",
+    "privacy": "Privacy┆TECNARIT",
+    "join_us": "Kom Bij Ons┆TECNARIT",
+    "jobs": "Vacatures┆TECNARIT"
   },
   "hero": {
     "title": "Test IT Better",
     "subtitle": "Kwaliteitsborgingsoplossingen voor uw bedrijf",
     "cta": "Neem Contact Op"
+  },
+  "join_us": {
+    "title": "Word Lid van Ons Software Testing Team",
+    "subtitle": "Bij TECNARIT bouwen we aan de toekomst van softwaretesten door expertise, innovatie en een passie voor kwaliteit.",
+    "benefits_title": "Waarom bij TECNARIT Werken?",
+    "benefits_description": "We zijn niet zomaar een testbedrijf; we zijn een team van gepassioneerde professionals met toewijding aan excellentie in softwarekwaliteit.",
+    "benefits": {
+      "growth": {
+        "title": "Constante Groei",
+        "description": "We investeren in uw ontwikkeling via certificeringen, trainingsprogramma's en leermogelijkheden."
+      },
+      "balance": {
+        "title": "Work-Life Balans",
+        "description": "Flexibele werktijden en beleid dat uw persoonlijke tijd en welzijn respecteert."
+      },
+      "international": {
+        "title": "Internationale Omgeving",
+        "description": "Doe ervaring op in een multiculturele omgeving met ons België-Marokko nearshoring model."
+      },
+      "projects": {
+        "title": "Uitdagende Projecten",
+        "description": "Werk aan diverse, uitdagende projecten in verschillende industrieën en technologieën."
+      }
+    },
+    "perks": {
+      "title": "Voordelen van Werken bij TECNARIT",
+      "remote": {
+        "title": "Hybride Werken",
+        "description": "Flexibiliteit om vanuit huis of op kantoor te werken."
+      },
+      "development": {
+        "title": "Professionele Ontwikkeling",
+        "description": "Toegang tot certificeringen, cursussen en conferenties."
+      },
+      "collaboration": {
+        "title": "Samenwerkende Cultuur",
+        "description": "Een ondersteunende en teamgerichte werkomgeving."
+      },
+      "career": {
+        "title": "Carrièregroei",
+        "description": "Duidelijke paden voor promotie en ontwikkeling."
+      }
+    },
+    "openings": {
+      "title": "Bekijk Onze Vacatures",
+      "description": "Klaar om de stap te zetten? Bekijk onze huidige vacatures en wordt deel van ons team.",
+      "button": "Bekijk Vacatures"
+    }
+  },
+  "jobs": {
+    "title": "Huidige Vacatures",
+    "subtitle": "Word lid van ons team van testexperts en help bij het opbouwen van kwaliteit in softwaresystemen voor onze klanten",
+    "no_fit": "Ziet u niet de juiste match?",
+    "spontaneous": "We zijn altijd op zoek naar getalenteerde professionals om ons team te versterken. Stuur een spontane sollicitatie en we zullen u overwegen voor toekomstige kansen.",
+    "submit_spontaneous": "Spontane Sollicitatie",
+    "immediate_start": "Direct Beginnen",
+    "form": {
+      "title": "Sollicitatie Indienen",
+      "description": "Dien uw sollicitatie in voor deze functie. We zullen het beoordelen en zo spoedig mogelijk contact met u opnemen.",
+      "full_name": "Volledige Naam",
+      "name_placeholder": "Uw volledige naam",
+      "email": "E-mail",
+      "email_placeholder": "Uw e-mailadres",
+      "phone": "Telefoonnummer",
+      "phone_placeholder": "Uw telefoonnummer (optioneel)",
+      "experience": "Jaren Ervaring",
+      "experience_placeholder": "Hoeveel jaar ervaring heeft u",
+      "message": "Motivatie / Bericht",
+      "message_placeholder": "Vertel ons over uzelf, uw ervaring en waarom u bij TECNARIT wilt werken",
+      "cv": "CV/Resume Bestand",
+      "cv_placeholder": "Upload uw CV (PDF of Word)",
+      "cancel": "Annuleren",
+      "submit": "Sollicitatie Indienen",
+      "success_title": "Sollicitatie Ingediend!",
+      "success_message": "Bedankt voor uw interesse in TECNARIT. We zullen uw sollicitatie beoordelen en spoedig contact met u opnemen.",
+      "error_title": "Fout",
+      "error_message": "Er is een probleem opgetreden bij het indienen van uw sollicitatie. Probeer het opnieuw."
+    },
+    "position": {
+      "qa_analyst": {
+        "title": "Quality Assurance Analyst",
+        "description": "We zoeken een ervaren QA Analist om ons testteam te versterken.",
+        "location": "Hybride (België of Marokko)",
+        "type": "Voltijds",
+        "requirements_title": "Vereisten",
+        "requirements": [
+          "4+ jaar ervaring in software kwaliteitsborging",
+          "Gedegen kennis van softwaretestmethodologieën en -levenscycli",
+          "Ervaring met het ontwerpen van testcases, testuitvoering en defectrapportage",
+          "Kennis van testtools zoals JIRA, TestRail en Zephyr",
+          "ISTQB-certificering (minimaal Foundation level)",
+          "Uitstekende communicatievaardigheden in het Engels (Nederlands en/of Frans is een plus)",
+          "Proactieve aanpak van probleemoplossing en kwaliteitsverbetering",
+          "Bachelor diploma in Informatica, Informatietechnologie of aanverwant vakgebied"
+        ],
+        "responsibilities_title": "Verantwoordelijkheden",
+        "responsibilities": [
+          "Ontwerpen, ontwikkelen en uitvoeren van testcases voor functionele en niet-functionele testen",
+          "Identificeren, documenteren en volgen van defecten tot aan de oplossing",
+          "Samenwerken met ontwikkelteams om software kwaliteit te verbeteren",
+          "Regressietesten uitvoeren om softwarestabiliteit te garanderen",
+          "Gedetailleerde testrapporten en documentatie maken",
+          "Deelnemen aan requirements analyse en testplanning",
+          "Bijdragen aan de continue verbetering van testprocessen"
+        ],
+        "apply": "Nu Solliciteren"
+      },
+      "qa_automation": {
+        "title": "QA Automation Engineer",
+        "description": "We zoeken een bekwame QA Automation Engineer om onze testautomatisering frameworks te ontwikkelen en onderhouden.",
+        "location": "Hybride (België of Marokko)",
+        "type": "Voltijds",
+        "requirements_title": "Vereisten",
+        "requirements": [
+          "4+ jaar ervaring in testautomatisering",
+          "Sterke programmeervaardigheden in talen zoals Java, JavaScript of Python",
+          "Ervaring met testautomatiseringsframeworks (Selenium, Cypress, Playwright, etc.)",
+          "Kennis van API-testtools (Postman, REST Assured, etc.)",
+          "Ervaring met CI/CD-pijplijnen en tools zoals Jenkins",
+          "ISTQB Advanced Level Test Automation Engineer certificering heeft voorkeur",
+          "Uitstekende probleemoplossings- en analytische vaardigheden",
+          "Bachelor diploma in Informatica, Informatietechnologie of aanverwant vakgebied"
+        ],
+        "responsibilities_title": "Verantwoordelijkheden",
+        "responsibilities": [
+          "Ontwerpen, ontwikkelen en onderhouden van geautomatiseerde testscripts en frameworks",
+          "Implementeren van API-, UI- en integratietestautomatisering",
+          "Opzetten van continue integratie voor geautomatiseerd testen",
+          "Analyseren van testresultaten en rapporteren van defecten",
+          "Creëren van testautomatiseringsdocumentatie en best practices",
+          "Samenwerken met ontwikkelteams om software kwaliteit te verbeteren",
+          "Begeleiden van teamleden in best practices voor testautomatisering"
+        ],
+        "apply": "Nu Solliciteren"
+      },
+      "performance_tester": {
+        "title": "Performance Test Engineer",
+        "description": "We zijn op zoek naar een Performance Test Engineer om ervoor te zorgen dat de applicaties van onze klanten aan de prestatienormen voldoen.",
+        "location": "Hybride (België of Marokko)",
+        "type": "Voltijds",
+        "requirements_title": "Vereisten",
+        "requirements": [
+          "4+ jaar ervaring in performancetesten",
+          "Praktische ervaring met performancetesttools zoals JMeter, LoadRunner of Gatling",
+          "Kennis van applicatiemonitoringtools en analyse van prestatiemetrieken",
+          "Ervaring met database performancetesten en SQL-optimalisatie",
+          "Begrip van webarchitectuur en netwerkprotocollen",
+          "ISTQB-certificering met specialisatie in performancetesten heeft voorkeur",
+          "Sterke analytische en probleemoplossingsvaardigheden",
+          "Bachelor diploma in Informatica, Informatietechnologie of aanverwant vakgebied"
+        ],
+        "responsibilities_title": "Verantwoordelijkheden",
+        "responsibilities": [
+          "Ontwerpen en uitvoeren van performancetests voor web- en mobiele applicaties",
+          "Analyseren van prestatiemetrieken en identificeren van knelpunten",
+          "Creëren en onderhouden van performancetest scripts en scenario's",
+          "Samenwerken met ontwikkelteams om applicatieprestaties te verbeteren",
+          "Documenteren van performancetest resultaten en aanbevelingen",
+          "Opzetten van monitoring voor prestatiemetrieken in testomgevingen",
+          "Expertise bieden over strategieën voor prestatie-optimalisatie"
+        ],
+        "apply": "Nu Solliciteren"
+      }
+    }
   },
   "home": {
     "cta": {
@@ -145,7 +320,7 @@
     "company": "Bedrijf",
     "services": "Diensten",
     "legal": "Juridisch",
-    "copyright": "© 2023 TECNARIT. Alle rechten voorbehouden.",
+    "copyright": "© TECNARIT. Alle rechten voorbehouden.",
     "terms": "Servicevoorwaarden",
     "privacy": "Privacybeleid",
     "address": "Cleydaellaan 16/5, 2630 Aartselaar, België",

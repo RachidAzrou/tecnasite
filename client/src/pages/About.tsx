@@ -15,7 +15,7 @@ const AboutPage = () => {
   return (
     <div className="bg-neutral-lightest min-h-screen flex flex-col">
       <Helmet>
-        <title>About TECNARIT | Software Testing Experts | Belgian-Moroccan Nearshoring</title>
+        <title>{t('page_titles.about')}</title>
         <meta name="description" content="TECNARIT is a specialized software testing company with Belgian management and a skilled Moroccan team. Our nearshoring model delivers quality QA, functional, performance and automation testing at competitive rates." />
         <meta name="keywords" content="TECNARIT team, software testing company, Belgian-Moroccan nearshoring, QA experts, software quality assurance, test automation specialists, nearshore testing, quality assurance team, software testing professionals, performance testing experts" />
         <link rel="canonical" href="https://www.tecnarit.com/about" />
@@ -27,7 +27,7 @@ const AboutPage = () => {
       </Helmet>
       <Navbar />
       <main>
-        <div className="h-2 w-full bg-gradient-to-r from-tecnarit-dark via-tecnarit-dark/90 to-tecnarit-dark"></div>
+
         
         {/* Breadcrumb Navigation - Good for SEO and user navigation */}
         <div className="bg-tecnarit-dark/95 py-2 px-4 sm:px-6 lg:px-8">

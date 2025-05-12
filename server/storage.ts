@@ -1,4 +1,4 @@
-import { users, type User, type InsertUser, type ContactMessage, type InsertContactMessage } from "@shared/schema";
+import { users, type User, type InsertUser, type ContactMessage, type InsertContactMessage, type JobApplication, type InsertJobApplication } from "@shared/schema";
 
 // modify the interface with any CRUD methods
 // you might need
@@ -8,19 +8,24 @@ export interface IStorage {
   getUserByUsername(username: string): Promise<User | undefined>;
   createUser(user: InsertUser): Promise<User>;
   createContactMessage(message: InsertContactMessage): Promise<ContactMessage>;
+  createJobApplication(application: InsertJobApplication): Promise<JobApplication>;
 }
 
 export class MemStorage implements IStorage {
   private users: Map<number, User>;
   private contactMessages: Map<number, ContactMessage>;
+  private jobApplications: Map<number, JobApplication>;
   userCurrentId: number;
   contactCurrentId: number;
+  jobApplicationCurrentId: number;
 
   constructor() {
     this.users = new Map();
     this.contactMessages = new Map();
+    this.jobApplications = new Map();
     this.userCurrentId = 1;
     this.contactCurrentId = 1;
+    this.jobApplicationCurrentId = 1;
   }
 
   async getUser(id: number): Promise<User | undefined> {
@@ -50,6 +55,21 @@ export class MemStorage implements IStorage {
     };
     this.contactMessages.set(id, contactMessage);
     return contactMessage;
+  }
+
+  async createJobApplication(application: InsertJobApplication): Promise<JobApplication> {
+    const id = this.jobApplicationCurrentId++;
+    const now = new Date();
+    const jobApplication: JobApplication = {
+      ...application,
+      id,
+      createdAt: now,
+      phone: application.phone || null,
+      experience: application.experience || null,
+      resumeFileName: application.resumeFileName || null
+    };
+    this.jobApplications.set(id, jobApplication);
+    return jobApplication;
   }
 }
 

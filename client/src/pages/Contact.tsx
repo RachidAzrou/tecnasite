@@ -90,7 +90,7 @@ const ContactPage = () => {
   return (
     <div className="bg-neutral-lightest min-h-screen flex flex-col">
       <Helmet>
-        <title>Contact TECNARIT | Software Testing and QA Services | Test IT Better</title>
+        <title>{t('page_titles.contact')}</title>
         <meta name="description" content="Get in touch with TECNARIT for professional software testing services including functional testing, performance testing, load testing, and test automation. Our Belgian-Moroccan nearshoring model ensures quality at competitive rates." />
         <meta name="keywords" content="contact TECNARIT, software testing services, QA services, nearshoring, test automation services, functional testing company, performance testing specialists, load testing experts, software quality assurance" />
         <link rel="canonical" href="https://www.tecnarit.com/contact" />
