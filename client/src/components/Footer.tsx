@@ -59,7 +59,7 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-tecnarit-green/20 pt-8">
           <p className="text-base text-neutral-light xl:text-center">
-            {t('footer.copyright').replace('2023', new Date().getFullYear().toString())}
+            {t('footer.copyright')}
           </p>
         </div>
       </div>
