@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { aboutUsHighlights } from "@/lib/data";
 import { CheckCircle2, Users, Globe, MapPin } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Helmet } from "react-helmet";
+import { Breadcrumb } from "@/components/ui/breadcrumb";
 
 // Import the TECNARIT logo for decoration
 import tecnaritIcon from "../assets/tecnarit-icon.png";
@@ -12,9 +14,31 @@ const AboutPage = () => {
   const { t } = useTranslation();
   return (
     <div className="bg-neutral-lightest min-h-screen flex flex-col">
+      <Helmet>
+        <title>About TECNARIT | Software Testing Experts | Belgian-Moroccan Nearshoring</title>
+        <meta name="description" content="TECNARIT is a specialized software testing company with Belgian management and a skilled Moroccan team. Our nearshoring model delivers quality QA, functional, performance and automation testing at competitive rates." />
+        <meta name="keywords" content="TECNARIT team, software testing company, Belgian-Moroccan nearshoring, QA experts, software quality assurance, test automation specialists, nearshore testing, quality assurance team, software testing professionals, performance testing experts" />
+        <link rel="canonical" href="https://www.tecnarit.com/about" />
+        <meta property="og:title" content="About TECNARIT | Software Testing Experts with Belgian-Moroccan Nearshoring" />
+        <meta property="og:description" content="Learn about TECNARIT's unique nearshoring approach to software testing, combining Belgian management expertise with our talented Moroccan team to deliver cost-effective, high-quality testing solutions." />
+        <meta property="og:url" content="https://www.tecnarit.com/about" />
+        <meta name="twitter:title" content="About TECNARIT | Software Testing Experts" />
+        <meta name="twitter:description" content="TECNARIT offers a unique Belgian-Moroccan nearshoring model for software testing, combining European management with North African talent for optimal quality at competitive rates." />
+      </Helmet>
       <Navbar />
       <main>
         <div className="h-2 w-full bg-gradient-to-r from-tecnarit-dark via-tecnarit-dark/90 to-tecnarit-dark"></div>
+        
+        {/* Breadcrumb Navigation - Good for SEO and user navigation */}
+        <div className="bg-tecnarit-dark/95 py-2 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <Breadcrumb 
+              segments={[
+                { name: t('nav.about'), href: '/about' }
+              ]}
+            />
+          </div>
+        </div>
         <section className="pt-14 pb-16 relative overflow-hidden text-white" style={{ background: 'linear-gradient(180deg, #0f1729 0%, #132b23 50%, #183728 100%)' }}>
           {/* Animated background elements */}
           <div className="absolute top-0 left-0 w-full h-full">

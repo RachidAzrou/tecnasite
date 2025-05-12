@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
+import { Breadcrumb } from "@/components/ui/breadcrumb";
 
 const Privacy = () => {
   const { t } = useTranslation();
@@ -10,13 +11,31 @@ const Privacy = () => {
   return (
     <div className="bg-neutral-lightest min-h-screen flex flex-col">
       <Helmet>
-        <title>Privacy Policy | TECNARIT</title>
-        <meta name="description" content="TECNARIT's Privacy Policy - Learn how we protect your personal data" />
+        <title>Privacy Policy | TECNARIT Software Testing Services</title>
+        <meta name="description" content="TECNARIT's Privacy Policy explains how we protect and process your personal data when you use our software testing, QA and test automation services." />
+        <meta name="keywords" content="TECNARIT privacy policy, GDPR compliance, software testing privacy, data protection, secure testing services, QA services privacy" />
+        <link rel="canonical" href="https://www.tecnarit.com/privacy" />
+        <meta property="og:title" content="Privacy Policy | TECNARIT Software Testing Services" />
+        <meta property="og:description" content="Learn how TECNARIT protects and respects your privacy and personal data while providing professional software testing services." />
+        <meta property="og:url" content="https://www.tecnarit.com/privacy" />
+        <meta name="twitter:title" content="Privacy Policy | TECNARIT" />
+        <meta name="twitter:description" content="TECNARIT's commitment to protecting your personal data while delivering high-quality software testing services." />
       </Helmet>
       
       <Navbar />
       <main className="flex-grow">
         <div className="h-2 w-full bg-gradient-to-r from-tecnarit-dark via-tecnarit-dark/90 to-tecnarit-dark"></div>
+        
+        {/* Breadcrumb Navigation - Good for SEO and user navigation */}
+        <div className="bg-tecnarit-dark/95 py-2 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <Breadcrumb 
+              segments={[
+                { name: 'Privacy', href: '/privacy' }
+              ]}
+            />
+          </div>
+        </div>
         {/* Hero Section */}
         <section className="pt-14 pb-16 relative overflow-hidden text-white" style={{ background: 'linear-gradient(180deg, #0f1729 0%, #132b23 50%, #183728 100%)' }}>
           {/* Animated background elements */}

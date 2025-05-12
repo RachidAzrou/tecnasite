@@ -6,6 +6,7 @@ import { serviceItems } from "@/lib/data";
 import { CheckSquare, BarChart2, Cog, Check } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
+import { Breadcrumb } from "@/components/ui/breadcrumb";
 
 const ServiceCard = ({ 
   title, 
@@ -46,13 +47,123 @@ const ServicesPage = () => {
   return (
     <div className="bg-neutral-lightest min-h-screen flex flex-col">
       <Helmet>
-        <title>Services | TECNARIT</title>
-        <meta name="description" content="Comprehensive software testing services offered by TECNARIT including functional testing, performance testing, and test automation." />
+        <title>Software Testing Services | Functional, Performance, Load & Automation Testing | TECNARIT</title>
+        <meta name="description" content="TECNARIT delivers comprehensive software testing services including functional testing, performance testing, load testing, test automation, integration testing, and UI/UX testing with our nearshoring approach." />
+        <meta name="keywords" content="software testing services, functional testing, performance testing, load testing, test automation, UI testing, integration testing, nearshoring, QA testing, regression testing, security testing" />
+        <link rel="canonical" href="https://www.tecnarit.com/services" />
+        <meta property="og:title" content="Software Testing Services | Functional, Performance & Automation Testing | TECNARIT" />
+        <meta property="og:description" content="Discover our complete range of software testing services including functional, performance, load, automation, integration, and UI/UX testing. Belgian-Moroccan nearshoring for optimal quality and cost-efficiency." />
+        <meta property="og:url" content="https://www.tecnarit.com/services" />
+        <meta name="twitter:title" content="Software Testing Services by TECNARIT" />
+        <meta name="twitter:description" content="Professional software testing services including functional, performance, load testing and test automation. Our Belgian-Moroccan nearshoring model ensures quality at competitive rates." />
+        
+        {/* JSON-LD structured data for better SEO */}
+        <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "Service",
+                  "name": "Functional Testing",
+                  "description": "Verify your software behaves exactly as expected by testing it against functional requirements and specifications.",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "TECNARIT",
+                    "url": "https://www.tecnarit.com"
+                  },
+                  "serviceType": "Software Testing",
+                  "areaServed": ["Belgium", "Netherlands", "France", "Germany", "Luxembourg"]
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "Service",
+                  "name": "Non-Functional Testing",
+                  "description": "Evaluate the performance, security, usability and reliability aspects of your software to ensure it meets quality standards.",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "TECNARIT",
+                    "url": "https://www.tecnarit.com"
+                  },
+                  "serviceType": "Software Testing",
+                  "areaServed": ["Belgium", "Netherlands", "France", "Germany", "Luxembourg"]
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "Service",
+                  "name": "Test Automation",
+                  "description": "Accelerate testing cycles with customized test automation solutions that improve efficiency and test coverage.",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "TECNARIT",
+                    "url": "https://www.tecnarit.com"
+                  },
+                  "serviceType": "Software Testing",
+                  "areaServed": ["Belgium", "Netherlands", "France", "Germany", "Luxembourg"]
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "Service",
+                  "name": "UI/UX Testing",
+                  "description": "Evaluate your software from the user's perspective to enhance usability, accessibility, and overall experience.",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "TECNARIT",
+                    "url": "https://www.tecnarit.com"
+                  },
+                  "serviceType": "Software Testing",
+                  "areaServed": ["Belgium", "Netherlands", "France", "Germany", "Luxembourg"]
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@type": "Service",
+                  "name": "Integration Testing",
+                  "description": "Ensure all components and systems work together seamlessly by validating the interactions between integrated units.",
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "TECNARIT",
+                    "url": "https://www.tecnarit.com"
+                  },
+                  "serviceType": "Software Testing",
+                  "areaServed": ["Belgium", "Netherlands", "France", "Germany", "Luxembourg"]
+                }
+              }
+            ]
+          }
+        `}
+        </script>
       </Helmet>
       
       <Navbar />
       <main className="flex-grow">
         <div className="h-2 w-full bg-gradient-to-r from-tecnarit-dark via-tecnarit-dark/90 to-tecnarit-dark"></div>
+        
+        {/* Breadcrumb Navigation - Good for SEO and user navigation */}
+        <div className="bg-tecnarit-dark/95 py-2 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <Breadcrumb 
+              segments={[
+                { name: t('nav.services'), href: '/services' }
+              ]}
+            />
+          </div>
+        </div>
         <section className="pt-14 pb-16 relative overflow-hidden text-white" style={{ background: 'linear-gradient(180deg, #0f1729 0%, #132b23 50%, #183728 100%)' }}>
           {/* Animated background elements */}
           <div className="absolute top-0 left-0 w-full h-full">

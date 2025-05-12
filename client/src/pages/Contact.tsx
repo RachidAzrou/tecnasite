@@ -13,6 +13,8 @@ import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
 import { Phone, Mail, MapPin, Send, CheckCircle } from "lucide-react";
 import { contactFormSchema } from "@/lib/data";
+import { Helmet } from "react-helmet";
+import { Breadcrumb } from "@/components/ui/breadcrumb";
 
 // Import Tecnarit logo for decoration
 import tecnaritIcon from "@assets/Color logo - no background.png";
@@ -87,9 +89,31 @@ const ContactPage = () => {
 
   return (
     <div className="bg-neutral-lightest min-h-screen flex flex-col">
+      <Helmet>
+        <title>Contact TECNARIT | Software Testing and QA Services | Test IT Better</title>
+        <meta name="description" content="Get in touch with TECNARIT for professional software testing services including functional testing, performance testing, load testing, and test automation. Our Belgian-Moroccan nearshoring model ensures quality at competitive rates." />
+        <meta name="keywords" content="contact TECNARIT, software testing services, QA services, nearshoring, test automation services, functional testing company, performance testing specialists, load testing experts, software quality assurance" />
+        <link rel="canonical" href="https://www.tecnarit.com/contact" />
+        <meta property="og:title" content="Contact TECNARIT | Software Testing and QA Services" />
+        <meta property="og:description" content="Reach out to TECNARIT for expert software testing solutions. Our Belgian-Moroccan nearshoring model delivers high-quality testing services at competitive rates." />
+        <meta property="og:url" content="https://www.tecnarit.com/contact" />
+        <meta name="twitter:title" content="Contact TECNARIT for Software Testing Services" />
+        <meta name="twitter:description" content="Get in touch with our testing experts for functional testing, performance testing, load testing, and test automation services." />
+      </Helmet>
       <Navbar />
       <main>
         <div className="h-2 w-full bg-gradient-to-r from-tecnarit-dark via-tecnarit-dark/90 to-tecnarit-dark"></div>
+        
+        {/* Breadcrumb Navigation - Good for SEO and user navigation */}
+        <div className="bg-tecnarit-dark/95 py-2 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <Breadcrumb 
+              segments={[
+                { name: t('nav.contact'), href: '/contact' }
+              ]}
+            />
+          </div>
+        </div>
         <section className="pt-14 pb-16 relative overflow-hidden text-white" style={{ background: 'linear-gradient(180deg, #0f1729 0%, #132b23 50%, #183728 100%)' }}>
           {/* Animated background elements */}
           <div className="absolute top-0 left-0 w-full h-full">
