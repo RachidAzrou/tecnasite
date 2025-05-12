@@ -2,19 +2,19 @@
   "nav": {
     "home": "Home",
     "services": "Diensten",
-    "about": "Over Ons",
+    "about": "Over ons",
     "contact": "Contact",
     "privacy": "Privacy",
-    "join_us": "Kom Bij Ons",
+    "join_us": "Sluit je aan",
     "jobs": "Vacatures"
   },
   "page_titles": {
     "home": "TECNARIT┆Test IT Better",
     "services": "Diensten┆TECNARIT",
-    "about": "Over Ons┆TECNARIT",
+    "about": "Over ons┆TECNARIT",
     "contact": "Contact┆TECNARIT",
     "privacy": "Privacy┆TECNARIT",
-    "join_us": "Kom Bij Ons┆TECNARIT",
+    "join_us": "Sluit je aan┆TECNARIT",
     "jobs": "Vacatures┆TECNARIT"
   },
   "hero": {
@@ -23,9 +23,9 @@
     "cta": "Neem Contact Op"
   },
   "join_us": {
-    "title": "Word Lid van Ons Software Testing Team",
+    "title": "Word lid van ons Software Testing team",
     "subtitle": "Bij TECNARIT bouwen we aan de toekomst van softwaretesten door expertise, innovatie en een passie voor kwaliteit.",
-    "benefits_title": "Waarom bij TECNARIT Werken?",
+    "benefits_title": "Waarom werken bij TECNARIT?",
     "benefits_description": "We zijn niet zomaar een testbedrijf; we zijn een team van gepassioneerde professionals met toewijding aan excellentie in softwarekwaliteit.",
     "benefits": {
       "growth": {
