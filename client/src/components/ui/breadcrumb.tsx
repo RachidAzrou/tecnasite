@@ -44,7 +44,7 @@ export function Breadcrumb({
                 {separator}
               </li>
             ) : null}
-            <li>
+            <li key={`li-${segment.href}`}>
               {index === segments.length - 1 ? (
                 <span aria-current="page" className="font-medium text-tecnarit-lime">
                   {segment.name}

@@ -75,6 +75,8 @@
   "jobs": {
     "title": "Current Job Openings",
     "subtitle": "Join our team of testing experts and help build quality into software systems for our clients",
+    "current_openings": "Current Openings",
+    "spontaneous_application": "Spontaneous Application",
     "no_fit": "Don't See the Right Fit?",
     "spontaneous": "We're always looking for talented individuals to join our team. Submit a spontaneous application and we'll consider you for future opportunities.",
     "submit_spontaneous": "Spontaneous Application",
@@ -317,6 +319,13 @@
         "description": "Please try again later."
       }
     }
+  },
+  "cookies": {
+    "title": "This website uses cookies",
+    "description": "We use cookies to enhance your experience, analyze and optimize the site. By clicking 'Accept', you consent to our cookie policy.",
+    "learn_more": "Learn more",
+    "accept": "Accept",
+    "decline": "Decline"
   },
   "footer": {
     "company": "Company",

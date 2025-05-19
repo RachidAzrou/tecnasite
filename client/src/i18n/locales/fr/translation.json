@@ -75,6 +75,8 @@
   "jobs": {
     "title": "Offres d'Emploi Actuelles",
     "subtitle": "Rejoignez notre équipe d'experts en test et aidez à intégrer la qualité dans les systèmes logiciels pour nos clients",
+    "current_openings": "Offres Actuelles",
+    "spontaneous_application": "Candidature Spontanée",
     "no_fit": "Vous ne trouvez pas ce qui vous convient ?",
     "spontaneous": "Nous sommes toujours à la recherche de personnes talentueuses pour rejoindre notre équipe. Soumettez une candidature spontanée et nous vous considérerons pour de futures opportunités.",
     "submit_spontaneous": "Candidature Spontanée",
@@ -317,6 +319,13 @@
         "description": "Veuillez réessayer plus tard."
       }
     }
+  },
+  "cookies": {
+    "title": "Ce site utilise des cookies",
+    "description": "Nous utilisons des cookies pour améliorer votre expérience, analyser et optimiser le site. En cliquant sur 'Accepter', vous consentez à notre politique de cookies.",
+    "learn_more": "En savoir plus",
+    "accept": "Accepter",
+    "decline": "Refuser"
   },
   "footer": {
     "company": "Entreprise",

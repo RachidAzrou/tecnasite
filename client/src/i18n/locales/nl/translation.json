@@ -75,6 +75,8 @@
   "jobs": {
     "title": "Huidige Vacatures",
     "subtitle": "Word lid van ons team van testexperts en help bij het opbouwen van kwaliteit in softwaresystemen voor onze klanten",
+    "current_openings": "Huidige Vacatures",
+    "spontaneous_application": "Spontane Sollicitatie",
     "no_fit": "Ziet u niet de juiste match?",
     "spontaneous": "We zijn altijd op zoek naar getalenteerde professionals om ons team te versterken. Stuur een spontane sollicitatie en we zullen u overwegen voor toekomstige kansen.",
     "submit_spontaneous": "Spontane Sollicitatie",
@@ -317,6 +319,13 @@
         "description": "Probeer het later opnieuw."
       }
     }
+  },
+  "cookies": {
+    "title": "Deze website gebruikt cookies",
+    "description": "We gebruiken cookies om uw ervaring te verbeteren, de site te analyseren en te optimaliseren. Door op 'Accepteren' te klikken, stemt u in met ons cookiebeleid.",
+    "learn_more": "Meer informatie",
+    "accept": "Accepteren",
+    "decline": "Weigeren"
   },
   "footer": {
     "company": "Bedrijf",
