@@ -5,6 +5,7 @@
     "about": "Over ons",
     "contact": "Contact",
     "privacy": "Privacy",
+    "terms": "Voorwaarden",
     "join_us": "Sluit je aan",
     "jobs": "Vacatures"
   },
@@ -14,6 +15,7 @@
     "about": "Over ons┆TECNARIT",
     "contact": "Contact┆TECNARIT",
     "privacy": "Privacy┆TECNARIT",
+    "terms": "Algemene Voorwaarden┆TECNARIT",
     "join_us": "Sluit je aan┆TECNARIT",
     "jobs": "Vacatures┆TECNARIT"
   },
@@ -325,6 +327,154 @@
     "privacy": "Privacybeleid",
     "address": "Cleydaellaan 16/5, 2630 Aartselaar, België",
     "nearshoring": "Ons Nearshoring Model"
+  },
+  "terms": {
+    "title": "Algemene Voorwaarden",
+    "subtitle": "Juridische voorwaarden voor het gebruik van TECNARIT's diensten",
+    "intro": "Lees deze Algemene Voorwaarden zorgvuldig door voordat u gebruik maakt van de softwaretestdiensten van TECNARIT VOF. Door gebruik te maken van onze diensten gaat u akkoord met deze voorwaarden.",
+    "definitions": {
+      "title": "1. Definities",
+      "content": "In deze Algemene Voorwaarden zijn de volgende definities van toepassing:",
+      "items": [
+        "'TECNARIT', 'we', 'wij', 'ons' of 'onze' verwijst naar TECNARIT VOF, een bedrijf geregistreerd in België met ondernemingsnummer BE1005.105.090.",
+        "'Klant', 'u' of 'uw' verwijst naar elke persoon of organisatie die gebruik maakt van onze diensten.",
+        "'Diensten' verwijst naar de softwaretest- en kwaliteitsborgingsdiensten die door TECNARIT worden aangeboden.",
+        "'Overeenkomst' verwijst naar het contract tussen TECNARIT en de Klant voor de levering van Diensten."
+      ]
+    },
+    "acceptance": {
+      "title": "2. Aanvaarding van de Voorwaarden",
+      "content": "Door gebruik te maken van onze Diensten erkent u dat u deze Algemene Voorwaarden heeft gelezen, begrepen en ermee akkoord gaat, evenals met eventuele aanvullende voorwaarden die van toepassing kunnen zijn op specifieke Diensten.\n\nTECNARIT behoudt zich het recht voor om deze Algemene Voorwaarden op elk moment te wijzigen. Wijzigingen zijn van kracht zodra ze op onze website worden geplaatst. Uw voortgezet gebruik van onze Diensten na dergelijke wijzigingen vormt uw aanvaarding van de herziene Algemene Voorwaarden."
+    },
+    "services": {
+      "title": "3. Diensten",
+      "content": "TECNARIT biedt softwaretest- en kwaliteitsborgingsdiensten aan. Deze omvatten, maar zijn niet beperkt tot:",
+      "items": [
+        "Functioneel testen",
+        "Niet-functioneel testen (prestaties, beveiliging, gebruiksvriendelijkheid)",
+        "Testautomatisering",
+        "Integratietesten",
+        "Gebruikersinterface testen",
+        "Kwaliteitsborgingsconsultancy"
+      ]
+    },
+    "intellectual_property": {
+      "title": "4. Intellectueel Eigendom",
+      "content": "Alle intellectuele eigendomsrechten met betrekking tot onze Diensten, methodologieën en eigen tools blijven het exclusieve eigendom van TECNARIT.\n\nAlle rapporten, documentatie of resultaten die zijn geproduceerd als onderdeel van onze Diensten zijn eigendom van de Klant zodra de volledige betaling is ontvangen, met uitzondering van reeds bestaande intellectuele eigendom van TECNARIT die in dergelijke resultaten is opgenomen."
+    },
+    "confidentiality": {
+      "title": "5. Vertrouwelijkheid",
+      "content": "TECNARIT stemt ermee in de vertrouwelijkheid te bewaren van alle informatie die door de Klant als vertrouwelijk is aangemerkt. Wij zullen dergelijke informatie niet aan derden bekendmaken zonder de voorafgaande schriftelijke toestemming van de Klant, behalve zoals vereist door de wet of om onze contractuele verplichtingen jegens de Klant na te komen."
+    },
+    "payment": {
+      "title": "6. Betalingsvoorwaarden",
+      "content": "De betalingsvoorwaarden zijn als volgt:",
+      "items": [
+        "Vergoedingen voor Diensten zullen zijn zoals overeengekomen in het contract tussen TECNARIT en de Klant.",
+        "Tenzij anders overeengekomen, zijn facturen betaalbaar binnen 30 dagen na de factuurdatum.",
+        "Bij late betalingen kunnen rente in rekening worden gebracht tegen het wettelijke tarief.",
+        "Alle vergoedingen zijn exclusief BTW, die waar van toepassing zal worden toegevoegd."
+      ]
+    },
+    "liability": {
+      "title": "7. Beperking van Aansprakelijkheid",
+      "content": "De aansprakelijkheid van TECNARIT onder deze Algemene Voorwaarden is beperkt tot het bedrag dat door de Klant is betaald voor de Diensten die het onderwerp zijn van de claim.\n\nTECNARIT is niet aansprakelijk voor indirecte, incidentele, speciale, gevolg- of punitieve schade, of verlies van winst of omzet, hetzij direct of indirect opgelopen, of verlies van gegevens, gebruik, goodwill of andere immateriële verliezen."
+    },
+    "termination": {
+      "title": "8. Beëindiging",
+      "content": "Beide partijen kunnen de Overeenkomst beëindigen door middel van een schriftelijke kennisgeving indien de andere partij een wezenlijke bepaling van de Overeenkomst schendt en deze schending niet binnen 30 dagen na ontvangst van de kennisgeving verhelpt.\n\nBij beëindiging zal de Klant betalen voor alle Diensten die tot de datum van beëindiging zijn uitgevoerd."
+    },
+    "force_majeure": {
+      "title": "9. Overmacht",
+      "content": "TECNARIT is niet aansprakelijk voor enige vertraging of verzuim bij de nakoming van zijn verplichtingen onder deze Algemene Voorwaarden als gevolg van omstandigheden buiten zijn redelijke controle, inclusief maar niet beperkt tot natuurrampen, oorlog, terrorisme, rellen of overheidsmaatregelen."
+    },
+    "governing_law": {
+      "title": "10. Toepasselijk Recht",
+      "content": "Deze Algemene Voorwaarden worden beheerst door en geïnterpreteerd in overeenstemming met de wetten van België. Alle geschillen die voortvloeien uit deze Algemene Voorwaarden zijn onderworpen aan de exclusieve jurisdictie van de rechtbanken van België."
+    },
+    "changes": {
+      "title": "11. Wijzigingen in de Voorwaarden",
+      "content": "TECNARIT behoudt zich het recht voor om deze voorwaarden op elk moment te wijzigen. We zullen u op de hoogte stellen van eventuele materiële wijzigingen. Uw voortgezet gebruik van onze diensten na dergelijke wijzigingen vormt aanvaarding van de bijgewerkte voorwaarden."
+    },
+    "contact": {
+      "title": "12. Contactgegevens",
+      "content": "Als u vragen heeft over deze Algemene Voorwaarden, neem dan contact met ons op via:\n\nTECNARIT VOF\nAdres: Cleydaellaan 16/5, 2630 Aartselaar, België\nE-mail: info@tecnarit.com\nBedrijfsnummer: BE1005.105.090"
+    }
+  },
+  
+  "privacy_policy": {
+    "title": "Privacybeleid",
+    "subtitle": "Hoe wij uw privacy en persoonlijke gegevens beschermen en respecteren",
+    "intro": "Bij TECNARIT VOF zijn we toegewijd aan het beschermen en respecteren van uw privacy en persoonlijke gegevens. Dit Privacybeleid legt uit hoe we uw persoonlijke informatie verzamelen, gebruiken, opslaan en beveiligen in overeenstemming met de Belgische wetgeving en de Algemene Verordening Gegevensbescherming (AVG).",
+    "who_we_are": {
+      "title": "1. Wie Wij Zijn",
+      "content": "TECNARIT VOF\nAdres: Cleydaellaan 16/5, 2630 Aartselaar\nE-mail: info@tecnarit.com\nTelefoon: +32 71 55 09 46\nBedrijfsnummer: BE1005.105.090"
+    },
+    "what_data": {
+      "title": "2. Welke Gegevens Wij Verzamelen",
+      "content": "Wij verzamelen de volgende soorten persoonsgegevens:",
+      "items": [
+        "Identificatiegegevens: Naam, e-mailadres, telefoonnummer, bedrijfsnaam, functietitel, adres",
+        "Contactgegevens: E-mailcommunicatie, telefoonnotities en andere interacties die u met ons deelt",
+        "Technische gegevens: IP-adres, browserinformatie, apparaatdetails, locatiegegevens, cookies en andere trackingtechnologieën (zoals uitgelegd in sectie 6)."
+      ]
+    },
+    "why_collect": {
+      "title": "3. Waarom We Uw Gegevens Verzamelen",
+      "content": "We verzamelen persoonsgegevens voor de volgende doeleinden:",
+      "items": [
+        "Om Contact Met U Op Te Nemen: Wanneer u contact met ons opneemt via onze website, e-mail of telefoon, gebruiken we uw gegevens om op uw vragen te reageren of hulp te bieden.",
+        "Om Onze Diensten Te Leveren: We gebruiken uw gegevens om de diensten die we aanbieden uit te voeren en te verbeteren (zoals softwareontwikkeling, UI/UX-ontwerp, enz.).",
+        "Marketing en Communicatie: Met uw toestemming kunnen we u informeren over nieuwe producten, diensten of aanbiedingen die voor u interessant kunnen zijn.",
+        "Wettelijke Naleving: We kunnen uw gegevens gebruiken om te voldoen aan wettelijke verplichtingen, zoals belastingwetten of contractuele vereisten."
+      ]
+    },
+    "how_protect": {
+      "title": "4. Hoe We Uw Gegevens Beschermen",
+      "content": "Wij nemen de bescherming van uw persoonsgegevens serieus. We hebben passende technische en organisatorische maatregelen geïmplementeerd om uw gegevens te beschermen tegen verlies, misbruik, ongeautoriseerde toegang, openbaarmaking of wijziging.\n\nHoewel we redelijke maatregelen nemen om de veiligheid van uw gegevens te waarborgen, kunnen we de absolute veiligheid van gegevens die via internet worden verzonden niet garanderen."
+    },
+    "how_long": {
+      "title": "5. Hoe Lang We Uw Gegevens Bewaren",
+      "content": "We bewaren uw persoonsgegevens niet langer dan noodzakelijk voor de doeleinden waarvoor ze zijn verzameld, tenzij we wettelijk verplicht zijn om ze te bewaren. De bewaartermijn varieert afhankelijk van het type gegevens, maar we zorgen ervoor dat gegevens alleen zo lang als nodig worden bewaard."
+    },
+    "cookies": {
+      "title": "6. Cookies en Trackingtechnologieën",
+      "content": "Onze website gebruikt cookies en andere trackingtechnologieën om uw ervaring te verbeteren. Cookies zijn kleine bestanden die op uw apparaat worden opgeslagen en die ons helpen uw voorkeuren te onthouden en uw gebruik van onze website te analyseren. U kunt uw browserinstellingen aanpassen om cookies te weigeren, maar houd er rekening mee dat dit uw ervaring op onze website kan beïnvloeden."
+    },
+    "who_share": {
+      "title": "7. Met Wie We Uw Gegevens Delen",
+      "content": "We delen uw persoonsgegevens alleen met derden in de volgende gevallen:",
+      "items": [
+        "Dienstverleners: We kunnen externe dienstverleners inschakelen om bepaalde functies of diensten namens ons uit te voeren (zoals hosting, betalingsverwerking, klantenondersteuning). Deze derden verwerken uw gegevens uitsluitend volgens onze instructies en in overeenstemming met ons privacybeleid.",
+        "Wettelijke Vereisten: We kunnen uw persoonsgegevens delen om te voldoen aan wettelijke verplichtingen of om onze rechten en eigendommen te beschermen."
+      ],
+      "note": "We verkopen uw persoonsgegevens nooit aan derden."
+    },
+    "your_rights": {
+      "title": "8. Uw Rechten",
+      "content": "U heeft verschillende rechten met betrekking tot de persoonsgegevens die wij verwerken:",
+      "items": [
+        "Recht op Inzage: U heeft het recht om te weten welke persoonsgegevens wij over u bewaren.",
+        "Recht op Rectificatie: U kunt verzoeken om correctie van onjuiste of verouderde gegevens.",
+        "Recht op Verwijdering: U kunt verzoeken om verwijdering van uw gegevens, tenzij er wettelijke verplichtingen zijn om deze te bewaren.",
+        "Recht op Bezwaar: U kunt bezwaar maken tegen de verwerking van uw gegevens, bijvoorbeeld voor marketingdoeleinden.",
+        "Recht op Gegevensoverdraagbaarheid: U heeft het recht om uw gegevens in een gestructureerde, gangbare en machineleesbare vorm te ontvangen en deze naar een andere organisatie over te dragen.",
+        "Recht om Toestemming in te Trekken: Als we uw gegevens hebben verwerkt op basis van uw toestemming, kunt u die toestemming op elk moment intrekken."
+      ],
+      "note": "Om een van deze rechten uit te oefenen, kunt u contact met ons opnemen via de hierboven vermelde gegevens."
+    },
+    "third_party": {
+      "title": "9. Links naar Derden",
+      "content": "Onze website kan links bevatten naar websites van derden. Wij zijn niet verantwoordelijk voor de privacypraktijken van deze sites, en we moedigen u aan om hun privacybeleid te bekijken voordat u persoonlijke gegevens deelt."
+    },
+    "changes": {
+      "title": "10. Wijzigingen in dit Privacybeleid",
+      "content": "We kunnen dit Privacybeleid van tijd tot tijd bijwerken. Eventuele wijzigingen worden op deze pagina geplaatst met de bijgewerkte datum bovenaan. We raden u aan dit beleid regelmatig te bekijken om op de hoogte te blijven van hoe we uw informatie beschermen."
+    },
+    "contact_us": {
+      "title": "11. Contact met Ons Opnemen",
+      "content": "Als u vragen of zorgen heeft over dit Privacybeleid of hoe wij omgaan met uw persoonsgegevens, neem dan contact met ons op via:\n\nTECNARIT VOF\nCleydaellaan 16/5, 2630 Aartselaar\nE-mail: info@tecnarit.com\nTelefoon: +32 71 55 09 46"
+    }
   },
   "about_section": {
     "label": "Over Ons",

@@ -7,35 +7,58 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { CheckCircle } from "lucide-react";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
+import { useState, useEffect } from "react";
 
 const JoinUs = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [language, setLanguage] = useState(i18n.language);
+  
+  // Update component when language changes
+  useEffect(() => {
+    const handleLanguageChange = () => {
+      setLanguage(i18n.language);
+    };
+    
+    // Add event listener
+    i18n.on('languageChanged', handleLanguageChange);
+    
+    // Clean up
+    return () => {
+      i18n.off('languageChanged', handleLanguageChange);
+    };
+  }, [i18n]);
 
-  // Benefits of working at TECNARIT
+  // Benefits dynamically pulled from translations 
   const benefits = [
     {
-      title: "Continuous Growth",
-      description: "We invest in your development through certifications, training programs, and learning opportunities."
+      key: "growth",
+      title: t('join_us.benefits.growth.title'),
+      description: t('join_us.benefits.growth.description')
     },
     {
-      title: "Work-Life Balance",
-      description: "Flexible working hours and policies that respect your personal time and well-being."
+      key: "balance",
+      title: t('join_us.benefits.balance.title'),
+      description: t('join_us.benefits.balance.description')
     },
     {
-      title: "International Environment",
-      description: "Gain experience in a multicultural setting with our Belgium-Morocco nearshoring model."
+      key: "international",
+      title: t('join_us.benefits.international.title'),
+      description: t('join_us.benefits.international.description')
     },
     {
-      title: "Challenging Projects",
-      description: "Work on diverse, challenging projects across various industries and technologies."
+      key: "projects",
+      title: t('join_us.benefits.projects.title'),
+      description: t('join_us.benefits.projects.description')
     },
     {
-      title: "Career Advancement",
-      description: "Clear growth paths and opportunities to advance your testing career."
+      key: "career",
+      title: t('join_us.perks.career.title'),
+      description: t('join_us.perks.career.description')
     },
     {
-      title: "Competitive Compensation",
-      description: "Attractive salary packages and benefits aligned with your skills and experience."
+      key: "compensation",
+      title: t('join_us.perks.development.title'),
+      description: t('join_us.perks.development.description')
     }
   ];
 
@@ -62,7 +85,7 @@ const JoinUs = () => {
           <div className="max-w-7xl mx-auto">
             <Breadcrumb 
               segments={[
-                { name: 'Join Us', href: '/join-us' }
+                { name: t('nav.join_us'), href: '/join-us' }
               ]}
             />
           </div>
@@ -70,11 +93,19 @@ const JoinUs = () => {
 
         {/* Hero Section */}
         <section className="pt-14 pb-16 relative overflow-hidden text-white" style={{ background: 'linear-gradient(180deg, #0f1729 0%, #132b23 50%, #183728 100%)' }}>
-          {/* Animated background elements */}
-          <div className="absolute top-0 left-0 w-full h-full">
-            <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-tecnarit-green/5 animate-pulse" style={{ animationDuration: '7s' }}></div>
-            <div className="absolute bottom-20 right-10 w-60 h-60 rounded-full bg-tecnarit-green/5 animate-pulse" style={{ animationDuration: '6s' }}></div>
-            <div className="absolute top-40 right-40 w-20 h-20 rounded-full bg-tecnarit-lime/5 animate-pulse" style={{ animationDuration: '8s' }}></div>
+          {/* Animated background elements - Responsive for all devices */}
+          <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+            {/* Larger animation on top left - also visible on mobile */}
+            <div className="absolute top-5 left-5 sm:top-10 sm:left-10 w-24 h-24 sm:w-40 sm:h-40 rounded-full bg-tecnarit-green/5 animate-pulse" style={{ animationDuration: '7s' }}></div>
+            
+            {/* Center animation - good visibility on mobile */}
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 sm:w-48 sm:h-48 rounded-full bg-tecnarit-lime/10 animate-pulse" style={{ animationDuration: '5s' }}></div>
+            
+            {/* Bottom right animation - adjusted for mobile */}
+            <div className="absolute bottom-5 right-5 sm:bottom-20 sm:right-10 w-32 h-32 sm:w-60 sm:h-60 rounded-full bg-tecnarit-green/5 animate-pulse" style={{ animationDuration: '6s' }}></div>
+            
+            {/* Small additional animations for visual interest */}
+            <div className="absolute top-20 sm:top-40 right-10 sm:right-40 w-12 h-12 sm:w-20 sm:h-20 rounded-full bg-tecnarit-lime/5 animate-pulse" style={{ animationDuration: '8s' }}></div>
           </div>
           
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -132,9 +163,9 @@ const JoinUs = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-tecnarit-dark mb-4">Why Join TECNARIT?</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-tecnarit-dark mb-4">{t('join_us.benefits_title')}</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                We're not just a testing company; we're a team of passionate professionals dedicated to excellence in software quality.
+                {t('join_us.benefits_description')}
               </p>
             </div>
 
@@ -189,15 +220,15 @@ const JoinUs = () => {
                   transition={{ duration: 0.5 }}
                   viewport={{ once: true }}
                 >
-                  <h2 className="text-3xl sm:text-4xl font-bold text-tecnarit-dark mb-6">Our Culture</h2>
+                  <h2 className="text-3xl sm:text-4xl font-bold text-tecnarit-dark mb-6">{t('join_us.perks.title')}</h2>
                   <p className="text-lg text-gray-600 mb-6">
-                    At TECNARIT, we've cultivated a working environment that values collaboration, innovation, and personal growth. We believe the best results come from teams that are empowered, respected, and inspired.
+                    {t('join_us.perks.remote.description')} {t('join_us.perks.collaboration.description')}
                   </p>
                   <p className="text-lg text-gray-600 mb-6">
-                    Our nearshoring model between Belgium and Morocco creates a unique multicultural atmosphere where diverse perspectives drive creative solutions and professional development.
+                    {t('join_us.benefits.international.description')}
                   </p>
                   <p className="text-lg text-gray-600">
-                    We prioritize a healthy work-life balance, recognize achievements, and provide opportunities for growth at every career stage.
+                    {t('join_us.benefits.balance.description')} {t('join_us.perks.career.description')}
                   </p>
                 </motion.div>
               </div>
@@ -215,7 +246,7 @@ const JoinUs = () => {
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
             >
-              Ready to Take the Next Step in Your Testing Career?
+              {t('join_us.openings.title')}
             </motion.h2>
             <motion.p 
               className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto"
@@ -224,7 +255,7 @@ const JoinUs = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              Explore our current openings or submit your resume for future opportunities.
+              {t('join_us.openings.description')}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

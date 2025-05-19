@@ -5,6 +5,7 @@
     "about": "About Us",
     "contact": "Contact",
     "privacy": "Privacy",
+    "terms": "Terms",
     "join_us": "Join Us",
     "jobs": "Jobs"
   },
@@ -14,6 +15,7 @@
     "about": "About Us┆TECNARIT",
     "contact": "Contact┆TECNARIT",
     "privacy": "Privacy┆TECNARIT",
+    "terms": "Terms and Conditions┆TECNARIT",
     "join_us": "Join Us┆TECNARIT",
     "jobs": "Jobs┆TECNARIT"
   },
@@ -325,6 +327,154 @@
     "privacy": "Privacy Policy",
     "address": "Cleydaellaan 16/5, 2630 Aartselaar, Belgium",
     "nearshoring": "Our Nearshoring Model"
+  },
+  "terms": {
+    "title": "Terms and Conditions",
+    "subtitle": "Legal terms governing the use of TECNARIT's services",
+    "intro": "Please read these Terms and Conditions carefully before using TECNARIT VOF's software testing services. By engaging our services, you agree to be bound by these terms.",
+    "definitions": {
+      "title": "1. Definitions",
+      "content": "In these Terms and Conditions, the following definitions apply:",
+      "items": [
+        "'TECNARIT', 'we', 'us', or 'our' refers to TECNARIT VOF, a company registered in Belgium with company number BE1005.105.090.",
+        "'Client', 'you', or 'your' refers to any individual or organization that engages our services.",
+        "'Services' refers to the software testing and quality assurance services provided by TECNARIT.",
+        "'Agreement' refers to the contract between TECNARIT and the Client for the provision of Services."
+      ]
+    },
+    "acceptance": {
+      "title": "2. Acceptance of Terms",
+      "content": "By engaging our Services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions, as well as any additional terms and conditions that may apply to specific Services.\n\nTECNARIT reserves the right to modify these Terms and Conditions at any time. Changes will be effective upon posting on our website. Your continued use of our Services after such modifications constitutes your acceptance of the revised Terms and Conditions."
+    },
+    "services": {
+      "title": "3. Services",
+      "content": "TECNARIT provides software testing and quality assurance services. These include but are not limited to:",
+      "items": [
+        "Functional testing",
+        "Non-functional testing (performance, security, usability)",
+        "Test automation",
+        "Integration testing",
+        "User interface testing",
+        "Quality assurance consulting"
+      ]
+    },
+    "intellectual_property": {
+      "title": "4. Intellectual Property",
+      "content": "All intellectual property rights in relation to our Services, methodologies, and proprietary tools remain the exclusive property of TECNARIT.\n\nAny reports, documentation, or deliverables produced as part of our Services are owned by the Client once full payment has been received, except for any pre-existing intellectual property of TECNARIT incorporated into such deliverables."
+    },
+    "confidentiality": {
+      "title": "5. Confidentiality",
+      "content": "TECNARIT agrees to maintain the confidentiality of all information designated as confidential by the Client. We will not disclose such information to third parties without the Client's prior written consent, except as required by law or to fulfill our contractual obligations to the Client."
+    },
+    "payment": {
+      "title": "6. Payment Terms",
+      "content": "Payment terms are as follows:",
+      "items": [
+        "Fees for Services will be as agreed in the contract between TECNARIT and the Client.",
+        "Unless otherwise agreed, invoices are payable within 30 days of the invoice date.",
+        "Late payments may incur interest charges at the statutory rate.",
+        "All fees are exclusive of VAT, which will be added where applicable."
+      ]
+    },
+    "liability": {
+      "title": "7. Limitation of Liability",
+      "content": "TECNARIT's liability under these Terms and Conditions shall be limited to the amount paid by the Client for the Services that are the subject of the claim.\n\nTECNARIT shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses."
+    },
+    "termination": {
+      "title": "8. Termination",
+      "content": "Either party may terminate the Agreement with written notice if the other party breaches any material term of the Agreement and fails to remedy such breach within 30 days of receiving notice.\n\nUpon termination, the Client shall pay for all Services performed up to the date of termination."
+    },
+    "force_majeure": {
+      "title": "9. Force Majeure",
+      "content": "TECNARIT shall not be liable for any delay or failure to perform its obligations under these Terms and Conditions due to circumstances beyond its reasonable control, including but not limited to acts of God, natural disasters, war, terrorism, riots, or governmental actions."
+    },
+    "governing_law": {
+      "title": "10. Governing Law",
+      "content": "These Terms and Conditions shall be governed by and construed in accordance with the laws of Belgium. Any disputes arising under these Terms and Conditions shall be subject to the exclusive jurisdiction of the courts of Belgium."
+    },
+    "changes": {
+      "title": "11. Changes to Terms",
+      "content": "TECNARIT reserves the right to modify these terms at any time. We will provide notice of any material changes. Your continued use of our services after such modifications constitutes acceptance of the updated terms."
+    },
+    "contact": {
+      "title": "12. Contact Information",
+      "content": "If you have any questions about these Terms and Conditions, please contact us at:\n\nTECNARIT VOF\nAddress: Cleydaellaan 16/5, 2630 Aartselaar, Belgium\nEmail: info@tecnarit.com\nCompany number: BE1005.105.090"
+    }
+  },
+  
+  "privacy_policy": {
+    "title": "Privacy Policy",
+    "subtitle": "How we protect and respect your privacy and personal data",
+    "intro": "At TECNARIT VOF, we are committed to protecting and respecting your privacy and personal data. This Privacy Policy explains how we collect, use, store, and safeguard your personal information in accordance with Belgian law and the General Data Protection Regulation (GDPR).",
+    "who_we_are": {
+      "title": "1. Who We Are",
+      "content": "TECNARIT VOF\nAddress: Cleydaellaan 16/5, 2630 Aartselaar\nEmail: info@tecnarit.com\nPhone: +32 71 55 09 46\nCompany Number: BE1005.105.090"
+    },
+    "what_data": {
+      "title": "2. What Data We Collect",
+      "content": "We collect the following types of personal data:",
+      "items": [
+        "Identification Data: Name, email address, phone number, company name, job title, address",
+        "Contact Data: Email communications, phone notes, and other interactions you share with us",
+        "Technical Data: IP address, browser information, device details, location data, cookies, and other tracking technologies (as explained in section 6)."
+      ]
+    },
+    "why_collect": {
+      "title": "3. Why We Collect Your Data",
+      "content": "We collect personal data for the following purposes:",
+      "items": [
+        "To Contact You: When you reach out to us via our website, email, or phone, we use your data to respond to your inquiries or provide assistance.",
+        "To Deliver Our Services: We use your data to perform and improve the services we offer (such as software development, UI/UX design, etc.).",
+        "Marketing and Communication: With your consent, we may inform you about new products, services, or offers that may interest you.",
+        "Legal Compliance: We may use your data to comply with legal obligations, such as tax laws or contractual requirements."
+      ]
+    },
+    "how_protect": {
+      "title": "4. How We Protect Your Data",
+      "content": "We take the protection of your personal data seriously. We have implemented appropriate technical and organizational measures to safeguard your data from loss, misuse, unauthorized access, disclosure, or alteration.\n\nAlthough we take reasonable measures to ensure the security of your data, we cannot guarantee the absolute security of data transmitted over the internet."
+    },
+    "how_long": {
+      "title": "5. How Long We Retain Your Data",
+      "content": "We do not retain your personal data longer than necessary for the purposes for which it was collected, unless we are required to retain it by law. The retention period varies depending on the type of data, but we ensure that data is only kept as long as necessary."
+    },
+    "cookies": {
+      "title": "6. Cookies and Tracking Technologies",
+      "content": "Our website uses cookies and other tracking technologies to improve your experience. Cookies are small files stored on your device that help us remember your preferences and analyze your usage of our website. You can adjust your browser settings to refuse cookies, but please note that this may affect your experience on our website."
+    },
+    "who_share": {
+      "title": "7. Who We Share Your Data With",
+      "content": "We only share your personal data with third parties in the following cases:",
+      "items": [
+        "Service Providers: We may engage external service providers to perform certain functions or services on our behalf (such as hosting, payment processing, customer support). These third parties process your data solely on our instructions and in accordance with our privacy policy.",
+        "Legal Requirements: We may share your personal data to comply with legal obligations or to protect our rights and property."
+      ],
+      "note": "We never sell your personal data to third parties."
+    },
+    "your_rights": {
+      "title": "8. Your Rights",
+      "content": "You have several rights regarding the personal data we process:",
+      "items": [
+        "Right to Access: You have the right to know what personal data we hold about you.",
+        "Right to Rectification: You can request the correction of inaccurate or outdated data.",
+        "Right to Erasure: You can request the deletion of your data, unless there are legal obligations to retain it.",
+        "Right to Object: You can object to the processing of your data, such as for marketing purposes.",
+        "Right to Data Portability: You have the right to receive your data in a structured, commonly used, and machine-readable format and to transfer it to another organization.",
+        "Right to Withdraw Consent: If we have processed your data based on your consent, you can withdraw that consent at any time."
+      ],
+      "note": "To exercise any of these rights, please contact us using the details provided above."
+    },
+    "third_party": {
+      "title": "9. Third-Party Links",
+      "content": "Our website may contain links to third-party websites. We are not responsible for the privacy practices of these sites, and we encourage you to review their privacy policies before sharing any personal data."
+    },
+    "changes": {
+      "title": "10. Changes to This Privacy Policy",
+      "content": "We may update this Privacy Policy from time to time. Any changes will be posted on this page with the updated date at the top. We encourage you to review this policy periodically to stay informed about how we protect your information."
+    },
+    "contact_us": {
+      "title": "11. Contact Us",
+      "content": "If you have any questions or concerns about this Privacy Policy or how we handle your personal data, please contact us at:\n\nTECNARIT VOF\nCleydaellaan 16/5, 2630 Aartselaar\nEmail: info@tecnarit.com\nPhone: +32 71 55 09 46"
+    }
   },
   "about_section": {
     "label": "About Us",

@@ -308,10 +308,30 @@ const Jobs = () => {
         {/* Job Listings Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col space-y-6 mb-8">
+              <div className="flex flex-col md:flex-row justify-between items-center">
+                <h2 className="text-2xl font-bold text-tecnarit-dark">{t('jobs.current_openings')}</h2>
+                
+                <Button 
+                  className="tecnarit-gradient-bg hover:opacity-90 text-white mt-4 md:mt-0"
+                  onClick={() => {
+                    form.setValue("position", "Spontane sollicitatie");
+                    handleApply("Spontane sollicitatie");
+                  }}
+                >
+                  {t('jobs.spontaneous_application') || "Spontane sollicitatie"}
+                </Button>
+              </div>
+            </div>
+            
             <Tabs defaultValue={jobListings[0].id} className="w-full">
-              <TabsList className="mb-8 flex flex-wrap justify-center gap-2">
+              <TabsList className="flex flex-wrap justify-center gap-2 overflow-x-auto px-2 py-1">
                 {jobListings.map((job) => (
-                  <TabsTrigger key={job.id} value={job.id} className="py-2 px-4">
+                  <TabsTrigger 
+                    key={job.id} 
+                    value={job.id} 
+                    className="py-2 px-4 text-xs sm:text-sm whitespace-normal text-center min-h-[45px] flex items-center justify-center"
+                  >
                     {job.title}
                   </TabsTrigger>
                 ))}

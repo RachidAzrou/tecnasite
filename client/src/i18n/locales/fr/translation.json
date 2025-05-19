@@ -2,18 +2,20 @@
   "nav": {
     "home": "Accueil",
     "services": "Services",
-    "about": "À Propos",
+    "about": "À propos",
     "contact": "Contact",
     "privacy": "Confidentialité",
+    "terms": "Conditions",
     "join_us": "Rejoignez-Nous",
     "jobs": "Emplois"
   },
   "page_titles": {
     "home": "TECNARIT┆Test IT Better",
     "services": "Services┆TECNARIT",
-    "about": "À Propos┆TECNARIT",
+    "about": "À propos┆TECNARIT",
     "contact": "Contact┆TECNARIT",
     "privacy": "Confidentialité┆TECNARIT",
+    "terms": "Conditions Générales┆TECNARIT",
     "join_us": "Rejoignez-Nous┆TECNARIT",
     "jobs": "Emplois┆TECNARIT"
   },
@@ -23,9 +25,9 @@
     "cta": "Contactez-Nous"
   },
   "join_us": {
-    "title": "Rejoignez Notre Équipe de Test Logiciel",
+    "title": "Rejoignez notre équipe de test logiciel",
     "subtitle": "Chez TECNARIT, nous construisons l'avenir des tests logiciels grâce à l'expertise, l'innovation et une passion pour la qualité.",
-    "benefits_title": "Pourquoi Travailler chez TECNARIT ?",
+    "benefits_title": "Pourquoi travailler chez TECNARIT ?",
     "benefits_description": "Nous ne sommes pas simplement une entreprise de test ; nous sommes une équipe de professionnels passionnés dédiés à l'excellence en matière de qualité logicielle.",
     "benefits": {
       "growth": {
@@ -325,6 +327,154 @@
     "privacy": "Politique de Confidentialité",
     "address": "Cleydaellaan 16/5, 2630 Aartselaar, Belgique",
     "nearshoring": "Notre Modèle de Nearshoring"
+  },
+  "terms": {
+    "title": "Conditions Générales",
+    "subtitle": "Termes juridiques régissant l'utilisation des services de TECNARIT",
+    "intro": "Veuillez lire attentivement ces Conditions Générales avant d'utiliser les services de test logiciel de TECNARIT VOF. En utilisant nos services, vous acceptez d'être lié par ces conditions.",
+    "definitions": {
+      "title": "1. Définitions",
+      "content": "Dans ces Conditions Générales, les définitions suivantes s'appliquent:",
+      "items": [
+        "'TECNARIT', 'nous', ou 'notre' fait référence à TECNARIT VOF, une société enregistrée en Belgique sous le numéro d'entreprise BE1005.105.090.",
+        "'Client', 'vous', ou 'votre' fait référence à toute personne ou organisation qui utilise nos services.",
+        "'Services' fait référence aux services de test logiciel et d'assurance qualité fournis par TECNARIT.",
+        "'Accord' fait référence au contrat entre TECNARIT et le Client pour la fourniture de Services."
+      ]
+    },
+    "acceptance": {
+      "title": "2. Acceptation des Conditions",
+      "content": "En utilisant nos Services, vous reconnaissez avoir lu, compris et accepté d'être lié par ces Conditions Générales, ainsi que par toutes conditions supplémentaires qui pourraient s'appliquer à des Services spécifiques.\n\nTECNARIT se réserve le droit de modifier ces Conditions Générales à tout moment. Les modifications seront effectives dès leur publication sur notre site web. Votre utilisation continue de nos Services après de telles modifications constitue votre acceptation des Conditions Générales révisées."
+    },
+    "services": {
+      "title": "3. Services",
+      "content": "TECNARIT fournit des services de test logiciel et d'assurance qualité. Ceux-ci comprennent, sans s'y limiter:",
+      "items": [
+        "Tests fonctionnels",
+        "Tests non fonctionnels (performance, sécurité, utilisabilité)",
+        "Automatisation des tests",
+        "Tests d'intégration",
+        "Tests d'interface utilisateur",
+        "Conseil en assurance qualité"
+      ]
+    },
+    "intellectual_property": {
+      "title": "4. Propriété Intellectuelle",
+      "content": "Tous les droits de propriété intellectuelle relatifs à nos Services, méthodologies et outils propriétaires restent la propriété exclusive de TECNARIT.\n\nTous les rapports, documentations ou livrables produits dans le cadre de nos Services sont la propriété du Client une fois le paiement intégral reçu, à l'exception de toute propriété intellectuelle préexistante de TECNARIT incorporée dans ces livrables."
+    },
+    "confidentiality": {
+      "title": "5. Confidentialité",
+      "content": "TECNARIT s'engage à maintenir la confidentialité de toutes les informations désignées comme confidentielles par le Client. Nous ne divulguerons pas ces informations à des tiers sans le consentement écrit préalable du Client, sauf si la loi l'exige ou pour remplir nos obligations contractuelles envers le Client."
+    },
+    "payment": {
+      "title": "6. Conditions de Paiement",
+      "content": "Les conditions de paiement sont les suivantes:",
+      "items": [
+        "Les frais pour les Services seront tels que convenus dans le contrat entre TECNARIT et le Client.",
+        "Sauf accord contraire, les factures sont payables dans les 30 jours suivant la date de facturation.",
+        "Les paiements tardifs peuvent entraîner des frais d'intérêt au taux légal.",
+        "Tous les frais sont hors TVA, qui sera ajoutée le cas échéant."
+      ]
+    },
+    "liability": {
+      "title": "7. Limitation de Responsabilité",
+      "content": "La responsabilité de TECNARIT en vertu de ces Conditions Générales sera limitée au montant payé par le Client pour les Services qui font l'objet de la réclamation.\n\nTECNARIT ne sera pas responsable des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, ni de toute perte de profits ou de revenus, qu'ils soient encourus directement ou indirectement, ni de toute perte de données, d'utilisation, de goodwill ou d'autres pertes intangibles."
+    },
+    "termination": {
+      "title": "8. Résiliation",
+      "content": "Chaque partie peut résilier l'Accord par notification écrite si l'autre partie viole une condition importante de l'Accord et ne remédie pas à cette violation dans les 30 jours suivant la réception de la notification.\n\nEn cas de résiliation, le Client paiera pour tous les Services effectués jusqu'à la date de résiliation."
+    },
+    "force_majeure": {
+      "title": "9. Force Majeure",
+      "content": "TECNARIT ne sera pas responsable de tout retard ou défaut d'exécution de ses obligations en vertu de ces Conditions Générales en raison de circonstances indépendantes de sa volonté raisonnable, y compris mais sans s'y limiter, les catastrophes naturelles, la guerre, le terrorisme, les émeutes ou les actions gouvernementales."
+    },
+    "governing_law": {
+      "title": "10. Loi Applicable",
+      "content": "Ces Conditions Générales seront régies et interprétées conformément aux lois de la Belgique. Tout litige découlant de ces Conditions Générales sera soumis à la juridiction exclusive des tribunaux de Belgique."
+    },
+    "changes": {
+      "title": "11. Modifications des Conditions",
+      "content": "TECNARIT se réserve le droit de modifier ces conditions à tout moment. Nous fournirons un avis de tout changement important. Votre utilisation continue de nos services après de telles modifications constitue une acceptation des conditions mises à jour."
+    },
+    "contact": {
+      "title": "12. Informations de Contact",
+      "content": "Si vous avez des questions concernant ces Conditions Générales, veuillez nous contacter à:\n\nTECNARIT VOF\nAdresse: Cleydaellaan 16/5, 2630 Aartselaar, Belgique\nEmail: info@tecnarit.com\nNuméro d'entreprise: BE1005.105.090"
+    }
+  },
+  
+  "privacy_policy": {
+    "title": "Politique de Confidentialité",
+    "subtitle": "Comment nous protégeons et respectons votre vie privée et vos données personnelles",
+    "intro": "Chez TECNARIT VOF, nous nous engageons à protéger et à respecter votre vie privée et vos données personnelles. Cette Politique de Confidentialité explique comment nous collectons, utilisons, stockons et protégeons vos informations personnelles conformément à la législation belge et au Règlement Général sur la Protection des Données (RGPD).",
+    "who_we_are": {
+      "title": "1. Qui Nous Sommes",
+      "content": "TECNARIT VOF\nAdresse: Cleydaellaan 16/5, 2630 Aartselaar\nEmail: info@tecnarit.com\nTéléphone: +32 71 55 09 46\nNuméro d'entreprise: BE1005.105.090"
+    },
+    "what_data": {
+      "title": "2. Quelles Données Nous Collectons",
+      "content": "Nous collectons les types de données personnelles suivants:",
+      "items": [
+        "Données d'identification: Nom, adresse email, numéro de téléphone, nom de l'entreprise, titre du poste, adresse",
+        "Données de contact: Communications par email, notes téléphoniques et autres interactions que vous partagez avec nous",
+        "Données techniques: Adresse IP, informations sur le navigateur, détails de l'appareil, données de localisation, cookies et autres technologies de suivi (comme expliqué dans la section 6)."
+      ]
+    },
+    "why_collect": {
+      "title": "3. Pourquoi Nous Collectons Vos Données",
+      "content": "Nous collectons des données personnelles aux fins suivantes:",
+      "items": [
+        "Pour Vous Contacter: Lorsque vous nous contactez via notre site web, email ou téléphone, nous utilisons vos données pour répondre à vos demandes ou vous fournir une assistance.",
+        "Pour Fournir Nos Services: Nous utilisons vos données pour exécuter et améliorer les services que nous offrons (comme le développement de logiciels, la conception UI/UX, etc.).",
+        "Marketing et Communication: Avec votre consentement, nous pouvons vous informer des nouveaux produits, services ou offres qui pourraient vous intéresser.",
+        "Conformité Légale: Nous pouvons utiliser vos données pour nous conformer aux obligations légales, telles que les lois fiscales ou les exigences contractuelles."
+      ]
+    },
+    "how_protect": {
+      "title": "4. Comment Nous Protégeons Vos Données",
+      "content": "Nous prenons la protection de vos données personnelles au sérieux. Nous avons mis en place des mesures techniques et organisationnelles appropriées pour protéger vos données contre la perte, l'utilisation abusive, l'accès non autorisé, la divulgation ou l'altération.\n\nBien que nous prenions des mesures raisonnables pour assurer la sécurité de vos données, nous ne pouvons pas garantir la sécurité absolue des données transmises via Internet."
+    },
+    "how_long": {
+      "title": "5. Combien de Temps Nous Conservons Vos Données",
+      "content": "Nous ne conservons pas vos données personnelles plus longtemps que nécessaire aux fins pour lesquelles elles ont été collectées, sauf si nous sommes tenus de les conserver par la loi. La période de conservation varie selon le type de données, mais nous veillons à ce que les données ne soient conservées que le temps nécessaire."
+    },
+    "cookies": {
+      "title": "6. Cookies et Technologies de Suivi",
+      "content": "Notre site web utilise des cookies et d'autres technologies de suivi pour améliorer votre expérience. Les cookies sont de petits fichiers stockés sur votre appareil qui nous aident à mémoriser vos préférences et à analyser votre utilisation de notre site web. Vous pouvez ajuster les paramètres de votre navigateur pour refuser les cookies, mais veuillez noter que cela peut affecter votre expérience sur notre site web."
+    },
+    "who_share": {
+      "title": "7. Avec Qui Nous Partageons Vos Données",
+      "content": "Nous ne partageons vos données personnelles avec des tiers que dans les cas suivants:",
+      "items": [
+        "Prestataires de Services: Nous pouvons engager des prestataires de services externes pour effectuer certaines fonctions ou services en notre nom (comme l'hébergement, le traitement des paiements, le support client). Ces tiers traitent vos données uniquement sur nos instructions et conformément à notre politique de confidentialité.",
+        "Exigences Légales: Nous pouvons partager vos données personnelles pour nous conformer à des obligations légales ou pour protéger nos droits et nos biens."
+      ],
+      "note": "Nous ne vendons jamais vos données personnelles à des tiers."
+    },
+    "your_rights": {
+      "title": "8. Vos Droits",
+      "content": "Vous avez plusieurs droits concernant les données personnelles que nous traitons:",
+      "items": [
+        "Droit d'Accès: Vous avez le droit de savoir quelles données personnelles nous détenons à votre sujet.",
+        "Droit de Rectification: Vous pouvez demander la correction de données inexactes ou obsolètes.",
+        "Droit à l'Effacement: Vous pouvez demander la suppression de vos données, sauf s'il existe des obligations légales de les conserver.",
+        "Droit d'Opposition: Vous pouvez vous opposer au traitement de vos données, par exemple à des fins de marketing.",
+        "Droit à la Portabilité des Données: Vous avez le droit de recevoir vos données dans un format structuré, couramment utilisé et lisible par machine et de les transférer à une autre organisation.",
+        "Droit de Retirer Votre Consentement: Si nous avons traité vos données sur la base de votre consentement, vous pouvez retirer ce consentement à tout moment."
+      ],
+      "note": "Pour exercer l'un de ces droits, veuillez nous contacter en utilisant les coordonnées fournies ci-dessus."
+    },
+    "third_party": {
+      "title": "9. Liens vers des Tiers",
+      "content": "Notre site web peut contenir des liens vers des sites web tiers. Nous ne sommes pas responsables des pratiques de confidentialité de ces sites, et nous vous encourageons à consulter leurs politiques de confidentialité avant de partager des données personnelles."
+    },
+    "changes": {
+      "title": "10. Modifications de cette Politique de Confidentialité",
+      "content": "Nous pouvons mettre à jour cette Politique de Confidentialité de temps à autre. Tout changement sera publié sur cette page avec la date de mise à jour en haut. Nous vous encourageons à consulter cette politique périodiquement pour rester informé de la façon dont nous protégeons vos informations."
+    },
+    "contact_us": {
+      "title": "11. Nous Contacter",
+      "content": "Si vous avez des questions ou des préoccupations concernant cette Politique de Confidentialité ou la façon dont nous traitons vos données personnelles, veuillez nous contacter à:\n\nTECNARIT VOF\nCleydaellaan 16/5, 2630 Aartselaar\nEmail: info@tecnarit.com\nTéléphone: +32 71 55 09 46"
+    }
   },
   "about_section": {
     "label": "À Propos",
