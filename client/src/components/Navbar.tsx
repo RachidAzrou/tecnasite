@@ -102,7 +102,7 @@ const Navbar = () => {
               <img 
                 src={tecnaritLogo} 
                 alt="TECNARIT Logo" 
-                className="h-8 md:h-10 md:-ml-4" 
+                className="h-10 md:h-14 md:-ml-4" 
               />
             </Link>
           </div>
