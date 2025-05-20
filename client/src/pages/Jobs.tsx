@@ -1,10 +1,18 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import {
   Form,
   FormControl,
@@ -315,130 +323,255 @@ const Jobs = () => {
                 <Button 
                   className="tecnarit-gradient-bg hover:opacity-90 text-white mt-4 md:mt-0"
                   onClick={() => {
-                    form.setValue("position", "Spontane sollicitatie");
-                    handleApply("Spontane sollicitatie");
+                    form.setValue("position", t('jobs.spontaneous_application') || "Spontaneous Application");
+                    handleApply(t('jobs.spontaneous_application') || "Spontaneous Application");
                   }}
                 >
-                  {t('jobs.spontaneous_application') || "Spontane sollicitatie"}
+                  {t('jobs.spontaneous_application') || "Spontaneous Application"}
                 </Button>
               </div>
             </div>
             
-            <Tabs defaultValue={jobListings[0].id} className="w-full">
-              <TabsList className="flex flex-wrap justify-center gap-2 overflow-x-auto px-2 py-1">
+            {/* Desktop view - Tabs */}
+            <div className="hidden md:block">
+              <Tabs defaultValue={jobListings[0].id} className="w-full">
+                <div className="overflow-x-auto pb-2 max-w-full">
+                  <TabsList className="flex justify-center gap-2 px-2 py-1 min-w-max mx-auto">
+                    {jobListings.map((job) => (
+                      <TabsTrigger 
+                        key={job.id} 
+                        value={job.id} 
+                        className="py-2 px-4 text-sm whitespace-nowrap text-center min-h-[45px] flex items-center justify-center"
+                      >
+                        {job.title}
+                      </TabsTrigger>
+                    ))}
+                  </TabsList>
+                </div>
+                
                 {jobListings.map((job) => (
-                  <TabsTrigger 
-                    key={job.id} 
-                    value={job.id} 
-                    className="py-2 px-4 text-xs sm:text-sm whitespace-normal text-center min-h-[45px] flex items-center justify-center"
-                  >
-                    {job.title}
-                  </TabsTrigger>
-                ))}
-              </TabsList>
-              
-              {jobListings.map((job) => (
-                <TabsContent key={job.id} value={job.id} className="mt-0">
-                  <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100">
-                    <div className="p-6 sm:p-8">
-                      <h2 className="text-2xl sm:text-3xl font-bold text-tecnarit-dark mb-4">{job.title}</h2>
-                      <p className="text-gray-600 mb-6">
-                        {(() => {
-                          try {
-                            return t(`jobs.position.${job.id}.description`);
-                          } catch (error) {
-                            console.log(`Error getting translation for jobs.position.${job.id}.description:`, error);
-                            return job.description;
-                          }
-                        })()}
-                      </p>
-                      
-                      <div className="flex flex-wrap gap-4 mb-6">
-                        <div className="flex items-center">
-                          <Briefcase className="mr-2 text-tecnarit-green" />
-                          <span>{t(`jobs.position.${job.id}.type`)}</span>
-                        </div>
-                        <div className="flex items-center">
-                          <Clock className="mr-2 text-tecnarit-green" />
-                          <span>{t('jobs.immediate_start')}</span>
-                        </div>
-                        <div className="flex items-center">
-                          <Award className="mr-2 text-tecnarit-green" />
-                          <span>{t(`jobs.position.${job.id}.location`)}</span>
-                        </div>
-                      </div>
-                      
-                      <div className="grid md:grid-cols-2 gap-8 mb-8">
-                        <div>
-                          <h3 className="text-xl font-semibold text-tecnarit-dark mb-4">{t(`jobs.position.${job.id}.requirements_title`)}</h3>
-                          <ul className="space-y-2 text-sm sm:text-base">
-                            {(() => {
-                              try {
-                                const requirements = t(`jobs.position.${job.id}.requirements`, { returnObjects: true }) as string[];
-                                return requirements.map((req: string, index: number) => (
-                                  <li key={index} className="flex items-start">
-                                    <CheckCircle className="mr-2 h-5 w-5 text-tecnarit-green shrink-0 mt-0.5" />
-                                    <span>{req}</span>
-                                  </li>
-                                ));
-                              } catch (error) {
-                                console.log(`Error getting translation for jobs.position.${job.id}.requirements:`, error);
-                                return job.requirements.map((req: string, index: number) => (
-                                  <li key={index} className="flex items-start">
-                                    <CheckCircle className="mr-2 h-5 w-5 text-tecnarit-green shrink-0 mt-0.5" />
-                                    <span>{req}</span>
-                                  </li>
-                                ));
-                              }
-                            })()}
-                          </ul>
-                        </div>
-                        <div className="mt-6 md:mt-0">
-                          <h3 className="text-xl font-semibold text-tecnarit-dark mb-4">{t(`jobs.position.${job.id}.responsibilities_title`)}</h3>
-                          <ul className="space-y-2 text-sm sm:text-base">
-                            {(() => {
-                              try {
-                                const responsibilities = t(`jobs.position.${job.id}.responsibilities`, { returnObjects: true }) as string[];
-                                return responsibilities.map((resp: string, index: number) => (
-                                  <li key={index} className="flex items-start">
-                                    <CheckCircle className="mr-2 h-5 w-5 text-tecnarit-green shrink-0 mt-0.5" />
-                                    <span>{resp}</span>
-                                  </li>
-                                ));
-                              } catch (error) {
-                                console.log(`Error getting translation for jobs.position.${job.id}.responsibilities:`, error);
-                                return job.responsibilities.map((resp: string, index: number) => (
-                                  <li key={index} className="flex items-start">
-                                    <CheckCircle className="mr-2 h-5 w-5 text-tecnarit-green shrink-0 mt-0.5" />
-                                    <span>{resp}</span>
-                                  </li>
-                                ));
-                              }
-                            })()}
-                          </ul>
-                        </div>
-                      </div>
-                      
-                      <div className="flex justify-center">
-                        <Button 
-                          onClick={() => handleApply(job.title)}
-                          className="tecnarit-gradient-bg hover:opacity-90 text-white font-semibold px-8 py-2 rounded-md border-none"
-                        >
+                  <TabsContent key={job.id} value={job.id} className="mt-0">
+                    <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100">
+                      <div className="p-6 sm:p-8">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-tecnarit-dark mb-4">{job.title}</h2>
+                        <p className="text-gray-600 mb-6">
                           {(() => {
                             try {
-                              return t(`jobs.position.${job.id}.apply`);
+                              return t(`jobs.position.${job.id}.description`);
                             } catch (error) {
-                              console.log(`Error getting translation for jobs.position.${job.id}.apply:`, error);
-                              return 'Apply Now';
+                              console.log(`Error getting translation for jobs.position.${job.id}.description:`, error);
+                              return job.description;
                             }
                           })()}
-                        </Button>
+                        </p>
+                        
+                        <div className="flex flex-wrap gap-4 mb-6">
+                          <div className="flex items-center">
+                            <Briefcase className="mr-2 text-tecnarit-green" />
+                            <span>{t(`jobs.position.${job.id}.type`)}</span>
+                          </div>
+                          <div className="flex items-center">
+                            <Clock className="mr-2 text-tecnarit-green" />
+                            <span>{t('jobs.immediate_start')}</span>
+                          </div>
+                          <div className="flex items-center">
+                            <Award className="mr-2 text-tecnarit-green" />
+                            <span>{t(`jobs.position.${job.id}.location`)}</span>
+                          </div>
+                        </div>
+                        
+                        <div className="grid md:grid-cols-2 gap-8 mb-8">
+                          <div>
+                            <h3 className="text-xl font-semibold text-tecnarit-dark mb-4">{t(`jobs.position.${job.id}.requirements_title`)}</h3>
+                            <ul className="space-y-2 text-sm sm:text-base">
+                              {(() => {
+                                try {
+                                  const requirements = t(`jobs.position.${job.id}.requirements`, { returnObjects: true }) as string[];
+                                  return requirements.map((req: string, index: number) => (
+                                    <li key={index} className="flex items-start">
+                                      <CheckCircle className="mr-2 h-5 w-5 text-tecnarit-green shrink-0 mt-0.5" />
+                                      <span>{req}</span>
+                                    </li>
+                                  ));
+                                } catch (error) {
+                                  console.log(`Error getting translation for jobs.position.${job.id}.requirements:`, error);
+                                  return job.requirements.map((req: string, index: number) => (
+                                    <li key={index} className="flex items-start">
+                                      <CheckCircle className="mr-2 h-5 w-5 text-tecnarit-green shrink-0 mt-0.5" />
+                                      <span>{req}</span>
+                                    </li>
+                                  ));
+                                }
+                              })()}
+                            </ul>
+                          </div>
+                          <div className="mt-6 md:mt-0">
+                            <h3 className="text-xl font-semibold text-tecnarit-dark mb-4">{t(`jobs.position.${job.id}.responsibilities_title`)}</h3>
+                            <ul className="space-y-2 text-sm sm:text-base">
+                              {(() => {
+                                try {
+                                  const responsibilities = t(`jobs.position.${job.id}.responsibilities`, { returnObjects: true }) as string[];
+                                  return responsibilities.map((resp: string, index: number) => (
+                                    <li key={index} className="flex items-start">
+                                      <CheckCircle className="mr-2 h-5 w-5 text-tecnarit-green shrink-0 mt-0.5" />
+                                      <span>{resp}</span>
+                                    </li>
+                                  ));
+                                } catch (error) {
+                                  console.log(`Error getting translation for jobs.position.${job.id}.responsibilities:`, error);
+                                  return job.responsibilities.map((resp: string, index: number) => (
+                                    <li key={index} className="flex items-start">
+                                      <CheckCircle className="mr-2 h-5 w-5 text-tecnarit-green shrink-0 mt-0.5" />
+                                      <span>{resp}</span>
+                                    </li>
+                                  ));
+                                }
+                              })()}
+                            </ul>
+                          </div>
+                        </div>
+                        
+                        <div className="flex justify-center">
+                          <Button 
+                            onClick={() => handleApply(job.title)}
+                            className="tecnarit-gradient-bg hover:opacity-90 text-white font-semibold px-8 py-2 rounded-md border-none"
+                          >
+                            {(() => {
+                              try {
+                                return t(`jobs.position.${job.id}.apply`);
+                              } catch (error) {
+                                console.log(`Error getting translation for jobs.position.${job.id}.apply:`, error);
+                                return 'Apply Now';
+                              }
+                            })()}
+                          </Button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </TabsContent>
-              ))}
-            </Tabs>
+                  </TabsContent>
+                ))}
+              </Tabs>
+            </div>
+            
+            {/* Mobile view - Carousel */}
+            <div className="block md:hidden">
+              <div className="text-center mb-4 bg-gray-50 py-2 rounded-md">
+                <span className="inline-flex items-center justify-center gap-2 text-sm font-medium text-gray-700">
+                  <ChevronLeft className="h-4 w-4 text-tecnarit-green" />
+                  <span>{t('jobs.swipe_instruction')}</span>
+                  <ChevronRight className="h-4 w-4 text-tecnarit-green" />
+                </span>
+              </div>
+              
+              <Carousel className="w-full">
+                <CarouselContent>
+                  {jobListings.map((job) => (
+                    <CarouselItem key={job.id}>
+                      <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 h-full">
+                        <div className="p-4 sm:p-6">
+                          <h2 className="text-xl font-bold text-tecnarit-dark mb-3">{job.title}</h2>
+                          <p className="text-gray-600 mb-4 text-sm">
+                            {(() => {
+                              try {
+                                return t(`jobs.position.${job.id}.description`);
+                              } catch (error) {
+                                console.log(`Error getting translation for jobs.position.${job.id}.description:`, error);
+                                return job.description;
+                              }
+                            })()}
+                          </p>
+                          
+                          <div className="flex flex-wrap gap-3 mb-4">
+                            <div className="flex items-center">
+                              <Briefcase className="mr-1 h-4 w-4 text-tecnarit-green" />
+                              <span className="text-sm">{t(`jobs.position.${job.id}.type`)}</span>
+                            </div>
+                            <div className="flex items-center">
+                              <Clock className="mr-1 h-4 w-4 text-tecnarit-green" />
+                              <span className="text-sm">{t('jobs.immediate_start')}</span>
+                            </div>
+                            <div className="flex items-center">
+                              <Award className="mr-1 h-4 w-4 text-tecnarit-green" />
+                              <span className="text-sm">{t(`jobs.position.${job.id}.location`)}</span>
+                            </div>
+                          </div>
+                          
+                          <div className="mb-4">
+                            <h3 className="text-lg font-semibold text-tecnarit-dark mb-2">{t(`jobs.position.${job.id}.requirements_title`)}</h3>
+                            <ul className="space-y-1 text-sm">
+                              {(() => {
+                                try {
+                                  const requirements = t(`jobs.position.${job.id}.requirements`, { returnObjects: true }) as string[];
+                                  return requirements.map((req: string, index: number) => (
+                                    <li key={index} className="flex items-start">
+                                      <CheckCircle className="mr-1 h-4 w-4 text-tecnarit-green shrink-0 mt-0.5" />
+                                      <span className="text-sm">{req}</span>
+                                    </li>
+                                  ));
+                                } catch (error) {
+                                  console.log(`Error getting translation for jobs.position.${job.id}.requirements:`, error);
+                                  return job.requirements.map((req: string, index: number) => (
+                                    <li key={index} className="flex items-start">
+                                      <CheckCircle className="mr-1 h-4 w-4 text-tecnarit-green shrink-0 mt-0.5" />
+                                      <span className="text-sm">{req}</span>
+                                    </li>
+                                  ));
+                                }
+                              })()}
+                            </ul>
+                          </div>
+                          
+                          <div className="mb-4">
+                            <h3 className="text-lg font-semibold text-tecnarit-dark mb-2">{t(`jobs.position.${job.id}.responsibilities_title`)}</h3>
+                            <ul className="space-y-1 text-sm">
+                              {(() => {
+                                try {
+                                  const responsibilities = t(`jobs.position.${job.id}.responsibilities`, { returnObjects: true }) as string[];
+                                  return responsibilities.map((resp: string, index: number) => (
+                                    <li key={index} className="flex items-start">
+                                      <CheckCircle className="mr-1 h-4 w-4 text-tecnarit-green shrink-0 mt-0.5" />
+                                      <span className="text-sm">{resp}</span>
+                                    </li>
+                                  ));
+                                } catch (error) {
+                                  console.log(`Error getting translation for jobs.position.${job.id}.responsibilities:`, error);
+                                  return job.responsibilities.map((resp: string, index: number) => (
+                                    <li key={index} className="flex items-start">
+                                      <CheckCircle className="mr-1 h-4 w-4 text-tecnarit-green shrink-0 mt-0.5" />
+                                      <span>{resp}</span>
+                                    </li>
+                                  ));
+                                }
+                              })()}
+                            </ul>
+                          </div>
+                          
+                          <div className="flex justify-center mt-5">
+                            <Button 
+                              onClick={() => handleApply(job.title)}
+                              className="tecnarit-gradient-bg hover:opacity-90 text-white font-semibold px-6 py-1.5 rounded-md border-none text-sm"
+                            >
+                              {(() => {
+                                try {
+                                  return t(`jobs.position.${job.id}.apply`);
+                                } catch (error) {
+                                  console.log(`Error getting translation for jobs.position.${job.id}.apply:`, error);
+                                  return 'Apply Now';
+                                }
+                              })()}
+                            </Button>
+                          </div>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <div className="flex justify-center mt-4 gap-2">
+                  <CarouselPrevious className="relative static transform-none rounded-full" />
+                  <CarouselNext className="relative static transform-none rounded-full" />
+                </div>
+              </Carousel>
+            </div>
           </div>
         </section>
 

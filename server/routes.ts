@@ -91,7 +91,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         const emailSent = await sendEmail({
           to: "info@tecnarit.com",
           from: "sendgrid@tecnarit.com",
-          subject: `Nieuwe sollicitatie voor ${data.position}`,
+          subject: `🚨 NIEUWE SOLLICITATIE: ${data.position} - ${data.name}`,
           html: `
             <h2>Nieuwe sollicitatie via tecnarit.com</h2>
             <p><strong>Naam:</strong> ${data.name}</p>
